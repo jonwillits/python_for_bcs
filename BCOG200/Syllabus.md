@@ -145,51 +145,51 @@ Due by Jan 15 at 5:20pm<br><br>
 Homework 1<br>
 Due by Jan 21 at 11:59pm<br><br>
 
-####Week 2: 01/22 & 01/24<br>
+#### Week 2: 01/22 & 01/24<br>
 Info Coming Soon
 
-####Week 3: 01/29 & 01/31<br>
+#### Week 3: 01/29 & 01/31<br>
 Info Coming Soon
 
-####Week 4: 02/05 & 02/07<br>
+#### Week 4: 02/05 & 02/07<br>
 Info Coming Soon
 
-####Week 5: 02/12 & 02/14<br>
+#### Week 5: 02/12 & 02/14<br>
 Info Coming Soon
 
-####Week 6: 02/19 & 02/21<br>
+#### Week 6: 02/19 & 02/21<br>
 Info Coming Soon
 
-####Week 7: 02/26 & 02/28<br>
+#### Week 7: 02/26 & 02/28<br>
 Info Coming Soon
 
-####Week 8: 03/05 & 03/07<br>
+#### Week 8: 03/05 & 03/07<br>
 Info Coming Soon
 
-####Week 9: 03/12 & 03/07<br>
+#### Week 9: 03/12 & 03/07<br>
 Info Coming Soon
 
-####Spring Break
+#### Spring Break
 March 16-24
 
-####Week 10: 03/26 & 03/28<br>
+#### Week 10: 03/26 & 03/28<br>
 Info Coming Soon
 
-####Week 11: 04/02 & 04/04<br>
+#### Week 11: 04/02 & 04/04<br>
 Info Coming Soon
 
-####Week 12: 04/09 & 04/11<br>
+#### Week 12: 04/09 & 04/11<br>
 Info Coming Soon
 
-####Week 13: 04/16 & 04/18<br>
+####W eek 13: 04/16 & 04/18<br>
 Info Coming Soon
 
-####Week 14: 04/23 & 04/25<br>
+#### Week 14: 04/23 & 04/25<br>
 Info Coming Soon
 
-####Week 15: 04/30 & 05/02<br>
+#### Week 15: 04/30 & 05/02<br>
 Info Coming Soon
 
-####Finals Exam Date: 05/03
+#### Finals Exam Date: 05/03
 8:00am - 11:00am
 Final Project Presentations
