@@ -160,8 +160,16 @@ https://www.python-course.eu/python3_loops.php
 https://www.python-course.eu/python3_for_loop.php
 https://www.python-course.eu/python3_iterable_iterator.php
 
-TP
-<br>
+**Lab Assignments:**
+- variables
+- conditions
+- lists
+- for loops
+
+**Homework:**<br>
+Complete all lab assignments
+
+
 
 #### Week 3: 01/29 & 01/31<br>
 PT1
