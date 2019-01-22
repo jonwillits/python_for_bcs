@@ -146,30 +146,30 @@ Homework 1<br>
 Due by Jan 21 at 11:59pm<br><br>
 
 #### Week 2: 01/22 & 01/24<br>
-Info Coming Soon
+PT1<br>
+https://www.w3schools.com/python/python_lists.asp
+https://www.w3schools.com/python/python_conditions.asp
+https://www.w3schools.com/python/python_for_loops.asp
+
+PT2<br>
+https://www.python-course.eu/python3_sequential_data_types.php
+https://www.python-course.eu/python3_list_manipulation.php
+https://www.python-course.eu/python3_deep_copy.php
+https://www.python-course.eu/python3_conditional_statements.php
+https://www.python-course.eu/python3_loops.php
+https://www.python-course.eu/python3_for_loop.php
+https://www.python-course.eu/python3_iterable_iterator.php
+
+TP
+<br>
 
 #### Week 3: 01/29 & 01/31<br>
 PT1
-- Python Intro: https://www.w3schools.com/python/python_intro.asp
-- Python Get Started: https://www.w3schools.com/python/python_getstarted.asp
-- Python Syntax: https://www.w3schools.com/python/python_syntax.asp
-- Python Variables: https://www.w3schools.com/python/python_variables.asp
-- Python Numbers: https://www.w3schools.com/python/python_numbers.asp
-- Python Casting: https://www.w3schools.com/python/python_casting.asp
-- Python Strings: https://www.w3schools.com/python/python_strings.asp
-- Python Operators: https://www.w3schools.com/python/python_operators.asp
+
 
 PT2
-- The Origins of Python: https://www.python-course.eu/python3_history_and_philosophy.php
-- Starting with Python: The Interactive Shell: https://www.python-course.eu/python3_interactive.php
-- Executing a Script: https://www.python-course.eu/python3_execute_script.php
-- Indentation: https://www.python-course.eu/python3_blocks.php
-- Data Types and Variables: https://www.python-course.eu/python3_variables.php
-- Operators: https://www.python-course.eu/python3_operators.php
 
 TP
-- Chapter 1: http://interactivepython.org/runestone/static/thinkcspy/GeneralIntro/toctree.html
-- Chapter 2: http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html
 <br>
 
 #### Week 4: 02/05 & 02/07<br>
