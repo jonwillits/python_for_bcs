@@ -1,0 +1,6 @@
+trait mean stdev
+conscientiousness 33.63 7.43
+agreeableness 32.78 6.02
+openness 32.34 5.16
+extraversion 27.19 7.27
+neuroticism 24.84 8.05
