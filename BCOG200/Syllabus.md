@@ -159,6 +159,7 @@ Due by Jan 21st at 11:59pm<br><br>
 <br>
 **Think Python EBook**<br>
 \- Chapter 7: http://interactivepython.org/runestone/static/thinkcspy/Selection/toctree.html<br>
+\- Chapter 10: http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html<br>
 
 #### Lab Assignments:
 \- variables.py<br>
@@ -204,14 +205,23 @@ Due by Feb 4th at 11:59pm<br><br>
 
 ### Week 4: Feb 5th & 7th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Dictionaries<br>
+\- Tuples<br>
+\- Sets<br>
 
 #### Readings:
 **Python Tutorial 1**<br>
-\- Reading 1<br>
+\- https://www.w3schools.com/python/python_dictionaries.asp<br>
+\- https://www.w3schools.com/python/python_tuples.asp<br>
+\- https://www.w3schools.com/python/python_sets.asp<br>
 
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+**Python Tutorial 2**<br>
+\- https://www.python-course.eu/python3_dictionaries.php<br>
+\- https://www.python-course.eu/python3_sets_frozensets.php<br>
+\- https://www.python-course.eu/python_sets_example.php<br>
+
+**Think Python EBook**<br>
+\- http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html<br>
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -222,11 +232,13 @@ Due by Feb 11th at 11:59pm<br><br>
 
 ### Week 5: Feb 12th & 14th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Functions<br>
+\- Passing Variables<br>
+\- Global & Local Variables<br>
 
 #### Readings:
 **Python Tutorial 1**<br>
-\- Reading 1<br>
+\- https://www.w3schools.com/python/python_functions.asp<br>
 
 **Python Tutorial 1**<br>
 \- Reading 1<br>
