@@ -97,128 +97,331 @@ undiagnosed disability by visiting the DRES website and selecting “Sign-Up for
 at the bottom of the page.”
 
 ## 7. Class Schedule
-<h4>Week 1</h4>
-**Topic:**<br>
-Course Overview<br>
-What Programming is Good For<br>
-The Value of Simulation<br>
-Introduction to Python Basic Data Types and Expressions<br><br>
-**Readings:**<br><br>
+### Week 1
+#### Learning Objectives:
+- Course Overview
+- What Programming is Good For
+- The Value of Simulation
+- Introduction to Python Basic Data Types and Expressions<br>
 
-PT1
-- Python Intro: https://www.w3schools.com/python/python_intro.asp
-- Python Get Started: https://www.w3schools.com/python/python_getstarted.asp
-- Python Syntax: https://www.w3schools.com/python/python_syntax.asp
-- Python Variables: https://www.w3schools.com/python/python_variables.asp
-- Python Numbers: https://www.w3schools.com/python/python_numbers.asp
-- Python Casting: https://www.w3schools.com/python/python_casting.asp
-- Python Strings: https://www.w3schools.com/python/python_strings.asp
-- Python Operators: https://www.w3schools.com/python/python_operators.asp
-
-PT2
-- The Origins of Python: https://www.python-course.eu/python3_history_and_philosophy.php
-- Starting with Python: The Interactive Shell: https://www.python-course.eu/python3_interactive.php
-- Executing a Script: https://www.python-course.eu/python3_execute_script.php
-- Indentation: https://www.python-course.eu/python3_blocks.php
-- Data Types and Variables: https://www.python-course.eu/python3_variables.php
-- Operators: https://www.python-course.eu/python3_operators.php
-
-TP
-- Chapter 1: http://interactivepython.org/runestone/static/thinkcspy/GeneralIntro/toctree.html
-- Chapter 2: http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html
+#### Readings:
+**Python Tutorial 1**<br>
+\- Python Intro: https://www.w3schools.com/python/python_intro.asp<br>
+\- Python Get Started: https://www.w3schools.com/python/python_getstarted.asp<br>
+\- Python Syntax: https://www.w3schools.com/python/python_syntax.asp<br>
+\- Python Variables: https://www.w3schools.com/python/python_variables.asp<br>
+\- Python Numbers: https://www.w3schools.com/python/python_numbers.asp<br>
+\- Python Casting: https://www.w3schools.com/python/python_casting.asp<br>
+\- Python Strings: https://www.w3schools.com/python/python_strings.asp<br>
+\- Python Operators: https://www.w3schools.com/python/python_operators.asp<br>
 <br>
-
-**Lab Assignments:**
-
-1-1
-- Background Survey
-- Install Python 3
-
-1-2
-- Three favorites
-- Top Musicians
-- 
-
-rite some simple programs<br>
-Due by Jan 15 at 5:20pm<br><br>
-**Homework:**<br>
-Homework 1<br>
-Due by Jan 21 at 11:59pm<br><br>
-
-#### Week 2: 01/22 & 01/24<br>
-PT1<br>
-https://www.w3schools.com/python/python_lists.asp
-https://www.w3schools.com/python/python_conditions.asp
-https://www.w3schools.com/python/python_for_loops.asp
-
-PT2<br>
-https://www.python-course.eu/python3_sequential_data_types.php
-https://www.python-course.eu/python3_list_manipulation.php
-https://www.python-course.eu/python3_deep_copy.php
-https://www.python-course.eu/python3_conditional_statements.php
-https://www.python-course.eu/python3_loops.php
-https://www.python-course.eu/python3_for_loop.php
-https://www.python-course.eu/python3_iterable_iterator.php
-
-**Lab Assignments:**
-- variables
-- conditions
-- lists
-- for loops
-
-**Homework:**<br>
-Complete all lab assignments
-
-
-
-#### Week 3: 01/29 & 01/31<br>
-PT1
-
-
-PT2
-
-TP
+**Python Tutorial 2**<br>
+\- The Origins of Python: https://www.python-course.eu/python3_history_and_philosophy.php<br>
+\- Starting with Python: The Interactive Shell: https://www.python-course.eu/python3_interactive.php<br>
+\- Executing a Script: https://www.python-course.eu/python3_execute_script.php<br>
+\- Indentation: https://www.python-course.eu/python3_blocks.php<br>
+\- Data Types and Variables: https://www.python-course.eu/python3_variables.php<br>
+\- Operators: https://www.python-course.eu/python3_operators.php<br>
 <br>
+**Think Python EBook**<br>
+\- Chapter 1: http://interactivepython.org/runestone/static/thinkcspy/GeneralIntro/toctree.html<br>
+\- Chapter 2: http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html<br>
 
-#### Week 4: 02/05 & 02/07<br>
-Info Coming Soon
+#### Lab Assignments:
+\- Background Survey<br>
+\- Install Python 3<br>
+\- top_three.py<br>
+\- play_counts.py<br>
+\- big5.py
 
-#### Week 5: 02/12 & 02/14<br>
-Info Coming Soon
+#### Homework:
+No Extra Homework this week<br>
+Just complete and turn in all lab assignments<br>
+Due by Jan 21st at 11:59pm<br><br>
 
-#### Week 6: 02/19 & 02/21<br>
-Info Coming Soon
+### Week 2: Jan 22nd & 24th<br>
+#### Learning Objectives:
+\- Variables<br>
+\- Conditionals<br>
+\- Lists<br>
+\- For Loops<br>
+#### Readings:
+**Python Tutorial 1**<br>
+\- https://www.w3schools.com/python/python_lists.asp<br>
+\- https://www.w3schools.com/python/python_conditions.asp<br>
+\- https://www.w3schools.com/python/python_for_loops.asp<br>
 
-#### Week 7: 02/26 & 02/28<br>
-Info Coming Soon
+**Python Tutorial 2**<br>
+\- https://www.python-course.eu/python3_sequential_data_types.php<br>
+\- https://www.python-course.eu/python3_list_manipulation.php<br>
+\- https://www.python-course.eu/python3_deep_copy.php<br>
+\- https://www.python-course.eu/python3_conditional_statements.php<br>
+<br>
+**Think Python EBook**<br>
+\- Chapter 7: http://interactivepython.org/runestone/static/thinkcspy/Selection/toctree.html<br>
 
-#### Week 8: 03/05 & 03/07<br>
-Info Coming Soon
+#### Lab Assignments:
+\- variables.py<br>
+\- conditions.py<br>
+\- lists.py<br>
+\- for_loops.py<br>
+\- big5e.py<br>
 
-#### Week 9: 03/12 & 03/07<br>
-Info Coming Soon
+#### Homework:
+No Extra Homework this week<br>
+Just complete and turn in all lab assignments<br>
+Due by Jan 28th at 11:59pm<br><br>
+
+### Week 3: Jan 29th & 31st<br>
+#### Learning Objectives:
+\- More Practice with For Loops
+\- While Loops<br>
+\- File Input and Output
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- https://www.w3schools.com/python/python_while_loops.asp<br>
+\- https://www.w3schools.com/python/python_file_handling.asp<br>
+\- https://www.w3schools.com/python/python_file_open.asp<br>
+\- https://www.w3schools.com/python/python_file_write.asp<br>
+\- https://www.w3schools.com/python/python_file_remove.asp<br>
+
+**Python Tutorial 2**<br>
+\- https://www.python-course.eu/python3_loops.php<br>
+\- https://www.python-course.eu/python3_for_loop.php<br>
+\- https://www.python-course.eu/python3_iterable_iterator.php<br>
+\- https://www.python-course.eu/python3_file_management.php<br>
+<br>
+**Think Python EBook**<br>
+\- Chapter 3: http://interactivepython.org/runestone/static/thinkcspy/Debugging/toctree.html<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Feb 4th at 11:59pm<br><br>
+
+### Week 4: Feb 5th & 7th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Feb 11th at 11:59pm<br><br>
+
+### Week 5: Feb 12th & 14th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Feb 18th at 11:59pm<br><br>
+
+### Week 6: Feb 19th & 21th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Feb 25th at 11:59pm<br><br>
+
+### Week 7: Feb 26th & 28th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Mar 4th at 11:59pm<br>
+
+### Week 8: Mar 5th & 7th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Mar 11th at 11:59pm<br>
+
+### Week 9: Mar 12th & 14th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Mar 25th at 11:59pm<br>
 
 #### Spring Break
-March 16-24
+March 16th-24th
 
-#### Week 10: 03/26 & 03/28<br>
-Info Coming Soon
+### Week 10: Mar 26th & 28th<br>
+#### Learning Objectives:
+\- LO1<br>
 
-#### Week 11: 04/02 & 04/04<br>
-Info Coming Soon
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
 
-#### Week 12: 04/09 & 04/11<br>
-Info Coming Soon
+**Python Tutorial 1**<br>
+\- Reading 1<br>
 
-####W eek 13: 04/16 & 04/18<br>
-Info Coming Soon
+#### Lab Assignments:
+\- Information Coming Soon
 
-#### Week 14: 04/23 & 04/25<br>
-Info Coming Soon
+#### Homework:
+Information Coming Soon
+Due by Apr 1st at 11:59pm<br>
 
-#### Week 15: 04/30 & 05/02<br>
-Info Coming Soon
+### Week 11: Apr 2nd & 4th<br>
+#### Learning Objectives:
+\- LO1<br>
 
-#### Finals Exam Date: 05/03
-8:00am - 11:00am
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Apr 8th at 11:59pm<br>
+
+### Week 12: Apr 9th & 11th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Apr 15th at 11:59pm<br>
+
+### Week 13: Apr 16th & 18th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Apr 22nd at 11:59pm<br>
+
+### Week 14: Apr 23rd & 25th<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by Apr 29th at 11:59pm<br>
+
+### Week 15: Apr 30th & May 2nd<br>
+#### Learning Objectives:
+\- LO1<br>
+
+#### Readings:
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+**Python Tutorial 1**<br>
+\- Reading 1<br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+Information Coming Soon
+Due by May 6th at 11:59pm<br>
+
+### Finals Exam Date:
+May 3rd<br>
+8:00am - 11:00am<br>
 Final Project Presentations
