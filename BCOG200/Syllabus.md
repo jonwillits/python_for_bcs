@@ -177,6 +177,7 @@ Due by Jan 28th at 11:59pm<br><br>
 #### Learning Objectives:
 \- More Practice with For Loops
 \- While Loops<br>
+\- Advanced Screen Output<br>
 \- File Input and Output
 
 #### Readings:
@@ -191,6 +192,7 @@ Due by Jan 28th at 11:59pm<br><br>
 \- https://www.python-course.eu/python3_loops.php<br>
 \- https://www.python-course.eu/python3_for_loop.php<br>
 \- https://www.python-course.eu/python3_iterable_iterator.php<br>
+\- https://www.python-course.eu/python3_formatted_output.php<br>
 \- https://www.python-course.eu/python3_file_management.php<br>
 <br>
 **Think Python EBook**<br>
@@ -237,11 +239,7 @@ Due by Feb 11th at 11:59pm<br><br>
 \- Global & Local Variables<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- https://www.w3schools.com/python/python_functions.asp<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -252,14 +250,13 @@ Due by Feb 18th at 11:59pm<br><br>
 
 ### Week 6: Feb 19th & 21th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Importing Libraries & Modules <br>
+\- Matrix Algebra with Numpy
+\- Scientific Computing with Scipy
+\- Plotting and Data Visualization with Matplotlib
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -270,14 +267,13 @@ Due by Feb 25th at 11:59pm<br><br>
 
 ### Week 7: Feb 26th & 28th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- What is NLP and Computational Linguistics?<br>
+\- Advanced String Processing<br>
+\- Regular Expressions<br>
+\- NLTK and spaCy<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -288,14 +284,10 @@ Due by Mar 4th at 11:59pm<br>
 
 ### Week 8: Mar 5th & 7th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Introduction to Classes<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -306,14 +298,10 @@ Due by Mar 11th at 11:59pm<br>
 
 ### Week 9: Mar 12th & 14th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- More on Classes<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -327,14 +315,10 @@ March 16th-24th
 
 ### Week 10: Mar 26th & 28th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Turtles and Other Agents<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -345,14 +329,11 @@ Due by Apr 1st at 11:59pm<br>
 
 ### Week 11: Apr 2nd & 4th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Graphical User Interfaces<br>
+\- Tkinter<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -363,14 +344,12 @@ Due by Apr 8th at 11:59pm<br>
 
 ### Week 12: Apr 9th & 11th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Basic Computer Graphics<br>
+\- Programming Experiments<br>
+\- Programming Games<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -381,14 +360,10 @@ Due by Apr 15th at 11:59pm<br>
 
 ### Week 13: Apr 16th & 18th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Vehicles Part 1<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -399,14 +374,10 @@ Due by Apr 22nd at 11:59pm<br>
 
 ### Week 14: Apr 23rd & 25th<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Vehicles Part 2<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
@@ -417,14 +388,12 @@ Due by Apr 29th at 11:59pm<br>
 
 ### Week 15: Apr 30th & May 2nd<br>
 #### Learning Objectives:
-\- LO1<br>
+\- Machine Learning<br>
+\- Neural Networks<br>
+\- Cognitive Simulations<br>
 
 #### Readings:
-**Python Tutorial 1**<br>
-\- Reading 1<br>
-
-**Python Tutorial 1**<br>
-\- Reading 1<br>
+\- Information Coming Soon
 
 #### Lab Assignments:
 \- Information Coming Soon
