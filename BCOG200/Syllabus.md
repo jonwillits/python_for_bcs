@@ -138,7 +138,7 @@ at the bottom of the page.”
 No Extra Homework this week<br>
 Just complete and turn in all lab assignments<br>
 Due by Jan 21st at 11:59pm<br><br>
-
+<br>
 ### Week 2: Jan 22nd & 24th<br>
 #### Learning Objectives:
 \- Variables<br>
@@ -172,7 +172,7 @@ Due by Jan 21st at 11:59pm<br><br>
 No Extra Homework this week<br>
 Just complete and turn in all lab assignments<br>
 Due by Jan 28th at 11:59pm<br><br>
-
+<br>
 ### Week 3: Jan 29th & 31st<br>
 #### Learning Objectives:
 \- More Practice with For Loops
@@ -204,7 +204,7 @@ Due by Jan 28th at 11:59pm<br><br>
 #### Homework:
 Information Coming Soon
 Due by Feb 4th at 11:59pm<br><br>
-
+<br>
 ### Week 4: Feb 5th & 7th<br>
 #### Learning Objectives:
 \- Dictionaries<br>
@@ -231,7 +231,7 @@ Due by Feb 4th at 11:59pm<br><br>
 #### Homework:
 Information Coming Soon
 Due by Feb 11th at 11:59pm<br><br>
-
+<br>
 ### Week 5: Feb 12th & 14th<br>
 #### Learning Objectives:
 \- Functions<br>
@@ -247,13 +247,13 @@ Due by Feb 11th at 11:59pm<br><br>
 #### Homework:
 Information Coming Soon
 Due by Feb 18th at 11:59pm<br><br>
-
+<br>
 ### Week 6: Feb 19th & 21th<br>
 #### Learning Objectives:
-\- Importing Libraries & Modules <br>
-\- Matrix Algebra with Numpy
-\- Scientific Computing with Scipy
-\- Plotting and Data Visualization with Matplotlib
+\- Importing Libraries & Modules<br>
+\- Matrix Algebra with Numpy<br>
+\- Scientific Computing with Scipy<br>
+\- Plotting and Data Visualization with Matplotlib<br>
 
 #### Readings:
 \- Information Coming Soon
@@ -264,7 +264,7 @@ Due by Feb 18th at 11:59pm<br><br>
 #### Homework:
 Information Coming Soon
 Due by Feb 25th at 11:59pm<br><br>
-
+<br>
 ### Week 7: Feb 26th & 28th<br>
 #### Learning Objectives:
 \- What is NLP and Computational Linguistics?<br>
@@ -281,7 +281,7 @@ Due by Feb 25th at 11:59pm<br><br>
 #### Homework:
 Information Coming Soon
 Due by Mar 4th at 11:59pm<br>
-
+<br>
 ### Week 8: Mar 5th & 7th<br>
 #### Learning Objectives:
 \- Introduction to Classes<br>
@@ -295,7 +295,7 @@ Due by Mar 4th at 11:59pm<br>
 #### Homework:
 Information Coming Soon
 Due by Mar 11th at 11:59pm<br>
-
+<br>
 ### Week 9: Mar 12th & 14th<br>
 #### Learning Objectives:
 \- More on Classes<br>
@@ -312,7 +312,7 @@ Due by Mar 25th at 11:59pm<br>
 
 #### Spring Break
 March 16th-24th
-
+<br>
 ### Week 10: Mar 26th & 28th<br>
 #### Learning Objectives:
 \- Turtles and Other Agents<br>
@@ -326,7 +326,7 @@ March 16th-24th
 #### Homework:
 Information Coming Soon
 Due by Apr 1st at 11:59pm<br>
-
+<br>
 ### Week 11: Apr 2nd & 4th<br>
 #### Learning Objectives:
 \- Graphical User Interfaces<br>
@@ -341,7 +341,7 @@ Due by Apr 1st at 11:59pm<br>
 #### Homework:
 Information Coming Soon
 Due by Apr 8th at 11:59pm<br>
-
+<br>
 ### Week 12: Apr 9th & 11th<br>
 #### Learning Objectives:
 \- Basic Computer Graphics<br>
@@ -357,7 +357,7 @@ Due by Apr 8th at 11:59pm<br>
 #### Homework:
 Information Coming Soon
 Due by Apr 15th at 11:59pm<br>
-
+<br>
 ### Week 13: Apr 16th & 18th<br>
 #### Learning Objectives:
 \- Vehicles Part 1<br>
@@ -371,7 +371,7 @@ Due by Apr 15th at 11:59pm<br>
 #### Homework:
 Information Coming Soon
 Due by Apr 22nd at 11:59pm<br>
-
+<br>
 ### Week 14: Apr 23rd & 25th<br>
 #### Learning Objectives:
 \- Vehicles Part 2<br>
@@ -385,7 +385,7 @@ Due by Apr 22nd at 11:59pm<br>
 #### Homework:
 Information Coming Soon
 Due by Apr 29th at 11:59pm<br>
-
+<br>
 ### Week 15: Apr 30th & May 2nd<br>
 #### Learning Objectives:
 \- Machine Learning<br>
