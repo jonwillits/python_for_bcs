@@ -36,6 +36,27 @@ Programming for Cognitive Science has three primary learning objectives:
 > - to discuss how computer programs, models, and simulations contribute to research about cognitive science.
 
 ## 3. Course Requirements and Grading
+**Grading Scale**<br>
+\- A+   97-100<br>
+\- A    93-97<br>
+\- A-   90-93<br>
+\- B+   87-90<br>
+\- B    83-87<br>
+\- B-   80-83<br>
+\- C+   77-80<br>
+\- C    73-77<br>
+\- C-   70-73<br>
+\- D+   67-70<br>
+\- D    63-67<br>
+\- D-   60-63<br>
+\- F    Below 60<br>
+
+**Grade Components**<br>
+\- Participation: 30%<br>
+\- Group Lab Work: 30%<br>
+\- Homework: 30%<br>
+\- Final Project: 30%<br>
+
 **Participation:**<br>
 Participation is graded in terms of attendance and asking questions in class. 
 Much of the learning in class comes through hands on activity and practice. 
