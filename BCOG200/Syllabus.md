@@ -196,7 +196,7 @@ Due by Jan 28th at 11:59pm<br><br>
 <br>
 ### Week 3: Jan 29th & 31st<br>
 #### Learning Objectives:
-\- More Practice with For Loops
+\- More Practice with For Loops<br>
 \- While Loops<br>
 \- Advanced Screen Output<br>
 \- File Input and Output
@@ -220,12 +220,15 @@ Due by Jan 28th at 11:59pm<br><br>
 \- Chapter 3: http://interactivepython.org/runestone/static/thinkcspy/Debugging/toctree.html<br>
 
 #### Lab Assignments:
-\- Information Coming Soon
+\- while_loops.py<br>
+\- files.py<br>
+\- big5.py<br>
 
 #### Homework:
-Information Coming Soon
+homework3.py
 Due by Feb 4th at 11:59pm<br><br>
 <br>
+
 ### Week 4: Feb 5th & 7th<br>
 #### Learning Objectives:
 \- Dictionaries<br>
