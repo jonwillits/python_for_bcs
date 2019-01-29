@@ -1,0 +1,20 @@
+elephant,africa
+lion,africa
+giraffe,africa
+zebra,africa
+hyena,africa
+wombat,australia
+kangaroo,australia
+koala,australia
+dingo,australia
+wallaby,australia
+sloth,south america
+jaguar,south america
+capybara,south america
+tapir,south america
+piranha,south america
+groundhog,north america
+moose,north america
+raccoon,north america
+bison,north america
+bald eagle,north america

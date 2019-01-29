@@ -1,0 +1,10 @@
+Feel little concern for others,-1
+Am interested in people,1
+Insult people,-1
+Sympathize with others' feelings,1
+Am not interested in other people's problems,-1
+Have a soft heart,1
+Am not really interested in others,-1
+Take time out for others,1
+Feel others' emotions,1
+Make people feel at ease,1
