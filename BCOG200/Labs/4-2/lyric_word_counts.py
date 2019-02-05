@@ -1,7 +1,8 @@
 '''
 complete the program below, so that after you have two lists of files for two specified folders, the program
+    0) comment the existing code that gets the list of file names
     1) creates an empty dictionary for artist
-    2) adds that dictionary to the lyric dictionary list
+    2) adds that dictionary to the lyric dictionary list. make sure you lower-case all the words.
     3) goes through each file in the artist's folder, counts the words in each file, and adds them to the appropriate
         dictionary
     4) prints out:
@@ -15,26 +16,20 @@ complete the program below, so that after you have two lists of files for two sp
             kanye       10          108                 751             7.54
 
 '''
-
 import os, sys
-
-folder_list = os.listdir(sys.argv[1])
 
 lyric_dictionary_list = []
 
-for folder in folder_list:
-    file_list = os.listdir(sys.argv[1]+folder)
+input_directory = sys.argv[1]
+artist_list = os.listdir(input_directory)
 
-song_list1 = os.listdir(folder1)
-song_list2 = os.listdir(folder2)
-
-verified_list1 = []
-verified_list2 = []
-
-for file in song_list1:
-    if file[-4] == '.txt':
-        verified_list1.append(file)
-
-for file in song_list2:
-    if file[-4] == '.txt':
-        verified_list2.append(file)
+for artist in artist_list:
+    #print(artist)
+    song_list = os.listdir(input_directory+artist)
+    #print(song_list)
+    for song in song_list:
+        file_name = input_directory + artist + "/" + song
+        f = open(file_name)
+        words = f.read()
+        #print(words)
+        f.close()
