@@ -36,16 +36,16 @@ print()
     what does the code below do?
 '''
 # your answer here
-print('Example 3')
-sum = 0
-i = 0
-while i < 10:
-    i += 1
-    if i % 2 != 0:
-        continue
-    sum += i
-print(sum)
-print()
+# print('Example 3')
+# sum = 0
+# i = 0
+# while i < 10:
+#     i += 1
+#     if i % 2 != 0:
+#         continue
+#     sum += i
+# print(sum)
+# print()
 
 '''
     what happens if you change the code above from 'continue' to 'break'?
