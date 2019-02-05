@@ -250,12 +250,14 @@ Due by Feb 4th at 11:59pm<br><br>
 \- http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html<br>
 
 #### Lab Assignments:
-\- Information Coming Soon
+\- dict.py<br>
+\- sets_and_tuples.py<br>
+\- lyric_word_counts.py<br>
 
 #### Homework:
-Information Coming Soon
+homework4.py<br>
 Due by Feb 11th at 11:59pm<br><br>
-<br>
+
 ### Week 5: Feb 12th & 14th<br>
 #### Learning Objectives:
 \- Functions<br>
