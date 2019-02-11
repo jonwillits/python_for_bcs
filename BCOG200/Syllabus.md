@@ -265,15 +265,24 @@ Due by Feb 11th at 11:59pm<br><br>
 \- Global & Local Variables<br>
 
 #### Readings:
-\- Information Coming Soon
+\- https://www.w3schools.com/PYTHON/python_functions.asp<br>
+\- https://www.python-course.eu/python3_functions.php<br>
+\- https://www.python-course.eu/python3_passing_arguments.php<br>
+\- https://www.python-course.eu/python3_global_vs_local_variables.php<br>
+\- http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html<br>
 
 #### Lab Assignments:
-\- Information Coming Soon
+Due by Feb 18th at 11:59pm<br>
+\- functions.py<br>
+\- function_scope.py<br>
+\- complex_programs.py<br>
+\- libraries.py<br>
+
 
 #### Homework:
-Information Coming Soon
-Due by Feb 18th at 11:59pm<br><br>
-<br>
+Due by Feb 18th at 11:59pm<br>
+\- homework5.py<br><br>
+
 ### Week 6: Feb 19th & 21th<br>
 #### Learning Objectives:
 \- Importing Libraries & Modules<br>
