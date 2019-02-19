@@ -276,7 +276,6 @@ Due by Feb 18th at 11:59pm<br>
 \- functions.py<br>
 \- function_scope.py<br>
 \- complex_programs.py<br>
-\- libraries.py<br>
 
 
 #### Homework:
@@ -285,21 +284,27 @@ Due by Feb 18th at 11:59pm<br>
 
 ### Week 6: Feb 19th & 21th<br>
 #### Learning Objectives:
-\- Importing Libraries & Modules<br>
-\- Matrix Algebra with Numpy<br>
-\- Scientific Computing with Scipy<br>
-\- Plotting and Data Visualization with Matplotlib<br>
+\- Importing Modules<br>
+\- Matrix Algebra with Numpy<br><br>
 
 #### Readings:
-\- Information Coming Soon
+\- https://www.w3schools.com/python/python_modules.asp<br>
+\- https://www.python-course.eu/python3_modules_and_modular_programming.php<br>
+\- https://www.python-course.eu/python3_packages.php<br>
+\- http://cs231n.github.io/python-numpy-tutorial/#numpy<br><br>
 
 #### Lab Assignments:
-\- Information Coming Soon
+Due by Feb 25th at 11:59pm<br>
+\- standard_library_modules.py<br>
+\- numpy.py<br>
+\- card_game.py<br><br>
+
 
 #### Homework:
-Information Coming Soon
+\- homework6.py<br>
 Due by Feb 25th at 11:59pm<br><br>
 <br>
+
 ### Week 7: Feb 26th & 28th<br>
 #### Learning Objectives:
 \- What is NLP and Computational Linguistics?<br>
