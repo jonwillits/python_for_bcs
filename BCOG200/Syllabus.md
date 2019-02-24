@@ -159,7 +159,8 @@ at the bottom of the page.”
 No Extra Homework this week<br>
 Just complete and turn in all lab assignments<br>
 Due by Jan 21st at 11:59pm<br><br>
-<br>
+
+
 ### Week 2: Jan 22nd & 24th<br>
 #### Learning Objectives:
 \- Variables<br>
@@ -193,7 +194,8 @@ Due by Jan 21st at 11:59pm<br><br>
 No Extra Homework this week<br>
 Just complete and turn in all lab assignments<br>
 Due by Jan 28th at 11:59pm<br><br>
-<br>
+
+
 ### Week 3: Jan 29th & 31st<br>
 #### Learning Objectives:
 \- More Practice with For Loops<br>
@@ -227,7 +229,7 @@ Due by Jan 28th at 11:59pm<br><br>
 #### Homework:
 homework3.py
 Due by Feb 4th at 11:59pm<br><br>
-<br>
+
 
 ### Week 4: Feb 5th & 7th<br>
 #### Learning Objectives:
@@ -258,6 +260,7 @@ Due by Feb 4th at 11:59pm<br><br>
 homework4.py<br>
 Due by Feb 11th at 11:59pm<br><br>
 
+
 ### Week 5: Feb 12th & 14th<br>
 #### Learning Objectives:
 \- Functions<br>
@@ -277,10 +280,10 @@ Due by Feb 18th at 11:59pm<br>
 \- function_scope.py<br>
 \- complex_programs.py<br>
 
-
 #### Homework:
 Due by Feb 18th at 11:59pm<br>
-\- homework5.py<br><br>
+homework5.py<br><br>
+
 
 ### Week 6: Feb 19th & 21th<br>
 #### Learning Objectives:
@@ -297,15 +300,55 @@ Due by Feb 18th at 11:59pm<br>
 Due by Feb 25th at 11:59pm<br>
 \- standard_library_modules.py<br>
 \- numpy.py<br>
-\- card_game.py<br><br>
-
+\- blackjack.py<br><br>
 
 #### Homework:
-\- homework6.py<br>
+homework6.py<br>
 Due by Feb 25th at 11:59pm<br><br>
-<br>
+
 
 ### Week 7: Feb 26th & 28th<br>
+#### Learning Objectives:
+\- Object-Oriented Programming<br>
+\- Classes<br>
+\- Class Methods and Attributes<br>
+
+#### Readings:
+\- http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html<br>
+\- http://interactivepython.org/runestone/static/thinkcspy/index.html<br>
+\- https://www.w3schools.com/python/python_classes.asp<br>
+\- https://www.python-course.eu/python3_object_oriented_programming.php<br><br>
+
+#### Lab Assignments:
+\- classes.py<br>
+\- class_attributes.py<br>
+\- class_methods.py<br><br>
+
+#### Homework:
+Due by Mar 4th at 11:59pm<br>
+homework7.py<br><br>
+
+
+### Week 8: Mar 5th & 7th<br>
+#### Learning Objectives:
+\- More on Classes<br>
+\- Mutability
+\- Sameness
+\- Inheritance
+
+#### Readings:
+\- http://interactivepython.org/runestone/static/thinkcspy/ClassesDiggingDeeper/Fractions.html<br>
+\- https://www.python-course.eu/python3_class_and_instance_attributes.php<br>
+\- https://www.python-course.eu/python3_inheritance.php<br><br>
+
+#### Lab Assignments:
+\- Information Coming Soon
+
+#### Homework:
+homework8.py<br><br>
+Due by Mar 11th at 11:59pm<br><br>
+
+### Week 9: Mar 12th & 14th<br>
 #### Learning Objectives:
 \- What is NLP and Computational Linguistics?<br>
 \- Advanced String Processing<br>
@@ -319,43 +362,17 @@ Due by Feb 25th at 11:59pm<br><br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
-Due by Mar 4th at 11:59pm<br>
-<br>
-### Week 8: Mar 5th & 7th<br>
-#### Learning Objectives:
-\- Introduction to Classes<br>
-
-#### Readings:
-\- Information Coming Soon
-
-#### Lab Assignments:
-\- Information Coming Soon
-
-#### Homework:
-Information Coming Soon
-Due by Mar 11th at 11:59pm<br>
-<br>
-### Week 9: Mar 12th & 14th<br>
-#### Learning Objectives:
-\- More on Classes<br>
-
-#### Readings:
-\- Information Coming Soon
-
-#### Lab Assignments:
-\- Information Coming Soon
-
-#### Homework:
-Information Coming Soon
 Due by Mar 25th at 11:59pm<br>
+homework9.py<br><br>
 
-#### Spring Break
-March 16th-24th
-<br>
+
+### Spring Break
+March 16th-24th<br><br>
+
+
 ### Week 10: Mar 26th & 28th<br>
 #### Learning Objectives:
-\- Turtles and Other Agents<br>
+\- Agents=Based Simulations<br>
 
 #### Readings:
 \- Information Coming Soon
@@ -364,9 +381,10 @@ March 16th-24th
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by Apr 1st at 11:59pm<br>
-<br>
+homework10.py<br><br>
+
+
 ### Week 11: Apr 2nd & 4th<br>
 #### Learning Objectives:
 \- Graphical User Interfaces<br>
@@ -379,9 +397,10 @@ Due by Apr 1st at 11:59pm<br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by Apr 8th at 11:59pm<br>
-<br>
+homework11.py<br><br>
+
+
 ### Week 12: Apr 9th & 11th<br>
 #### Learning Objectives:
 \- Basic Computer Graphics<br>
@@ -395,9 +414,10 @@ Due by Apr 8th at 11:59pm<br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by Apr 15th at 11:59pm<br>
-<br>
+homework12.py<br><br>
+
+
 ### Week 13: Apr 16th & 18th<br>
 #### Learning Objectives:
 \- Vehicles Part 1<br>
@@ -409,9 +429,10 @@ Due by Apr 15th at 11:59pm<br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by Apr 22nd at 11:59pm<br>
-<br>
+homework13.py<br><br>
+
+
 ### Week 14: Apr 23rd & 25th<br>
 #### Learning Objectives:
 \- Vehicles Part 2<br>
@@ -423,14 +444,14 @@ Due by Apr 22nd at 11:59pm<br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by Apr 29th at 11:59pm<br>
-<br>
+homework14.py<br><br>
+
+
 ### Week 15: Apr 30th & May 2nd<br>
 #### Learning Objectives:
 \- Machine Learning<br>
 \- Neural Networks<br>
-\- Cognitive Simulations<br>
 
 #### Readings:
 \- Information Coming Soon
@@ -439,10 +460,11 @@ Due by Apr 29th at 11:59pm<br>
 \- Information Coming Soon
 
 #### Homework:
-Information Coming Soon
 Due by May 6th at 11:59pm<br>
+homework15.py<br><br>
 
 ### Finals Exam Date:
 May 3rd<br>
 8:00am - 11:00am<br>
-Final Project Presentations
+There is no Final Exam<br>
+But we will still meet for final project presentations
