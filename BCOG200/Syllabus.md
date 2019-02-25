@@ -333,7 +333,7 @@ homework6.py<br><br>
 
 #### Readings:
 \- https://www.w3schools.com/python/python_classes.asp<br>
-\- https://www.python-course.eu/python3_object_oriented_programming.php<br><br>
+\- https://www.python-course.eu/python3_object_oriented_programming.php<br>
 
 #### Lab Assignments:
 Due by Mar 4th at 11:59pm<br>
