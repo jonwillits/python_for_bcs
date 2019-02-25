@@ -356,8 +356,8 @@ homework7.py<br><br>
 #### Readings:
 \- https://www.python-course.eu/python3_inheritance.php<br>
 \- http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html<br>
-\-http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html<br>
-\- http://interactivepython.org/runestone/static/thinkcspy/ClassesDiggingDeeper/Fractions.html<br><br>
+\- http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html<br>
+\- http://interactivepython.org/runestone/static/thinkcspy/ClassesDiggingDeeper/Fractions.html<br>
 
 #### Lab Assignments:
 Due by Mar 11th at 11:59pm<br>
@@ -415,8 +415,7 @@ March 16th-24th<br><br>
 \- regex2.py<br>
 \- try_nltk.py<br>
 \- music_corpus10.py<br>
-\- run_mc10.py<br><br>
-
+\- run_mc10.py<br>
 
 #### Homework:
 Due by Apr 1st at 11:59pm<br>
@@ -440,7 +439,7 @@ homework10.py<br><br>
 \- multiplots.py<br>
 \- music_corpus11.py<br>
 \- plot_stats11.py<br>
--\ run_mc11.py<br><br>
+\- run_mc11.py<br>
 
 #### Homework:
 Due by Apr 8th at 11:59pm<br>
@@ -455,14 +454,14 @@ homework11.py<br><br>
 
 #### Readings:
 \- http://interactivepython.org/runestone/static/thinkcspy/GUIandEventDrivenProgramming/toctree.html<br>
-\- https://www.python-course.eu/tkinter_labels.php<br><br>
+\- https://www.python-course.eu/tkinter_labels.php<br>
 
 #### Lab Assignments:
 \- tk_windows.py<br>
 \- tk_widgets.py<br>
 \- tk_interactive.py<br>
 \- tk_layout.py<br>
-\- tk_game.py<br><br>
+\- tk_game.py<br>
 
 #### Homework:
 Due by Apr 15th at 11:59pm<br>
@@ -492,21 +491,21 @@ homework13.py<br><br>
 #### Learning Objectives:
 \- Data Analysis in Python<br>
 \- Pandas<br>
-\- Statmodels<br><br>
+\- Statmodels<br>
 
 #### Readings:
 \- https://seeing-theory.brown.edu/regression-analysis/index.html#section1<br>
 \- https://seeing-theory.brown.edu/regression-analysis/index.html#section2<br>
 \- https://seeing-theory.brown.edu/regression-analysis/index.html#section3<br>
 \- https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html<br>
-\- http://greenteapress.com/thinkstats2/html/thinkstats2012.html<br><br>
+\- http://greenteapress.com/thinkstats2/html/thinkstats2012.html<br>
 
 #### Lab Assignments:
 \- try_pandas.py<br>
 \- summarize.py<br>
 \- plotting.py<br>
 \- regression.py<br>
-\- analyze_big5.py<br><br>
+\- analyze_big5.py<br>
 
 #### Homework:
 Due by Apr 29th at 11:59pm<br>
@@ -519,10 +518,9 @@ homework14.py<br><br>
 \- Basic Neural Networks<br>
 
 #### Readings:
-
 \- https://www.python-course.eu/machine_learning_terminology.php<br>
 \- https://www.python-course.eu/k_nearest_neighbor_classifier.php<br>
-\- http://neuralnetworksanddeeplearning.com/chap1.html<br><br>
+\- http://neuralnetworksanddeeplearning.com/chap1.html<br>
 
 #### Lab Assignments:
 \- network.py<br>
@@ -533,6 +531,7 @@ homework14.py<br><br>
 #### Homework:
 Due by May 6th at 11:59pm<br>
 homework15.py<br><br>
+
 
 ### Finals Exam Date:
 May 3rd<br>
