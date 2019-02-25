@@ -340,7 +340,7 @@ Due by Mar 4th at 11:59pm<br>
 \- classes.py<br>
 \- class_attributes.py<br>
 \- class_methods.py<br>
-\- analyze_lyrics.py<br><br>
+\- analyze_lyrics.py<br>
 
 #### Homework:
 Due by Mar 4th at 11:59pm<br>
