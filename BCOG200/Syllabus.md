@@ -19,7 +19,7 @@ University of Illinois at Urbana-Champaign<br>
 Email: jwillits@illinois.edu<br>
 Website: http://www.psychology.illinois.edu/people/jwillits<br>
 Office Location: Psychology 811<br>
-Office Hours: Thursday 230pm-330pm
+Office Hours: Monday 1000am-1200pm, Thursday 230pm-330pm
 
 **Teaching Assistant**<br>
 Andrew Flores<br>
@@ -170,13 +170,12 @@ at the bottom of the page.”
 Due by Jan 21st at 11:59pm<br>
 \- Background Survey<br>
 \- Install Python 3<br>
-\- top_three.py<br>
-\- play_counts.py<br>
-\- big5.py
+\- Install Git<br>
+\- hello_world.py<br>
 
 #### Homework:
 Due by Jan 21st at 11:59pm<br>
-homework2.py<br><br>
+homework1.py<br><br>
 
 
 ### Week 2: Jan 22nd & 24th<br>
@@ -363,7 +362,7 @@ homework7.py<br><br>
 Due by Mar 11th at 11:59pm<br>
 \- inheritance.py<br>
 \- try_turtles.py<br>
-\- advanced_turtle.py<br>
+\- advanced_turtles.py<br>
 \- turtle_tag.py<br>
 
 #### Homework:
