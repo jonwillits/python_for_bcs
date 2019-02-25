@@ -314,8 +314,6 @@ Due by Feb 25th at 11:59pm<br><br>
 \- Class Methods and Attributes<br>
 
 #### Readings:
-\- http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html<br>
-\- http://interactivepython.org/runestone/static/thinkcspy/index.html<br>
 \- https://www.w3schools.com/python/python_classes.asp<br>
 \- https://www.python-course.eu/python3_object_oriented_programming.php<br><br>
 
