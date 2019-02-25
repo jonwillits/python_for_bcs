@@ -477,10 +477,10 @@ homework12.py<br><br>
 \- http://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html<br>
 
 #### Lab Assignments:
-\- graphics.py
-\- draw_shapes.py
-\- n-back.py
-\- big5.py
+\- graphics.py<br>
+\- draw_shapes.py<br>
+\- n-back.py<br>
+\- big5.py<br>
 
 #### Homework:
 Due by Apr 22nd at 11:59pm<br>
