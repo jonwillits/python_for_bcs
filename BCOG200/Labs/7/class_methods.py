@@ -56,3 +56,15 @@ jon.celebrate_birthday()
 # Create two more methods in the class definition above that change attributes of class. Feel free to add new
 # attributes to the class definition that may be things about the instance that could change over time. Make sure at
 # least one of the methods is a 'fruitful' method.
+
+
+
+class List:
+
+    def __init__:
+
+    def append(self)
+        :
+
+x = list()
+[]

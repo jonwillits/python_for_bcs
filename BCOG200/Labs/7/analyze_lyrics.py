@@ -12,6 +12,7 @@ import os
 #           Then, combine the freq dictionaries for each song to create one summary freq dictionary for the artist
 #           Then you can count the artist's overall types and tokens from that summary dictionary
 
+
 class Artist:
 
     def __init__(self, name, directory_location):
@@ -43,11 +44,27 @@ class Song:
         self.num_tokens = 0
         self.num_types = 0
 
+        # call get_lyrics, passed the file location, stores the lyric list
+        # call get_freq_dict
+        # call get_word_type_sum
+        # call get_word_token_sum
+
+
     def get_lyrics(self):
-        pass
+        f = open(self.file_location)
+        for line in f:
+            data = line.strip('\n')
+            token_list = data.split(0)
+            self.lyric_list.append(token_list)
+        f.close()
 
     def get_freq_dict(self):
-        pass
+        for line in self.lyric_list:
+            for token in line:
+                if token in self.lyric_freq_dict:
+                    self.lyric_freq_dict[token] += 1
+                else:
+                    self.lyric_freq_dict[token] = 1
 
     def get_word_type_sum(self):
         pass
@@ -81,6 +98,7 @@ def main():
             song_title = song_filename[:-4]
             song_location = artist_directory + "/" + song_title
             new_song_instance = Song(song_title, song_location)
+
             new_artist_instance.song_list.append(new_song_instance)
 
         artist_object_list.append(new_artist_instance)
