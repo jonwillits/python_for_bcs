@@ -30,8 +30,8 @@ class Vehicle2(turtle.Turtle):
         self.vehicle_type = vehicle_type
         self.input_list = input_list
         self.create_vehicle()
-        self.speed_parameters = [20, 0.2, 6]
-        self.turn_parameters = [20]
+        self.speed_parameters = [10, .2, 0]
+        self.turn_parameters = [300]
         self.moves = 0
 
     def create_vehicle(self):
@@ -44,7 +44,7 @@ class Vehicle2(turtle.Turtle):
             self.color(255, random.randint(0, 150), random.randint(0, 150))
         self.goto(random.randint(-290, 290), random.randint(-290, 290))
         self.right(random.randint(0, 360))
-        self.pendown()
+        #self.pendown()
         self.showturtle()
 
     def get_input_information(self, position):
@@ -56,15 +56,23 @@ class Vehicle2(turtle.Turtle):
         sin_angle = math.sin(math.radians(angle))
         left_distance = distance - sin_angle
         right_distance = distance + sin_angle
+        if left_distance == 0:
+            left_distance = 0.00001
+        if right_distance == 0:
+            right_distance = 0.00001
         return left_distance, right_distance
+
+#A(distance - B)^2 + C
+# to have parabola upsidedown, make A negative
+# make sure that B is great enough that the curve crosses the horizontal axis at a positive distance
 
     def compute_speed(self, left_distance, right_distance):
         if self.vehicle_type == 'crossed':
-            left_speed = (self.speed_parameters[0] / (right_distance ** self.speed_parameters[1])) - self.speed_parameters[2]
-            right_speed = (self.speed_parameters[0] / (left_distance ** self.speed_parameters[1])) - self.speed_parameters[2]
+            left_speed = 1 / ((right_distance+5) ** 0.2)
+            right_speed = 1 / ((left_distance+5) ** 0.2)
         else:
-            left_speed = (self.speed_parameters[0] / (left_distance ** self.speed_parameters[1])) - self.speed_parameters[2]
-            right_speed = (self.speed_parameters[0] / (right_distance ** self.speed_parameters[1])) - self.speed_parameters[2]
+            left_speed = 1 / ((left_distance+5) ** 0.2)
+            right_speed = 1 / ((right_distance+5) ** 0.2)
         combined_speed = (left_speed + right_speed)/2
         return left_speed, right_speed, combined_speed
 
@@ -83,7 +91,7 @@ class Vehicle2(turtle.Turtle):
                 turn_amount = self.compute_turn_amount(left_speed, right_speed)
                 combined_turn_amount += turn_amount
                 combined_speed += average_speed
-
+            #print(self.vehicle_id, combined_speed, combined_turn_amount)
             try:
                 self.right(combined_turn_amount)
             except:
@@ -103,7 +111,7 @@ def create_screen():
 
 def main():
     wn = create_screen()
-    num_vehicles = 5
+    num_vehicles = 100
     num_heat_sources = 4
 
     vehicle_list = []
@@ -122,4 +130,3 @@ def main():
         wn.update()
 
 main()
-
