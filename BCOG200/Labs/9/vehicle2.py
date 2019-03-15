@@ -62,10 +62,6 @@ class Vehicle2(turtle.Turtle):
             right_distance = 0.00001
         return left_distance, right_distance
 
-#A(distance - B)^2 + C
-# to have parabola upsidedown, make A negative
-# make sure that B is great enough that the curve crosses the horizontal axis at a positive distance
-
     def compute_speed(self, left_distance, right_distance):
         if self.vehicle_type == 'crossed':
             left_speed = 1 / ((right_distance+5) ** 0.2)
