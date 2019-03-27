@@ -139,8 +139,6 @@ frakenstein_freqs = nltk.FreqDist(frankenstein_text)
 # for word in frakenstein_freqs.most_common(50):
 #     print(word)
 
-# write some code that combines
-
 """
 Remember sets? We can take advantage of them.
 """
