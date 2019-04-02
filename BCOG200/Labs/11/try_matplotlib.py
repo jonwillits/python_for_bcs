@@ -64,22 +64,20 @@ school_list = ['Illinois', 'Indiana', 'Northwestern']
 score_type = ['IQ List', 'GPA']
 
 iq_matrix = np.random.normal(100, 10, [1000, 3])
-gpa_matrix = np.random.normal(3, 0.5, [1000, 3])
+gpa_matrix = np.random.normal(3, 0.25, [1000, 3])
 iq_matrix[:, 0] += 10
 iq_matrix[:, 2] -= 10
-gpa_matrix[:, 0] += 0.5
-gpa_matrix[:, 2] -= 0.5
+gpa_matrix[:, 0] += 0.25
+gpa_matrix[:, 2] -= 0.25
 gpa_matrix = np.clip(gpa_matrix, 0.0, 4.0)
-
 data_matrix = np.dstack((iq_matrix, gpa_matrix))
-iq_means = None
-iq_stdevs = None
-gpa_means = None
-gpa_stdevs = None
+print(data_matrix.shape)
+means = None
+stdevs = None
 
 # comment the code above to show you understand it.
-# next, add code on lines 75-78 to compute means and standard deviations of gpa and IQ for each school
-# and for each type of score, using the data_matrix variable. You can do each in 1 line!
+# next, add code to compute means and standard deviations of gpa and IQ for each school
+# and store in a single matrix with three rows (one for each school) and two columns (one for each score type).
 
 """
 Now let's plot a histogram.
@@ -102,7 +100,9 @@ Now let's make a bar plot
 # x_pos = np.arange(num_groups)
 
 # create a bar chart, specifying the x-values at which our bars are positioned, then the y-values
-# plt.bar(x_pos, iq_means, align='center', yerr=iq_stdevs)
+# the next line wont work if you havent correctly computed mean and standard deviations and stored them in the
+# matrices named 'means' and 'stdevs'
+# plt.bar(x_pos, means[:,0], align='center', yerr=stdevs[:,0])
 # plt.xticks(x_pos, school_list)
 # plt.ylabel('IQ')
 # plt.ylim(50, 150)
