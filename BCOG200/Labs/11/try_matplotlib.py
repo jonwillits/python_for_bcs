@@ -72,12 +72,14 @@ gpa_matrix[:, 2] -= 0.5
 gpa_matrix = np.clip(gpa_matrix, 0.0, 4.0)
 
 data_matrix = np.dstack((iq_matrix, gpa_matrix))
-print(data_matrix.shape)
-print()
-# that should do it. Now let's compare some students
+iq_means = None
+iq_stdevs = None
+gpa_means = None
+gpa_stdevs = None
 
-# first, add code to compute means and standard deviations of gpa and IQ for each school and for each type of score,
-# using the data_matrix variable. You can do each in 1 line!
+# comment the code above to show you understand it.
+# next, add code on lines 75-78 to compute means and standard deviations of gpa and IQ for each school
+# and for each type of score, using the data_matrix variable. You can do each in 1 line!
 
 """
 Now let's plot a histogram.
@@ -94,15 +96,6 @@ Change the bins value and comment on what it does
 """
 Now let's make a bar plot
 """
-num_groups = len(school_list)
-
-# here i have computed means and standard deviations for you. Is this how you did it above?
-# note that the 0 that is passed to mean() and std() tells us to compute a different mean for each column, resulting
-# in a three element array.
-# iq_means = iq_matrix.mean(0)
-# gpa_means = iq_matrix.mean(0)
-# iq_stdevs = iq_matrix.std(0)
-# gpa_stdevs = gpa_matrix.std(0)
 
 # this creates an array starting at 0 and going up to the num_groups -1. Print it out to see.
 # we use this to figure out the x-axis values at which we will plot our group labels.
@@ -120,11 +113,11 @@ num_groups = len(school_list)
 Now let's make a scatter plot
 """
 # comment the code here and explain what is going on
-colors = ("xkcd:navy", "xkcd:crimson", "xkcd:indigo")
-for i in range(num_groups):
-    print(len(iq_matrix), len(gpa_matrix))
-    plt.scatter(iq_matrix[:,i], gpa_matrix[:, i],
-                c=colors[i], edgecolors='none', s=30, label=school_list[i])
-plt.title('GPA and IQ by School')
-plt.legend(loc=2)
-plt.show()
+# colors = ("xkcd:navy", "xkcd:crimson", "xkcd:indigo")
+# for i in range(len(school_list)):
+#     print(len(iq_matrix), len(gpa_matrix))
+#     plt.scatter(iq_matrix[:,i], gpa_matrix[:, i],
+#                 c=colors[i], edgecolors='none', s=30, label=school_list[i])
+# plt.title('GPA and IQ by School')
+# plt.legend(loc=2)
+# plt.show()
