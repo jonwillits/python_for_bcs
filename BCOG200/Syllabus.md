@@ -363,7 +363,7 @@ Due by Mar 11th at 11:59pm<br>
 \- inheritance.py<br>
 \- try_turtles.py<br>
 \- advanced_turtles.py<br>
-\- turtle_tag.py<br>
+\- turtle_game.py<br>
 
 #### Homework:
 Due by Mar 11th at 11:59pm<br>
@@ -433,12 +433,10 @@ homework10.py<br><br>
 \- https://www.labri.fr/perso/nrougier/teaching/matplotlib<br>
 
 #### Lab Assignments:
+\- numpy_refresher.py<br>
 \- try_matplotlib.py<br>
-\- simple_plot_examples.py<br>
-\- multiplots.py<br>
-\- music_corpus11.py<br>
-\- plot_stats11.py<br>
-\- run_mc11.py<br>
+\- figures.py<br>
+\- novel_figures.py<br>
 
 #### Homework:
 Due by Apr 8th at 11:59pm<br>
@@ -447,20 +445,19 @@ homework11.py<br><br>
 
 ### Week 12: Apr 9th & 11th<br>
 #### Learning Objectives:
-\- Graphical User Interfaces<br>
-\- Event-Driven Programming<br>
-\- Tkinter<br>
+\- Introduction to Machine Learning<br>
+\- Supervised Learning<br>
+\- Classification<br>
+\- K Nearest Neighbors method<br>
 
 #### Readings:
-\- http://interactivepython.org/runestone/static/thinkcspy/GUIandEventDrivenProgramming/toctree.html<br>
-\- https://www.python-course.eu/tkinter_labels.php<br>
+\- Python Machine Learning by Raschka CH1 <br>
+\- https://www.python-course.eu/machine_learning_terminology.php<br>
 
 #### Lab Assignments:
-\- tk_windows.py<br>
-\- tk_widgets.py<br>
-\- tk_interactive.py<br>
-\- tk_layout.py<br>
-\- tk_game.py<br>
+\- classify.py
+\- data_loader.py
+\- k_nearest_neighbor.py
 
 #### Homework:
 Due by Apr 15th at 11:59pm<br>
@@ -469,17 +466,15 @@ homework12.py<br><br>
 
 ### Week 13: Apr 16th & 18th<br>
 #### Learning Objectives:
-\- Programming Experiments<br>
-\- Basic 2D Computer Graphics<br>
+\- More Supervised Learning<br>
+\- More Classification<br>
+\- Logistic Regression<br>
 
 #### Readings:
-\- http://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html<br>
+\- Coming Soon <br>
 
 #### Lab Assignments:
-\- graphics.py<br>
-\- draw_shapes.py<br>
-\- n-back.py<br>
-\- big5.py<br>
+\- Coming Soon <br>
 
 #### Homework:
 Due by Apr 22nd at 11:59pm<br>
@@ -488,23 +483,13 @@ homework13.py<br><br>
 
 ### Week 14: Apr 23rd & 25th<br>
 #### Learning Objectives:
-\- Data Analysis in Python<br>
-\- Pandas<br>
-\- Statmodels<br>
+\- Neural Networks<br>
 
 #### Readings:
-\- https://seeing-theory.brown.edu/regression-analysis/index.html#section1<br>
-\- https://seeing-theory.brown.edu/regression-analysis/index.html#section2<br>
-\- https://seeing-theory.brown.edu/regression-analysis/index.html#section3<br>
-\- https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html<br>
-\- http://greenteapress.com/thinkstats2/html/thinkstats2012.html<br>
+\- Coming Soon <br>
 
 #### Lab Assignments:
-\- try_pandas.py<br>
-\- summarize.py<br>
-\- plotting.py<br>
-\- regression.py<br>
-\- analyze_big5.py<br>
+\- Coming Soon <br>
 
 #### Homework:
 Due by Apr 29th at 11:59pm<br>
@@ -513,23 +498,17 @@ homework14.py<br><br>
 
 ### Week 15: Apr 30th & May 2nd<br>
 #### Learning Objectives:
-\- Defining Machine Learning<br>
-\- Basic Neural Networks<br>
+\- Sentiment Analysis<br>
+\- Text Classification<br>
 
 #### Readings:
-\- https://www.python-course.eu/machine_learning_terminology.php<br>
-\- https://www.python-course.eu/k_nearest_neighbor_classifier.php<br>
-\- http://neuralnetworksanddeeplearning.com/chap1.html<br>
+\- Coming Soon <br>
 
 #### Lab Assignments:
-\- network.py<br>
-\- mnist_loader.py<br>
-\- visualize.py<br>
-\- run_nn.py<br>
+\- Coming Soon <br>
 
 #### Homework:
-Due by May 6th at 11:59pm<br>
-homework15.py<br><br>
+\- Coming Soon <br>
 
 
 ### Finals Exam Date:
