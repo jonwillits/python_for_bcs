@@ -17,7 +17,7 @@ class Dataset:
 
 		self.num_categories = 0  	# the total number of categories in the data file
 		self.category_list = None  	# a list of the categories in teh data file
-		self.category_index_dict = None
+		self.category_index_dict = None  # a dict with words as keys and their unique index number as a value
 
 		self.num_features = 0		# the total number of features in the data file
 		self.feature_list = None    # a list of the features
@@ -27,23 +27,29 @@ class Dataset:
 		self.word_category_dict = None        # a dictionary with words as keys and their category as the value
 		self.category_word_list_dict = None   # a dict with category as key and the list of member words as values
 		self.feature_matrix = None			  # the full matrix of feature data in the dataset
+		self.category_matrix = None				# a binary matrix of size nun_words x num_categories; 1s if word in cat
+
+		self.feature_diagnosticity_matrix = None  # a matrix showing the correlation of each feature with each category
+		self.feature_correlation_matrix = None		# a matrix showing the inter-correlations of all features
 
 		self.training_size = 0		# the number of words in the training set
 		self.training_list = None   # the list of data for the training set
-		self.training_indexes = None
+		self.training_indexes = None   # a list of index numbers of all the words in the training set
 
 		self.test_size = 0			# the number of words in the test set
 		self.test_list = None		# the list of data for the test set
-		self.test_indexes = None
+		self.test_indexes = None		# a list of index numbers of all the words in the test set
 
-		self.svd_dimensions = None
-		self.svd_features = None
-		self.eigenvalues = None
-		self.top_two_variance = None
+		self.svd_dimensions = None		# how many singular value dimensions to retain if svd, or None if dont svd
+		self.svd_features = None		# the resulting svd matrix of size num_words x svd_dimensions
+		self.eigenvalues = None			# the eigenvalues of the svd
+		self.top_two_variance = None	# the proportion of variance of the top two singular values
 
-		self.verbose = verbose
+		self.verbose = verbose			# whether or not to print a lot of stuff out
 
+		# import the data, creating the majority of the data structures described above
 		self.import_data()
+
 		if self.normalize_data:
 			self.normalize()
 
@@ -100,6 +106,14 @@ class Dataset:
 		self.feature_matrix = np.array(feature_vector_list)
 		self.num_words = len(self.word_list)
 		self.num_features = len(self.feature_list)
+
+		self.category_matrix = np.zeros([self.num_words, self.num_categories], float)
+		for i in range(self.num_words):
+			current_word = self.word_list[i]
+			for j in range(self.num_categories):
+				current_category = self.category_list[j]
+				if self.word_category_dict[current_word] == current_category:
+					self.category_matrix[i, j] = 1
 
 		print()
 		print("Loaded Dataset with {} categories, {} words, and {} features".format(self.num_categories,
@@ -221,4 +235,53 @@ class Dataset:
 		plt.ylabel(y_label)
 		plt.title(title)
 		plt.legend()
+
+	###########################################################################
+	def compute_feature_correlations(self):
+
+		self.feature_diagnosticity_matrix = np.zeros([self.num_features, self.num_categories], float)
+
+		self.feature_correlation_matrix = np.zeros([self.num_features, self.num_features], float)
+
+		for i in range(self.num_features):
+			word_feature_vector = self.feature_matrix[:, i]
+
+			for j in range(self.num_features):
+				word2_feature_vector = self.feature_matrix[:, j]
+				correlation = np.corrcoef(word_feature_vector, word2_feature_vector)[0, 1]
+				self.feature_correlation_matrix[i, j] = correlation
+
+			for j in range(self.num_categories):
+				category_vector = self.category_matrix[:, j]
+				correlation = np.corrcoef(word_feature_vector, category_vector)[0,1]
+				self.feature_diagnosticity_matrix[i, j] = correlation
+
+		if self.verbose:
+			print()
+			print("Feature Diagnosticity")
+			output_string = "{:20s}".format("Feature")
+			for i in range(self.num_categories):
+				output_string += " {:>9s}".format(self.category_list[i])
+			print(output_string)
+
+			for i in range(self.num_features):
+				output_string = "{:20s}".format(self.feature_list[i])
+				for j in range(self.num_categories):
+					output_string += " {:>9.2f}".format(self.feature_diagnosticity_matrix[i, j])
+				print(output_string)
+
+			print()
+			print("Feature Correlations")
+			for i in range(self.num_features):
+				output_string = "{:20s}".format(self.feature_list[i])
+				for j in range(self.num_features):
+					output_string += "   {:>3.2f}".format(self.feature_correlation_matrix[i, j])
+				print(output_string)
+
+
+
+
+
+
+
 
