@@ -24,7 +24,8 @@ class Knn:
         print("Training Model")
         sim_matrix = self.calculate_similarity_matrix(self.dataset.training_list, self.dataset.training_list)
 
-        num_neighbors_list = np.arange(self.min_knn, self.max_knn + 1) + 1
+        num_neighbors_list = np.arange(self.min_knn, self.max_knn + 1)
+        print(num_neighbors_list)
         accuracy_list = []
 
         for nn in num_neighbors_list:

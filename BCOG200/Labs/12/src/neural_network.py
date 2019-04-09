@@ -5,10 +5,16 @@ import numpy as np
 ############################################################################################################
 class NeuralNetwork:
     ############################################################################################################
-    def __init__(self, input_size, output_size, learning_rate):
+    def __init__(self, input_size, hidden_size, output_size, learning_rate, weight_init):
 
         self.input_size = input_size
+        self.hidden_size = hidden_size
         self.output_size = output_size
+        self.weight_mean = weight_init[0]
+        self.weight_stdev = weight_init[1]
+
+        self.h_bias = np.random.normal(self.weight_mean, self.weight_stdev, [self.hidden_size])
+        self.h_x = np.random.normal(self.weight_mean, self.weight_stdev, [self.hidden_size, self.input_size])
 
         self.o_bias = np.random.normal(self.weight_mean, self.weight_stdev, [self.output_size])
         self.o_h = np.random.normal(self.weight_mean, self.weight_stdev, [self.output_size, self.hidden_size])
