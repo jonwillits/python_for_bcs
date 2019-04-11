@@ -84,6 +84,7 @@ class Dataset:
 		self.num_words = 0
 		self.word_list = []
 		self.word_index_dict = {}
+
 		self.word_category_dict = {}
 		self.category_word_list_dict = {}
 
@@ -260,6 +261,11 @@ class Dataset:
 			y_label = "Singular Value 2"
 
 		elif (0 <= f1 < self.num_features) and (0 <= f2 < self.num_features):
+			if self.svd_dimensions:
+				if f1 >= self.svd_dimensions or f2 >= self.svd_dimensions:
+					print("ERROR: SVD dimensions was {}, but you specified a feature number greater than that".format(self.svd_dimensions))
+					sys.exit()
+
 			print("\nCreating scatter plot of features {} and {}".format(self.feature_list[f1], self.feature_list[f2]))
 			plot_data = self.feature_matrix
 			plot_feature_list = [f1, f2]
