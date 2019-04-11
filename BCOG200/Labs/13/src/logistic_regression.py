@@ -40,6 +40,8 @@ class LogisticRegression:
                                                                                                       self.output_size,
                                                                                                       self.num_epochs))
 
+        print(self.input_size, self.output_size, self.y_bias.shape)
+
     ############################################################################################################
     def prep_data(self):
         self.train_xy_list = []
@@ -221,7 +223,6 @@ class LogisticRegression:
         if ok_to_go:
             h = heatmapcluster.heatmapcluster(self.y_x_weights.transpose(),
                                               self.dataset.feature_list, self.dataset.category_list,
-                                              num_row_clusters=3, num_col_clusters=0,
                                               label_fontsize=12,
                                               xlabel_rotation=0,
                                               cmap=plt.cm.coolwarm,
@@ -230,7 +231,7 @@ class LogisticRegression:
                                               top_dendrogram=True)
 
     ############################################################################################################
-    def plot_ypredict_yactual_scatter(self, category_index=None):
+    def plot_ypredict_yactual_scatter(self, word_labels, category_index=None):
         ###########################################################################
         def plot_group(item_list, current_marker):
 
@@ -252,10 +253,11 @@ class LogisticRegression:
                     if current_category == word_category:
                         current_prediction_list.append(current_category_prediction)
 
-                        if word_category == plot_category:
-                            plt.text(current_category_prediction, 0.95, word, rotation=315)
-                        else:
-                            plt.text(current_category_prediction, 0.05, word, rotation=45)
+                        if word_labels:
+                            if word_category == plot_category:
+                                plt.text(current_category_prediction, 0.95, word, rotation=315)
+                            else:
+                                plt.text(current_category_prediction, 0.05, word, rotation=45)
 
                 feature_vector = np.array(current_prediction_list)
                 if current_category == plot_category:

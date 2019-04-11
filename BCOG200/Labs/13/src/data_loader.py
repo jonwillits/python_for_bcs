@@ -9,9 +9,11 @@ np.set_printoptions(precision=3)
 ###########################################################################
 class Dataset:
 	###########################################################################
-	def __init__(self, filename, training_proportion=0.80, normalize_data=False, svd_dimensions=0, verbose=True):
+	def __init__(self, filename, random_data, training_proportion=0.80,
+				 normalize_data=False, svd_dimensions=0, verbose=True):
 
 		self.filename = filename  # the file where the data came from
+		self.random_data = random_data		# if nonzero, will replace the real data with random data containing n features
 		self.training_proportion = training_proportion  # the proportion of items that will be used to train the model
 		self.normalize_data = normalize_data  # whether or not we want to z-score the feature columns
 
@@ -54,7 +56,11 @@ class Dataset:
 
 		# import the data, creating the majority of the data structures described above
 		print("\nCreating Dataset from file '{}'".format(filename))
-		self.import_data()
+
+		if self.random_data is False:
+			self.import_data()
+		else:
+			self.generate_random_data()
 
 		if self.normalize_data:
 			self.normalize()
@@ -135,7 +141,18 @@ class Dataset:
 		f.close()
 
 		self.feature_matrix = np.array(feature_vector_list)
+		self.generate_category_matrix()
 
+		print("    Loaded Dataset with {} categories, {} words, and {} features".format(self.num_categories,
+																					self.num_words,
+																					self.num_features))
+		if self.verbose:
+			print("    Features:")
+			for i in range(self.num_features):
+				print("        {}: {}".format(i, self.feature_list[i]))
+
+	###########################################################################
+	def generate_category_matrix(self):
 		self.category_matrix = np.zeros([self.num_words, self.num_categories], float)
 		for i in range(self.num_words):
 			current_word = self.word_list[i]
@@ -144,14 +161,52 @@ class Dataset:
 				if self.word_category_dict[current_word] == current_category:
 					self.category_matrix[i, j] = 1
 
-		print("    Loaded Dataset with {} categories, {} words, and {} features".format(self.num_categories,
-																					self.num_words,
-																					self.num_features))
+	###########################################################################
+	def generate_random_data(self):
+		num_categories = self.random_data[0]
+		num_words = self.random_data[1]
+		num_features = self.random_data[2]
 
-		if self.verbose:
-			print("    Features:")
-			for i in range(self.num_features):
-				print("        {}: {}".format(i, self.feature_list[i]))
+
+		print("    Randomly generating data with {} categories, {} words, and {} features".format(num_categories,
+																								  num_words,
+																								  num_features))
+		self.num_categories = 0
+		self.category_list = []
+		self.category_index_dict = {}
+		self.num_words = 0
+		self.word_list = []
+		self.word_index_dict = {}
+		self.num_features = 0
+		self.feature_list = []
+		self.feature_index_dict = {}
+
+		self.word_category_dict = {}
+		self.category_word_list_dict = {}
+
+		for i in range(num_features):
+			feature = 'random feature ' + str(i + 1)
+			self.feature_list.append(feature)
+			self.feature_index_dict[feature] = self.num_features
+			self.num_features += 1
+
+		for i in range(num_categories):
+			category = "Category {}".format(i + 1)
+			self.category_list.append(category)
+			self.category_index_dict[category] = self.num_categories
+			self.num_categories += 1
+			self.category_word_list_dict[category] = []
+
+			for j in range(num_words):
+				word = "Word {}_{}".format(i + 1, j + 1)
+				self.word_list.append(word)
+				self.word_index_dict[word] = self.num_words
+				self.num_words += 1
+				self.word_category_dict[word] = category
+				self.category_word_list_dict[category].append(word)
+
+		self.feature_matrix = np.random.normal(0, 1, [self.num_words, self.num_features])
+		self.generate_category_matrix()
 
 	###########################################################################
 	def normalize(self):
@@ -228,7 +283,7 @@ class Dataset:
 		return color_list
 
 	###########################################################################
-	def plot_feature_scatter(self, f1=None, f2=None):
+	def plot_feature_scatter(self, word_labels, f1=None, f2=None):
 
 		###########################################################################
 		def plot_group(feature_data, category_data, color_list, m, group):
@@ -246,8 +301,10 @@ class Dataset:
 					new_feature_matrix = np.array(new_feature_data_list)
 					plt.scatter(new_feature_matrix[:, 0], new_feature_matrix[:, 1], marker=m, color=color_list[i],
 								label=category + group)
-			for i in range(len(category_data)):
-				plt.annotate(category_data[i][2], xy=(feature_data[i, 0], feature_data[i, 1]), fontsize=6)
+
+			if word_labels:
+				for i in range(len(category_data)):
+					plt.annotate(category_data[i][2], xy=(feature_data[i, 0], feature_data[i, 1]), fontsize=6)
 		###########################################################################
 
 		if f1 is None and f2 is None:
@@ -292,7 +349,7 @@ class Dataset:
 		plt.legend()
 
 	###########################################################################
-	def plot_feature_category_scatter(self, feature_index=None, category_index=None):
+	def plot_feature_category_scatter(self, word_labels, feature_index=None, category_index=None):
 		###########################################################################
 		def plot_group(item_list, current_marker):
 
@@ -311,10 +368,11 @@ class Dataset:
 					if current_category == word_category:
 						current_feature_list.append(feature)
 
-						if word_category == plot_category:
-							plt.text(feature, 0.95, word, rotation=315)
-						else:
-							plt.text(feature, 0.05, word, rotation=45)
+						if word_labels:
+							if word_category == plot_category:
+								plt.text(feature, 0.95, word, rotation=315)
+							else:
+								plt.text(feature, 0.05, word, rotation=45)
 
 				feature_vector = np.array(current_feature_list)
 				if current_category == plot_category:
