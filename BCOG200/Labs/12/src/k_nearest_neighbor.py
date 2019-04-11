@@ -1,37 +1,51 @@
 import numpy as np
+import sys
 
 
 ###########################################################################
 ###########################################################################
 class Knn:
     ###########################################################################
-    def __init__(self, dataset, min_max_knn=None, verbose=True):
+    def __init__(self, dataset, min_max_knn=None, distance_metric='cosine', verbose=True):
 
         if min_max_knn is not None:
-            self.min_knn = min_max_knn[0]
-            self.max_knn = min_max_knn[1]
+            if len(min_max_knn) != 2:
+                print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
+                      "and the second number being >= the first number and < training size - 1.")
+                sys.exit(2)
+            else:
+                self.min_knn = min_max_knn[0]
+                self.max_knn = min_max_knn[1]
         else:
             self.min_knn = 1
-            self.max_knn = dataset.training_size
+            self.max_knn = 5
+        self.distance_metric = distance_metric
 
         self.dataset = dataset
         self.best_k = None
         self.verbose = verbose
 
+        if min_max_knn[0] < 1:
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
+                  "and the second number being >= the first number and < training size - 1.")
+            sys.exit(2)
+        if min_max_knn[1] < min_max_knn[0] or min_max_knn[1] > self.dataset.training_size-1:
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
+                  "and the second number being >= the first number and < training size - 1.")
+            sys.exit(2)
+
     ###########################################################################
-    def train_model(self):
-        verbose = False
-        print("Training Model")
+    def train(self):
+        print("\nTraining KNN Model from KNN {} to {}".format(self.min_knn, self.max_knn))
         sim_matrix = self.calculate_similarity_matrix(self.dataset.training_list, self.dataset.training_list)
 
         num_neighbors_list = np.arange(self.min_knn, self.max_knn + 1)
-        print(num_neighbors_list)
         accuracy_list = []
 
         for nn in num_neighbors_list:
-            accuracy, confidence_list = self.classify_items(self.dataset.training_list,
+            accuracy, confidence_list, item_performance_list = self.classify_items(self.dataset.training_list,
                                                             self.dataset.training_list,
-                                                            sim_matrix, nn, verbose)
+                                                            sim_matrix, nn)
             accuracy_list.append(accuracy)
 
         if self.verbose:
@@ -40,16 +54,22 @@ class Knn:
 
         best_nn_index = np.argmax(accuracy_list)
         self.best_k = num_neighbors_list[best_nn_index]
-        print()
-        print("Winning Model: nn={}".format(self.best_k))
+        print("    Winning Model: nn={}".format(self.best_k))
+        if self.verbose:
+            print("    Item Performance:")
+            for item in item_performance_list:
+                print(item)
 
     ###########################################################################
-    def test_model(self, rows, columns, k):
+    def test(self, rows, columns, k):
         sim_matrix = self.calculate_similarity_matrix(rows, columns)
-        accuracy, confidence_list = self.classify_items(rows, columns, sim_matrix, k, self.verbose)
+        accuracy, confidence_list, item_performance_list = self.classify_items(rows, columns,
+                                                                               sim_matrix, k)
         conf_mean = np.array(confidence_list).mean()
-
-        print("Test Accuracy Using {} nn: {:0.3f} with confidence {:0.3f}".format(k, accuracy, conf_mean))
+        print("    Test Accuracy Using {} nn: {:0.3f} with confidence {:0.3f}".format(k, accuracy, conf_mean))
+        if self.verbose:
+            for item in item_performance_list:
+                print(item)
 
     ###########################################################################
     def calculate_similarity_matrix(self, rows, columns):
@@ -85,12 +105,13 @@ class Knn:
         return similarity
 
     ###########################################################################
-    def classify_items(self, rows, columns, sim_matrix, num_neighbors, verbose):
+    def classify_items(self, rows, columns, sim_matrix, num_neighbors):
         num_rows = len(rows)
         correct_sum = 0
         n = 0
         confidence_list = []
-
+        item_performance_list = []
+        num_neighbors += 1
         for i in range(num_rows):
             category_votes = np.zeros(self.dataset.num_categories)
             current_word = rows[i][2]
@@ -115,11 +136,12 @@ class Knn:
             correct_sum += correct
             n += 1
 
-            if verbose:
-                print("{:16s} {:16s} {}     {:0.3f}".format(current_word, category_guess, correct, confidence))
+            performance_output = "        {:16s} {:16s} {}     {:0.3f}".format(current_word, category_guess,
+                                                                               correct, confidence)
+            item_performance_list.append(performance_output)
 
         accuracy = correct_sum / n
-        return accuracy, confidence_list
+        return accuracy, confidence_list, item_performance_list
 
 
 
