@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Dataset Parameters
 TRAINING_PROPORTION = .75
 NORMALIZE = True
-SVD_DIM = 0
+SVD_DIM = 2
 
 # KNN Parameters
 DISTANCE_METRIC = 'cosine'
@@ -21,23 +21,17 @@ VERBOSE = True
 
 def main():
     my_data = dl.Dataset('data/data2.csv', TRAINING_PROPORTION, NORMALIZE, SVD_DIM, VERBOSE)
-    #my_data.plot_feature_scatter(0, 2)
-
+    my_data.plot_feature_scatter(0, 2)
 
     # my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)
     # my_knn.train()
     # my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
-    #
+
     my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE)
-    my_logreg.plot_ypredict_yactual_scatter(0)
-    my_logreg.plot_ypredict_yactual_scatter(1)
-    my_logreg.plot_weight_heat_map()
     my_logreg.train()
     my_logreg.test()
 
-    my_logreg.plot_ypredict_yactual_scatter(0)
-    my_logreg.plot_ypredict_yactual_scatter(1)
-    my_logreg.plot_weight_heat_map()
+
 
     plt.show()
 
