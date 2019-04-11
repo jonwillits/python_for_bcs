@@ -1,0 +1,9 @@
+﻿category,word,air,water,land
+bird,penguin,0,0.6,0.4
+bird,crow,0.2,0.01,0.79
+bird,bluejay,0.16,0.02,0.82
+bird,chickadee,0.18,0.02,0.80
+mammal,squirrel,0,0.01,0.99
+mammal,human,0.01,0.04,0.95
+mammal,gorilla,0,0.03,0.97
+mammal,baboon,0,0.02,0.98
