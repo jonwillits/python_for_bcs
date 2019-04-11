@@ -12,10 +12,6 @@ SVD_DIM = 0
 DISTANCE_METRIC = 'cosine'
 MIN_MAX_KNN = (1, 5)
 
-# Regression Parameters
-LEARNING_RATE = 0.1
-NUM_EPOCHS = 1000
-
 # print amount parameters
 VERBOSE = True
 
@@ -41,12 +37,6 @@ def main():
     my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)
     my_knn.train()
     my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
-
-    # my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE)
-    # my_logreg.train()
-    # my_logreg.test()
-    # my_logreg.plot_ypredict_yactual_scatter(WORD_LABELS, 0)
-    # my_logreg.plot_weight_heat_map()
 
     plt.show()
 
