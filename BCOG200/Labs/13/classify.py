@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Dataset Parameters
 TRAINING_PROPORTION = .75
 NORMALIZE = True
-SVD_DIM = 0
+SVD_DIM = 4
 
 # KNN Parameters
 DISTANCE_METRIC = 'cosine'
@@ -23,10 +23,11 @@ VERBOSE = True
 WORD_LABELS = True
 
 # data file
-FILE_NAME = 'data/data2.csv'
+FILE_NAME = 'data/data3.csv'
 
 # to use the data in the file, set RANDOM_DATA to False:
-RANDOM_DATA = (4, 5, 20)
+# RANDOM_DATA = (4, 5, 20)
+RANDOM_DATA = False
 # if you want to use random data, specify a tuple with 3 numbers:
 # 0 num_categories
 # 1 num_words per category
@@ -34,13 +35,14 @@ RANDOM_DATA = (4, 5, 20)
 
 def main():
     my_data = dl.Dataset(FILE_NAME, RANDOM_DATA, TRAINING_PROPORTION, NORMALIZE, SVD_DIM, VERBOSE)
-    my_data.compute_feature_correlations()
+    # my_data.compute_feature_correlations()
     # my_data.plot_feature_scatter(WORD_LABELS)
     # my_data.plot_feature_category_scatter(WORD_LABELS, 1, 0)
+    my_data.plot_hierarchical_cluster(similarity=True)
 
-    my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)
-    my_knn.train()
-    my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
+    # my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)
+    # my_knn.train()
+    # my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
 
     # my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE)
     # my_logreg.train()

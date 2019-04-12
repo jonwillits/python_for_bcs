@@ -9,8 +9,7 @@ np.set_printoptions(precision=3)
 ###########################################################################
 class Dataset:
 	###########################################################################
-	def __init__(self, filename, random_data, training_proportion=0.80,
-				 normalize_data=False, svd_dimensions=0, verbose=True):
+	def __init__(self, filename, random_data, training_proportion, normalize_data, svd_dimensions, verbose):
 
 		self.filename = filename  # the file where the data came from
 		self.random_data = random_data		# if nonzero, will replace the real data with random data containing n features
@@ -58,7 +57,7 @@ class Dataset:
 		print("\nCreating Dataset from file '{}'".format(filename))
 
 		if self.random_data is False:
-			self.import_data()
+			self.import_data_from_file()
 		else:
 			self.generate_random_data()
 
@@ -77,7 +76,7 @@ class Dataset:
 		self.create_train_test_sets()
 
 	###########################################################################
-	def import_data(self):
+	def import_data_from_file(self):
 
 		self.num_categories = 0
 		self.category_list = []
@@ -441,6 +440,46 @@ class Dataset:
 				for j in range(self.num_features):
 					output_string += "   {:>3.2f}".format(self.feature_correlation_matrix[i, j])
 				print(output_string)
+
+	###########################################################################
+	def plot_hierarchical_cluster(self, similarity=False):
+		print("\n    Plotting Hierarchical Cluster Diagram")
+		ok_to_go = False
+		try:
+			import heatmapcluster
+			ok_to_go = True
+		except:
+			print("Cannot import heatmapcluster. try running 'pip install heatmapcluster'")
+
+		if ok_to_go:
+			x_labels = self.word_list
+			y_labels = self.word_list
+			if similarity:
+				data = np.zeros([self.num_words, self.num_words])
+				for i in range(self.num_words):
+					a = self.feature_matrix[i, :]
+					for j in range(self.num_words):
+						b = self.feature_matrix[j, :]
+						data[i,j] = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+
+			else:
+				data = self.feature_matrix.transpose()
+				x_labels = self.word_list
+				y_labels = self.feature_list
+
+			h = heatmapcluster.heatmapcluster(data,
+											  y_labels,
+											  x_labels,
+											  label_fontsize=8,
+											  xlabel_rotation=90,
+											  cmap=plt.cm.coolwarm,
+											  show_colorbar=True,
+											  colorbar_pad=2,
+											  top_dendrogram=True)
+
+
+
 
 
 
