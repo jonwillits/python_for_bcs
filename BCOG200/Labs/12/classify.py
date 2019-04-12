@@ -1,6 +1,5 @@
 from src import data_loader as dl
-from src import logistic_regression as lr
-from src import k_nearest_neighbors as knn
+from src import k_nearest_neighbor as knn
 import matplotlib.pyplot as plt
 
 # Dataset Parameters
