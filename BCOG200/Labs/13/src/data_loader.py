@@ -9,12 +9,13 @@ np.set_printoptions(precision=3)
 ###########################################################################
 class Dataset:
 	###########################################################################
-	def __init__(self, filename, random_data, training_proportion, normalize_data, svd_dimensions, verbose):
+	def __init__(self, filename, random_data, training_proportion, normalize_method, svd_dimensions, verbose, random_seed):
 
 		self.filename = filename  # the file where the data came from
 		self.random_data = random_data		# if nonzero, will replace the real data with random data containing n features
 		self.training_proportion = training_proportion  # the proportion of items that will be used to train the model
-		self.normalize_data = normalize_data  # whether or not we want to z-score the feature columns
+		self.normalize_method = normalize_method  # whether or not we want to z-score or scale the feature columns
+		self.random_seed = random_seed
 
 		self.num_categories = 0  	     # the total number of categories in the data file
 		self.category_list = None  	     # a list of the categories in teh data file
@@ -53,6 +54,9 @@ class Dataset:
 
 		self.verbose = verbose			# whether or not to print a lot of stuff out
 
+		random.seed(self.random_seed)
+		np.random.seed(self.random_seed)
+
 		# import the data, creating the majority of the data structures described above
 		print("\nCreating Dataset from file '{}'".format(filename))
 
@@ -61,7 +65,7 @@ class Dataset:
 		else:
 			self.generate_random_data()
 
-		if self.normalize_data:
+		if self.normalize_method is not None:
 			self.normalize()
 
 		if svd_dimensions:
@@ -209,8 +213,15 @@ class Dataset:
 
 	###########################################################################
 	def normalize(self):
-		print("    Normalizing Data...")
-		self.feature_matrix = (self.feature_matrix.mean(0) - self.feature_matrix) / self.feature_matrix.std(0)
+		print("    Normalizing Data by {}".format(self.normalize_method))
+		if self.normalize_method == 'scale':
+			self.feature_matrix -= self.feature_matrix.min(0)
+			self.feature_matrix /= self.feature_matrix.sum(0)
+		elif self.normalize_method == 'z-score':
+			self.feature_matrix = (self.feature_matrix.mean(0) - self.feature_matrix) / self.feature_matrix.std(0)
+		else:
+			print("    Invalid normalization method. Options are 'scale' and 'z-score")
+			sys.exit()
 
 	###########################################################################
 	def create_train_test_sets(self):
@@ -249,7 +260,11 @@ class Dataset:
 			training_feature_list.append(self.feature_matrix[item[0], :])
 
 			if self.verbose:
-				print("        {:5s} {:16s} {:16s} {}".format(str(item[0]), item[1], item[2], self.feature_matrix[item[0], :]))
+				output_string = "        {:5s} {:16s} {:24s}".format(str(item[0]), item[1], item[2])
+				for j in range(self.feature_matrix.shape[1]):
+					output_string += "   {:>3.3f}".format(self.feature_matrix[item[0], j])
+				print(output_string)
+
 		self.training_feature_matrix = np.array(training_feature_list)
 
 		if self.verbose:
@@ -261,7 +276,10 @@ class Dataset:
 			test_feature_list.append(self.feature_matrix[item[0], :])
 
 			if self.verbose:
-				print("        {:5s} {:16s} {:16s} {}".format(str(item[0]), item[1], item[2], self.feature_matrix[item[0], :]))
+				output_string = "        {:5s} {:16s} {:24s}".format(str(item[0]), item[1], item[2])
+				for j in range(self.feature_matrix.shape[1]):
+					output_string += "   {:>3.3f}".format(self.feature_matrix[item[0], j])
+				print(output_string)
 		self.test_feature_matrix = np.array(test_feature_list)
 
 	###########################################################################
@@ -271,6 +289,7 @@ class Dataset:
 		self.svd_features = u[:, :dimensions]
 		self.eigenvalues = s
 		self.top_two_variance = self.eigenvalues[:dimensions].sum() / self.eigenvalues.sum()
+		print("        Top {} dimensions' proportion of variance: {:0.3f}".format(dimensions, self.top_two_variance))
 
 	###########################################################################
 	def get_color_list(self):
@@ -471,7 +490,7 @@ class Dataset:
 			h = heatmapcluster.heatmapcluster(data,
 											  y_labels,
 											  x_labels,
-											  label_fontsize=8,
+											  label_fontsize=6,
 											  xlabel_rotation=90,
 											  cmap=plt.cm.coolwarm,
 											  show_colorbar=True,

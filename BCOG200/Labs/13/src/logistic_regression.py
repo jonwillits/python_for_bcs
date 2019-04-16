@@ -1,13 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import random
+
 
 ############################################################################################################
 ############################################################################################################
 class LogisticRegression:
     ############################################################################################################
-    def __init__(self, dataset, learning_rate, num_epochs, verbose=True):
+    def __init__(self, dataset, learning_rate, num_epochs, verbose, random_seed, output_filename):
+
+        self.name = "logistic_regression"
 
         self.dataset = dataset
+        self.output_filename = output_filename
+        self.random_seed = random_seed
 
         self.train_xy_list = None
         self.test_xy_list = None
@@ -23,11 +29,22 @@ class LogisticRegression:
         self.y_bias = None
         self.y_x_weights = None
 
+        self.training_accuracy = None
+        self.training_confidence = None
+        self.training_sse = None
+        self.test_accuracy = None
+        self.test_confidence = None
+        self.test_sse = None
+
         self.init_network()
         self.prep_data()
 
     ############################################################################################################
     def init_network(self):
+
+        random.seed(self.random_seed)
+        np.random.seed(self.random_seed)
+
         if self.dataset.svd_dimensions:
             self.input_size = self.dataset.svd_dimensions
         else:
@@ -36,11 +53,9 @@ class LogisticRegression:
         self.y_bias = np.random.normal(self.weight_mean, self.weight_stdev, [self.output_size])
         self.y_x_weights = np.random.normal(self.weight_mean, self.weight_stdev, [self.output_size, self.input_size])
         print()
-        print("Training Logistic Regression Model with {} inputs and {} outputs for {} epochs".format(self.input_size,
+        print("Creating Logistic Regression Model with {} inputs and {} outputs for {} epochs".format(self.input_size,
                                                                                                       self.output_size,
                                                                                                       self.num_epochs))
-
-        print(self.input_size, self.output_size, self.y_bias.shape)
 
     ############################################################################################################
     def prep_data(self):
@@ -58,10 +73,10 @@ class LogisticRegression:
 
     ############################################################################################################
     def train(self):
+        print("    Training Model")
         sse = 0
         accuracy_sum = 0
         confidence_sum = 0
-        error = 0
 
         for i in range(self.num_epochs):
             sse = 0
@@ -88,7 +103,7 @@ class LogisticRegression:
                         confidence_mean = confidence_sum / self.dataset.training_size
                         self.output_epoch(i, accuracy_mean, confidence_mean, sse)
                     else:
-                        print("    Epoch: {}   SSE: {:0.3f}".format(i, sse))
+                        print("        Epoch: {}   SSE: {:0.3f}".format(i, sse))
 
                 self.delta_rule(x, y_pred, error)
 
@@ -97,20 +112,21 @@ class LogisticRegression:
             confidence_mean = confidence_sum / self.dataset.training_size
             self.output_epoch(self.num_epochs, accuracy_mean, confidence_mean, sse)
         else:
-            print("    Epoch: {}   SSE: {:0.3f}".format(self.num_epochs, sse))
+            print("        Epoch: {}   SSE: {:0.3f}".format(self.num_epochs, sse))
 
-        accuracy_mean = accuracy_sum / self.dataset.training_size
-        confidence_mean = confidence_sum / self.dataset.training_size
+        self.training_accuracy = accuracy_sum / self.dataset.training_size
+        self.training_confidence = confidence_sum / self.dataset.training_size
+        self.training_sse = sse / self.dataset.training_size
 
         print()
-        print("    Final Training Peformance:")
-        print("        Accuracy:       {:0.3f}".format(accuracy_mean))
-        print("        Confidence:     {:0.3f}".format(confidence_mean))
-        print("        Mean SS Error:  {:0.3f}".format(sse/self.dataset.training_size))
+        print("        Final Training Performance:")
+        print("            Accuracy:       {:0.3f}".format(self.training_accuracy))
+        print("            Confidence:     {:0.3f}".format(self.training_confidence))
+        print("            Mean SS Error:  {:0.3f}".format(sse/self.dataset.training_size))
 
         if self.verbose:
-            print("\n    Individual Word Results")
-            print("        Word           CorrectCat     GuessCat    Accuracy    Confidence   Error")
+            print("\n        Individual Word Results")
+            print("            Word           CorrectCat     GuessCat    Accuracy    Confidence   Error")
             for i in range(self.dataset.training_size):
                 word = self.dataset.training_list[i][2]
                 correct_category = self.dataset.training_list[i][1]
@@ -119,15 +135,17 @@ class LogisticRegression:
                 y_pred = self.feedforward(x)
                 category_prediction, accuracy, confidence = self.evaluate(y_pred, correct_category)
                 error = self.calc_error(y_actual, y_pred)
-                print("        {:14s} {:14s} {:14s} {:4s}     {:0.3f}        {:0.3f}".format(word,
-                                                                   correct_category,
-                                                                   category_prediction,
-                                                                   str(accuracy), confidence, (error**2).sum()))
+                print("            {:14s} {:14s} {:14s} {:4s}     {:0.3f}        {:0.3f}".format(word,
+                                                                                             correct_category,
+                                                                                             category_prediction,
+                                                                                             str(accuracy),
+                                                                                             confidence,
+                                                                                             (error**2).sum()))
 
     ############################################################################################################
     def test(self):
         print()
-        print("    Test Performance:")
+        print("        Test Performance:")
 
         acc_sum = 0
         conf_sum = 0
@@ -146,7 +164,7 @@ class LogisticRegression:
             conf_sum += confidence
             error = self.calc_error(y_actual, y_pred)
             sse += (error**2).sum()
-            output_string = "        {:14s} {:14s} {:14s} {:4s}     {:0.3f}        {:0.3f}".format(word,
+            output_string = "            {:14s} {:14s} {:14s} {:4s}     {:0.3f}        {:0.3f}".format(word,
                                                                                                    correct_category,
                                                                                                    category_prediction,
                                                                                                    str(accuracy),
@@ -154,23 +172,29 @@ class LogisticRegression:
                                                                                                    (error**2).sum())
             verbose_output_list.append(output_string)
 
-        print("        Summary")
-        print("            Accuracy:   {:0.3f}".format(acc_sum/self.dataset.test_size))
-        print("            Confidence: {:0.3f}".format(conf_sum / self.dataset.test_size))
-        print("            Mean SSE:   {:0.3f}".format(sse/self.dataset.test_size))
+        self.test_accuracy = acc_sum / self.dataset.test_size
+        self.test_confidence = conf_sum / self.dataset.test_size
+        self.test_sse = sse/self.dataset.test_size
+
+
+        print("            Summary")
+        print("                Accuracy:   {:0.3f}".format(self.test_accuracy))
+        print("                Confidence: {:0.3f}".format(self.test_confidence))
+        print("                Mean SSE:   {:0.3f}".format(self.test_sse))
 
         if self.verbose:
-            print("\n    Individual Word Results")
-            print("        Word           CorrectCat     GuessCat    Accuracy    Confidence   Error")
+            print("\n        Individual Word Results")
+            print("            Word           CorrectCat     GuessCat    Accuracy    Confidence   Error")
             for output_string in verbose_output_list:
                 print(output_string)
 
     ############################################################################################################
-    def output_epoch(self, i, accuracy_mean, confidence_mean, sse):
-        print("    Epoch {}:   Accuracy: {:0.3f}   Confidence: {:0.3f}   SSE: {:0.3f}".format(i,
-                                                                                          accuracy_mean,
-                                                                                          confidence_mean,
-                                                                                          sse))
+    @staticmethod
+    def output_epoch(i, accuracy_mean, confidence_mean, sse):
+        print("        Epoch {}:   Accuracy: {:0.3f}   Confidence: {:0.3f}   SSE: {:0.3f}".format(i,
+                                                                                              accuracy_mean,
+                                                                                              confidence_mean,
+                                                                                              sse))
 
     ############################################################################################################
     def feedforward(self, x):
@@ -285,3 +309,18 @@ class LogisticRegression:
 
             plot_group(self.dataset.training_list, 'o')
             plot_group(self.dataset.test_list, 'x')
+
+    ###########################################################################
+    def write_results(self):
+        f = open(self.output_filename, 'a')
+        f.write("{},{},{},{},{},{},{},{},{}_{},{},{}\n".format(self.name, self.random_seed,
+                                                                  self.dataset.num_features,
+                                                                  self.dataset.num_categories,
+                                                                  self.dataset.num_words,
+                                                                  self.dataset.training_size,
+                                                                  self.dataset.normalize_data,
+                                                                  self.dataset.svd_dimensions,
+                                                                  self.learning_rate, self.num_epochs,
+                                                                  self.training_accuracy,
+                                                                  self.test_accuracy))
+        f.close()
