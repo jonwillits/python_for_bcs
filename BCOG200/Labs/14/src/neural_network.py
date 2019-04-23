@@ -36,7 +36,9 @@ class NeuralNetwork:
     ############################################################################################################
     @staticmethod
     def calc_error(y, y_predict):
-        return y - y_predict
+        error = y - y_predict
+        sse = (error**2).sum()
+        return error, sse
 
     ############################################################################################################
     def backpropogation(self, x, y_predict, h, y_error):
@@ -80,58 +82,70 @@ class NeuralNetwork:
         return 1/(1+np.exp(-z)) * (1 - 1/(1+np.exp(-z)))
 
     ############################################################################################################
-    def train(self, num_epochs, x_list, y_list):
+    def train(self, x_list, y_list, num_epochs=1):
         print("\nTraining Neural Network with {} hidden units using learning rate of {}".format(self.hidden_size,
                                                                                                 self.learning_rate))
-        for i in range(num_epochs):
+        acc_history = []
+        sse_history = []
 
-            correct_sum = 0
+        for i in range(num_epochs):
+            accuracy_sum = 0
+            sse_sum = 0
             for j in range(len(x_list)):  # for each item
                 x = np.array(x_list[j], float)  # get the current x as a numpy array
                 y = np.array(y_list[j], float)  # get the current y as a numpy array
                 h, y_predict = self.feedforward(x)  # feed x through the weights to get a predicted y as the output
-                error = self.calc_error(y, y_predict)  # compute the error, the difference between y and predicted y
+
+                error, sse = self.calc_error(y, y_predict)  # compute the error, the difference between y and predicted y
+                sse_sum += sse
+                accuracy = self.evaluate(y_predict, y)       # compute whether the correct answer was predicted
+                accuracy_sum += accuracy
+
                 self.backpropogation(x, y_predict, h, error)  # use  error to adjust weights in  appropriate direction
 
-                rounded_y_predict = np.round(y_predict)
-                item_acc_sum = 0
-                for k in range(len(y_list[j])):
-                    if y[k] == rounded_y_predict[k]:
-                        item_acc_sum += 1
-                accuracy = item_acc_sum / len(y)
-                correct_sum += accuracy
+            mean_accuracy = accuracy_sum / len(y_list)
+            mean_sse = sse_sum / len(y_list)
 
-            if i % 10 == 0:
-                accuracy = correct_sum / len(y_list)
-                sse = (error**2).sum()
-                print("Epoch: {}    Accuracy: {:0.3f}   Error: {:0.3f}".format(i+1, accuracy, sse))
+            acc_history.append(mean_accuracy)
+            sse_history.append(mean_sse)
+
+            if i % 100 == 0:
+
+                print("Epoch: {}    Accuracy: {:0.3f}   Error: {:0.3f}".format(i+1, mean_accuracy, mean_sse))
+
+        return acc_history, sse_history
+
+    ############################################################################################################
+    def evaluate(self, y_predict, y):
+        rounded_y_predict = np.round(y_predict)
+        item_acc_sum = 0
+        for k in range(len(y)):
+            if y[k] == rounded_y_predict[k]:
+                item_acc_sum += 1
+        correct = item_acc_sum / len(y)
+        return correct
 
     ############################################################################################################
     def test(self, x_list, y_list, label_list):
         # print out detailed network performance after training
         print("\nTesting model on test data")
-        correct_sum = 0
-        error_sum = 0
+        accuracy_sum = 0
+        sse_sum = 0
         for i in range(len(x_list)):
             x = np.array(x_list[i], float)
             y = np.array(y_list[i], float)
             h, y_predict = self.feedforward(x)
 
-            rounded_y_predict = np.round(y_predict)
-            item_acc_sum = 0
-            for j in range(len(y_list[i])):
-                if y[j] == rounded_y_predict[j]:
-                    item_acc_sum += 1
-            accuracy = item_acc_sum / len(y)
-            correct_sum += accuracy
-
-            error = self.calc_error(y, y_predict)
-            sse = (error**2).sum()
-            error_sum += sse
+            error, sse = self.calc_error(y, y_predict)  # compute the error, the difference between y and predicted y
+            sse_sum += sse
+            accuracy = self.evaluate(y_predict, y)  # compute whether the correct answer was predicted
+            accuracy_sum += accuracy
 
             error_output = np.array2string(y_predict, precision=3, separator='   ', suppress_small=True)
             print("{:24s}  Outputs: {}    Accuracy: {:0.2f}   Error: {:0.3f}".format(label_list[i], error_output, accuracy, sse))
 
-        error_mean = error_sum / len(y_list)
-        accuracy = correct_sum / len(y_list)
-        print("Test Results    Accuracy: {:0.3f}   Error: {:0.3f}".format(accuracy, error_mean))
+        sse_mean = sse_sum / len(y_list)
+        accuracy_mean = accuracy_sum / len(y_list)
+        print("Test Results    Accuracy: {:0.3f}   Error: {:0.3f}".format(accuracy_mean, sse_mean))
+
+        return accuracy_mean, sse_mean
