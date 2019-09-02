@@ -131,10 +131,10 @@ at the bottom of the page.”
 \- Week 9: Agent-Based Simulations<br>
 \- Week 10: Natural Language Processing<br>
 \- Week 11: Plotting and Data Visualization<br>
-\- Week 12: Graphical User Interfaces<br>
-\- Week 13: Programming Experiments and Games<br>
-\- Week 14: Data Analysis and Pandas<br>
-\- Week 15: Machine Learning<br>
+\- Week 12: Introduction to Machine Learning<br>
+\- Week 13: Supervised Learning<br>
+\- Week 14: Neural Networks<br>
+\- Week 15: Final Projects<br>
 
 ### Week 1
 #### Learning Objectives:
@@ -498,17 +498,16 @@ homework14.py<br><br>
 
 ### Week 15: Apr 30th & May 2nd<br>
 #### Learning Objectives:
-\- Sentiment Analysis<br>
-\- Text Classification<br>
+\- Final Projects
 
 #### Readings:
-\- Coming Soon <br>
+\- None <br>
 
 #### Lab Assignments:
-\- Coming Soon <br>
+\- None <br>
 
 #### Homework:
-\- Coming Soon <br>
+\- None <br>
 
 
 ### Finals Exam Date:
