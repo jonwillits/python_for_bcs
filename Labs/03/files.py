@@ -2,7 +2,7 @@
     what is the difference between a filename, a file handle, and file content?
 '''
 print('\n')
-print("Example 1")
+print("Example 01")
 filename = 'test_file1.txt'
 f = open(filename)
 text = f.read()
@@ -15,7 +15,7 @@ print()
 '''
 # your answer here
 print()
-print("Example 2")
+print("Example 02")
 filename = 'test_file1.txt'
 f = open(filename)
 line = f.readline()
@@ -34,7 +34,7 @@ print()
     the for loop automatically lets us create a variable that gives us the lines from the file, one at a time.
 '''
 print()
-print("Example 3")
+print("Example 03")
 filename = 'test_file1.txt'
 f = open(filename)
 for line in f:
@@ -43,13 +43,13 @@ f.close()
 print()
 
 '''
-    Examples 2 and 3 both print out slightly differently from Example 1.
+    Examples 02 and 03 both print out slightly differently from Example 01.
     This is because of hidden "new line characters
     To see what this means, try adding each line to a list, and then printing the list
 '''
-# how are 2 & 3 different from 1?
+# how are 02 & 03 different from 01?
 
-print("Example 4")
+print("Example 04")
 filename = 'test_file1.txt'
 line_list = []
 f = open(filename)
@@ -64,7 +64,7 @@ print()
     You can remove it, or anything, but using .strip()
 '''
 print()
-print("Example 5")
+print("Example 05")
 filename = 'test_file1.txt'
 f = open(filename)
 for line in f:
@@ -80,7 +80,7 @@ print()
     Edit this code so that it prints only the animals, not their geographical location
 
 '''
-print("Example 6")
+print("Example 06")
 filename = 'test_file2.txt'
 f = open(filename)
 for line in f:

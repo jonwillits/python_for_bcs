@@ -2,7 +2,7 @@
 def q1():
     # What is the difference between an argument and a parameter? Given an example.
     your_answer = ""
-    print("Question 1")
+    print("Question 01")
     print(your_answer)
 
 
@@ -14,7 +14,7 @@ def q2():
     def nonfruitful_function():
         print("all this function does is print me out")
 
-    print("Question 2")
+    print("Question 02")
     nonfruitful_function()
     your_answer = ""
     print(your_answer)
@@ -24,16 +24,16 @@ def q3():
     # what is wrong with the code below?
     #
     # def function1():
-    #     print("This is function 1")
+    #     print("This is function 01")
     #
     #     def function2():
-    #         print("This is function 2")
+    #         print("This is function 02")
     #
     # function1()
     # function2()
 
     your_answer = ""
-    print("Question 3")
+    print("Question 03")
     print(your_answer)
 
 
@@ -42,7 +42,7 @@ def q4():
     # global variable? How would you make it a local variable to this function?
 
     your_answer = ""
-    print("Question 4")
+    print("Question 04")
     print(your_answer)
 x = 25
 
@@ -50,7 +50,7 @@ x = 25
 def q5():
     # What is an optional parameter in a python function, and how do you define one in a function definition?
     your_answer = ""
-    print("Question 5")
+    print("Question 05")
     print(your_answer)
 
 
@@ -67,7 +67,7 @@ def q6():
                 min = value
             return min, max
 
-    print("Question 6")
+    print("Question 06")
     your_answer = ""
     my_list = [-6, 2, 5, 5, -1, 3]
     min_max = get_min_max(my_list)
@@ -80,7 +80,7 @@ def q7():
     # structure?
 
     your_answer = ""
-    print("Question 7")
+    print("Question 07")
     print(your_answer)
 
 
@@ -88,7 +88,7 @@ def q8():
     # Define a function that can take a variable number of input arguments, and if all the arguments are numbers,
     # calculates and returns the variance of those numbers. print
 
-    print("Question 8")
+    print("Question 08")
     variance = 0
     print(variance)
 
@@ -107,7 +107,7 @@ def q9():
     # answer = dog_identifier(input_string)
 
     your_answer = ""
-    print("Question 9")
+    print("Question 09")
     print(your_answer)
 
 def q10():

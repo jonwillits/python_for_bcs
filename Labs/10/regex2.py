@@ -1,10 +1,10 @@
 """
 As I said, there are two things to keep track of when doing regex's in python.
 The first is that there are different regex functions:
-    1. findall()
-    2. search()
-    3. split()
-    4. sub()
+    01. findall()
+    02. search()
+    03. split()
+    04. sub()
 
 The second thing, and the thing that makes regex really powerful, is that you can use all sorts of special
 'meta-characters' that modify how the search is performed. These include:
@@ -39,9 +39,9 @@ d = re.findall('summer$', some_text)
 What happens if you actually want to search for a dollar sign or other special characters? You can use a \ to "escape"
 the special character, or to treat it as a regular string.
 """
-some_text = "$5 is all I will give you."
-a = re.findall('$5', some_text)
-b = re.findall('\$5', some_text)
+some_text = "$05 is all I will give you."
+a = re.findall('$05', some_text)
+b = re.findall('\$05', some_text)
 # print(a)
 # print(b)
 
@@ -90,5 +90,5 @@ some_text = "The rain will be here again. You know what they say about April! I 
 # x = re.findall("[^arn]", some_text)
 # x = re.findall("[a-n]", some_text)
 # x = re.findall("[0123]", some_text)
-# x = re.findall("[0-2]", some_text)
-# x = re.findall("[3][1]", some_text)
+# x = re.findall("[0-02]", some_text)
+# x = re.findall("[03][01]", some_text)

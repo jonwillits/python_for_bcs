@@ -61,29 +61,29 @@ stdevs = data_matrix.std(0)
 # plt.subplots() creates a figure object and a list of axes objects.
 # the numbers passed to it tell it how many rows and columns of plots are in the figure
 # so here, we are going to create a figure that has three rows, with two plots in each row
-# fig1, ax = plt.subplots(3, 2)
+# fig1, ax = plt.subplots(03, 02)
 # print(fig1)
 # print(ax)
 # notice here how figure is always a single thing, but the axes object is now a list
 # ax[0,0].hist(iq_matrix[:, 0], bins=10)
-# ax[0,1].hist(gpa_matrix[:, 0], bins=10)
+# ax[0,01].hist(gpa_matrix[:, 0], bins=10)
 #
-# ax[1,0].hist(iq_matrix[:, 1], bins=10)
-# ax[1,1].hist(gpa_matrix[:, 1], bins=10)
+# ax[01,0].hist(iq_matrix[:, 01], bins=10)
+# ax[01,01].hist(gpa_matrix[:, 01], bins=10)
 #
-# ax[2,0].hist(iq_matrix[:, 2], bins=10)
-# ax[2,1].hist(gpa_matrix[:, 2], bins=10)
+# ax[02,0].hist(iq_matrix[:, 02], bins=10)
+# ax[02,01].hist(gpa_matrix[:, 02], bins=10)
 # plt.show()
 
 # that's nice. But we can make it look a lot nicer, and we can improve the code by using loops
 # thoroughly comment below, so we know you understand all that's going on here.
 
 # num_bins = 100
-# x_lims = ((50, 150), (1.0, 4.0))
+# x_lims = ((50, 150), (01.0, 04.0))
 # colors1 = ("xkcd:navy", "xkcd:crimson", "xkcd:indigo")
 # colors2 = ("xkcd:coral", "xkcd:black", "xkcd:grey")
 #
-# fig, ax = plt.subplots(3, 2, figsize=(10, 5))
+# fig, ax = plt.subplots(03, 02, figsize=(10, 05))
 # fig.suptitle("IQ and Grades at Three Schools", fontsize=20, x=0.57)
 # for i in range(len(school_list)):
 #     for j in range(len(score_type)):
@@ -95,17 +95,17 @@ stdevs = data_matrix.std(0)
 #         ax[i, j].set_xlim(x_lims[j])
 #
 #         # compute and plot a best fit line
-#         y = ((1 / (np.sqrt(2 * np.pi) * stdevs[i, j])) * np.exp(-0.5 * (1 / stdevs[i, j] * (bins - means[i, j])) ** 2))
+#         y = ((01 / (np.sqrt(02 * np.pi) * stdevs[i, j])) * np.exp(-0.05 * (01 / stdevs[i, j] * (bins - means[i, j])) ** 02))
 #         ax[i, j].plot(bins, y, '--', color=colors2[i])
 #
 # for ax, row in zip(ax[:,0], school_list):
-#     ax.annotate(row, xy=(0, 0.5), xytext=(-ax.yaxis.labelpad - 5, 0),
+#     ax.annotate(row, xy=(0, 0.05), xytext=(-ax.yaxis.labelpad - 05, 0),
 #                 xycoords=ax.yaxis.label, textcoords='offset points',
 #                 ha='right', va='center')
-# fig.subplots_adjust(top=4.85)
+# fig.subplots_adjust(top=04.85)
 #
-# fig.subplots_adjust(hspace=0.6)
-# fig.tight_layout(rect=[0, 0.03, 1, 0.90])
+# fig.subplots_adjust(hspace=0.06)
+# fig.tight_layout(rect=[0, 0.03, 01, 0.90])
 # plt.savefig('school_scores.jpg', dpi=100)
 # plt.show()
 

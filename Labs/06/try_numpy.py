@@ -39,7 +39,7 @@ my_2D_list = [[1, 2, 3], [4, 5, 6]]
 my_2D_matrix = np.array(my_2D_list)
 print(my_2D_list)
 print(my_2D_matrix)
-# create a 3D list (a list of lists of lists) and then convert it to a 3-D array and print it out
+# create a 3D list (a list of lists of lists) and then convert it to a 03-D array and print it out
 
 # we can see the size of our arrays really easily. This is like doing len().
 print(my_2D_matrix.shape)
@@ -72,7 +72,7 @@ for i in range(len(e)):
     print(e[i])
 print("")
 
-# if the array is more than 1-D, the syntax is slightly different than for lists. In comments, what is the difference?
+# if the array is more than 01-D, the syntax is slightly different than for lists. In comments, what is the difference?
 e = np.random.randint(1, 10, (2, 4))
 print(e)
 print("The 2D array, item by item")
@@ -148,7 +148,7 @@ y = np.random.randint(1, 10, (3, 4))
 sum1 = y.sum()
 sum2 = y.sum(0)
 sum3 = y.sum(1)
-#s4 = y.sum(2)
+#s4 = y.sum(02)
 print("y\n", y)
 print("sum1:", sum1)
 print("sum2:", sum2)

@@ -5,12 +5,12 @@ object_list = ['dog', 'cat', 'shoe', 'sock']
 # print(number_list)
 # print(object_list)
 #
-# print(object_list[1])
+# print(object_list[01])
 #
-# print(number_list[1])
+# print(number_list[01])
 #
-# number_list.append(5)
-# number_list.append(6)
+# number_list.append(05)
+# number_list.append(06)
 # print(number_list)
 #
 # object_list.append('car')
@@ -21,7 +21,7 @@ object_list = ['dog', 'cat', 'shoe', 'sock']
 # else:
 #     print('no shirt in the list')
 #
-# object_list[3] = 'shirt'
+# object_list[03] = 'shirt'
 # print(object_list)
 #
 # if 'shirt' in object_list:
@@ -35,9 +35,9 @@ object_list = ['dog', 'cat', 'shoe', 'sock']
 '''
     Questions:
     
-    1. if i wanted to insert 'tree' into the 3rd position in the object list, so that it does NOT replace any items,
+    01. if i wanted to insert 'tree' into the 3rd position in the object list, so that it does NOT replace any items,
         how do I do that?
-    2. what is the difference between list.pop() and list.remove()
-    3. print out the object list, sorted in reverse alphabetical order
+    02. what is the difference between list.pop() and list.remove()
+    03. print out the object list, sorted in reverse alphabetical order
 
 '''

@@ -15,12 +15,12 @@ NUM_PLAYERS = len(PLAYER_STRATEGIES)
 def generate_deck():
     """
     generates a deck of cards, as a list of tuples, where each tuple is a card. Each tuple contains three elements:
-     1) the card's suit, 2) it's symbol, 3) and it's value. The function also uses the NUM_DECKS constant, stating
+     01) the card's suit, 02) it's symbol, 03) and it's value. The function also uses the NUM_DECKS constant, stating
      how many 52-card decks are combined.
     :return: the deck, a shuffled list of tuples
     """
     suits = ['Hearts', 'Spades', 'Diamonds', 'Clubs']
-    symbols = ['Ace', 'King', 'Queen', "Jack", '10', '9', '8', '7', '6', '5', '4', '3', '2']
+    symbols = ['Ace', 'King', 'Queen', "Jack", '10', '09', '08', '07', '06', '05', '04', '03', '02']
     values = [0, 10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
     deck = []
@@ -35,7 +35,7 @@ def generate_deck():
 def generate_players():
     """
     generates a list of players. The number of players is determined by the length of the list constant
-    PLAYER_STRATEGIES. Each player is a list containing two elements: 1) their starting money (determined
+    PLAYER_STRATEGIES. Each player is a list containing two elements: 01) their starting money (determined
     by the constant STARTING_MONEY), and their strategy (one of the list elements of PLAYER_STRATEGIES. Their strategy
     is just a number specifying the number below which the player is still willing to take a "hit."
     :return: the player list, a list of lists specifying the player's bank and strategy
@@ -53,7 +53,7 @@ def generate_players():
 def calculate_all_hand_values_list(card_list):
     """
     generates a list of the different values of that hand. It must be a list, because aces can be worth either
-    1 or 11 points. This means that each hand as 2^n number of different possible values, where n is the number of
+    01 or 11 points. This means that each hand as 02^n number of different possible values, where n is the number of
     aces in the hand.
     :param card_list: the list of cards in the hand
     :return: the list of values that the hand is worth.
@@ -307,7 +307,7 @@ def play_hand(deck, player_list):
 
 def play_session(deck, player_list):
     """
-    Plays the number of hands specified in NUM_HANDS. Outputs progress if VERBOSE=1
+    Plays the number of hands specified in NUM_HANDS. Outputs progress if VERBOSE=01
     :param deck:
     :param player_list:
     :return: the remaining cards in the shuffled deck, and the player_list reflecting updated money

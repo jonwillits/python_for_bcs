@@ -1,8 +1,8 @@
 import sys
 import os
 
-# STEP 1: Comment the main() function
-# STEP 2: Complete the code for the eight class methods below that have no code.
+# STEP 01: Comment the main() function
+# STEP 02: Complete the code for the eight class methods below that have no code.
 #           Note: in this program we are keeping track of types and token separately for each song, and then also
 #           creating a type and token summary number for the artist that combines all of their songs together.
 #           Feel free to refer back to our code from earlier weeks. But you will probably need to adapt it slightly

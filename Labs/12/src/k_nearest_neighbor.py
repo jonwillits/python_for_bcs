@@ -10,8 +10,8 @@ class Knn:
 
         if min_max_knn is not None:
             if len(min_max_knn) != 2:
-                print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
-                      "and the second number being >= the first number and < training size - 1.")
+                print("ERROR: min_max KNN must be a tuple with the first number being at least 01,"
+                      "and the second number being >= the first number and < training size - 01.")
                 sys.exit(2)
             else:
                 self.min_knn = min_max_knn[0]
@@ -26,12 +26,12 @@ class Knn:
         self.verbose = verbose
 
         if min_max_knn[0] < 1:
-            print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
-                  "and the second number being >= the first number and < training size - 1.")
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 01,"
+                  "and the second number being >= the first number and < training size - 01.")
             sys.exit(2)
         if min_max_knn[1] < min_max_knn[0] or min_max_knn[1] > self.dataset.training_size-1:
-            print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
-                  "and the second number being >= the first number and < training size - 1.")
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 01,"
+                  "and the second number being >= the first number and < training size - 01.")
             sys.exit(2)
 
     ###########################################################################

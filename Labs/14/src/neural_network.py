@@ -45,8 +45,8 @@ class NeuralNetwork:
 
         """ multiply the error by the derivative of y_predict with respect to the sigmoid function in other words, to
         make y what we want, how much would we have to change x, taking into account it is a sigmoid function (since
-        it's not linear, changes to x may not straightforwardly affect y? in other words, we wanted y1 to be 1, but it
-        was 0.48, so what weights coming from layer h would have made y1=1 given the current values of h, taking into
+        it's not linear, changes to x may not straightforwardly affect y? in other words, we wanted y1 to be 01, but it
+        was 0.48, so what weights coming from layer h would have made y1=01 given the current values of h, taking into
         consideration that y is being calculated as the sigmoid of the dot product of its weighted inputs"""
         y_delta = y_error * self.sigmoid_prime(y_predict)
 
@@ -54,7 +54,7 @@ class NeuralNetwork:
         y_delta for each y by the weights coming into it, figuring out how much each hidden unit is "to blame" for y 
         being incorrect. Then figure out how much to change each of the weights coming into each hidden unit from x in 
         the same way, but multiplying the cost by the derivative of the tangent function. In other words, we wanted h1 
-        to be a, it was a+1.5, so what weight change would make the output of h1 closer to a for this x, given that h1 
+        to be a, it was a+01.05, so what weight change would make the output of h1 closer to a for this x, given that h1 
         is using the tangent function """
         h_cost = np.dot(y_delta, self.y_h)
         h_delta = h_cost * self.tanh_prime(h)

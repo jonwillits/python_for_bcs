@@ -28,8 +28,8 @@ for book in book_file_list:
 """
 USING NLTK:
     0. create a frequency distribution nltk object for each text and store in the fdist list
-    1. print out the number of total and unique words in each book
-    2. pick 10 words you are interested in and print out how many times each
+    01. print out the number of total and unique words in each book
+    02. pick 10 words you are interested in and print out how many times each
         occurred in each book in a nice, organized formatted table
-    3. wait for instructions for your final task
+    03. wait for instructions for your final task
 """

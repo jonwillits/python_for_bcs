@@ -6,11 +6,12 @@ Room: Psychology 11<br>
 Tue/Thu 330pm - 520pm
 
 **Materials**<br>
-1\) Python Tutorial #1 (PT1). https://www.w3schools.com/python/python_intro.asp<br>
-2\) Python Tutorial #2 (PT2). https://www.python-course.eu/python3_course.php.<br>
-3\) Think Python (TP). http://interactivepython.org/runestone/static/thinkcspy/index.html<br>
-4\) Vehicles (V). Braitenburg, V. (1984). MIT Press.<br>
-5\) Course Github Page: https://github.com/jonwillits/python_for_bcs 
+1\) Python for BCS (PBCS). http://www.brainandcognitivescience.org/module/Background_and_Methods/Programming/Intro_to_Python/<br>
+2\) Python Tutorial #1 (PT1). https://www.w3schools.com/python/python_intro.asp<br>
+3\) Python Tutorial #2 (PT2). https://www.python-course.eu/python3_course.php.<br>
+4\) Think Python (TP). http://interactivepython.org/runestone/static/thinkcspy/index.html<br>
+5\) Vehicles (V). Braitenburg, V. (1984). MIT Press.<br>
+6\) Course Github Page: https://github.com/jonwillits/python_for_bcs 
 
 **Instructor**<br>
 Dr. Jon A. Willits<br>
@@ -19,15 +20,15 @@ University of Illinois at Urbana-Champaign<br>
 Email: jwillits@illinois.edu<br>
 Website: http://www.psychology.illinois.edu/people/jwillits<br>
 Office Location: Psychology 811<br>
-Office Hours: Monday 1000am-1200pm, Thursday 230pm-330pm
+Office Hours: Monday 1000am-1200pm or by appointment
 
 **Teaching Assistant**<br>
-Andrew Flores<br>
+Shufan Mao<br>
 PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
-Email: azf2@illinois.edu<br>
+Email: smao9@illinois.edu<br>
 Office Location: Psychology 832<br>
-Office Hours: Tuesday 230pm-330pm
+Office Hours: TBA
 
 ## 2. Course Description and Learning Objectives
 Programming for Cognitive Science has three primary learning objectives: 
@@ -53,7 +54,8 @@ Programming for Cognitive Science has three primary learning objectives:
 
 **Grade Components**<br>
 \- Participation: 10%<br>
-\- Group Lab Work: 30%<br>
+\- Weekly Online Quiz: 10%<br>
+\- Group Lab Work: 20%<br>
 \- Homework: 30%<br>
 \- Final Project: 30%<br>
 
@@ -64,6 +66,13 @@ If you don’t come you won’t get that experience. Thus, the class’s attenda
 that you should come to class, and that failing to do so will directly affect your grade. 
 Each week is worth 5 points. You get 4 just for showing up, and you get the other point for 
 asking at least one question in class.
+
+**Weekly Online Quiz:**<br>
+Starting week 2, there is an online quiz due by Tue at 12pm.
+This quiz covers the readings for the current week, helping to ensure that you have done them by the time
+of the first class of the week on Tuesday. The quiz will be administered via the course Compass/Blackboard
+web-page. Your lowest quiz score will be dropped, but no late or make-up quizzes will be allowed with prior
+permission. The quizzes are open book and note, but you must work on them individually.
 
 **Group Lab Work:**<br>
 Each week we will be spending a considerable portion of our lab time working on various 

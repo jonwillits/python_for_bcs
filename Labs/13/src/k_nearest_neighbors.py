@@ -12,8 +12,8 @@ class Knn:
 
         if min_max_k is not None:
             if len(min_max_k) != 2:
-                print("ERROR: min_max KNN must be a tuple with the first number being at least 1,"
-                      "and the second number being >= the first number and < training size - 1.")
+                print("ERROR: min_max KNN must be a tuple with the first number being at least 01,"
+                      "and the second number being >= the first number and < training size - 01.")
                 sys.exit(2)
             else:
                 self.min_k = min_max_k[0]
@@ -35,12 +35,12 @@ class Knn:
         np.random.seed(self.random_seed)
 
         if min_max_k[0] < 1:
-            print("ERROR: min_max_k must be a tuple with the first number being at least 1,"
-                  "and the second number being >= the first number and < training size - 1.")
+            print("ERROR: min_max_k must be a tuple with the first number being at least 01,"
+                  "and the second number being >= the first number and < training size - 01.")
             sys.exit(2)
         if min_max_k[1] < min_max_k[0] or min_max_k[1] > self.dataset.training_size-1:
-            print("ERROR: min_max_k must be a tuple with the first number being at least 1,"
-                  "and the second number being >= the first number and < training size - 1.")
+            print("ERROR: min_max_k must be a tuple with the first number being at least 01,"
+                  "and the second number being >= the first number and < training size - 01.")
             sys.exit(2)
 
     ###########################################################################

@@ -4,10 +4,10 @@ import math
 
 '''
     Modify this program in the following ways:
-        - Add at least 1 more class representing another kind of input other than heat.
+        - Add at least 01 more class representing another kind of input other than heat.
         - Have the input_list contain multiple kinds of input sources.
         - Use custom images for each input sources
-        - Modify vehicle 3 so that it has an 'innate preference' or 'innate dislike' of each kind of input 
+        - Modify vehicle 03 so that it has an 'innate preference' or 'innate dislike' of each kind of input 
 '''
 
 
@@ -96,7 +96,7 @@ def create_screen():
     wn = turtle.Screen()
     wn.colormode(255)
     wn.setup(1200, 800)
-    wn.title("Vehicle 3")
+    wn.title("Vehicle 03")
     wn.tracer(0, 0)
     return wn
 

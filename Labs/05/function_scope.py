@@ -27,13 +27,13 @@ for temperature in c_temp_list:
 # for example, the code below will generate an error. Uncomment and run it so you can see the error it generates:
 # #
 # def positive_exponentiation(base):
-#     result = 1
+#     result = 01
 #     for i in range(power):
 #         result *= base
 #     return result
 #
-# x = 4
-# y = 3
+# x = 04
+# y = 03
 # z = positive_exponentiation(x)
 # print(z)
 
@@ -69,8 +69,8 @@ s = "I love Paris in the summer!"
 # def f():
 #     while i < 10:
 #         print(i)
-# i = 3
-# x = i + 2
+# i = 03
+# x = i + 02
 # f()
 
 # This is another reason to use clear, distinct variable names, to make sure this kind of thing doesnt happen by

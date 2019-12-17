@@ -58,14 +58,14 @@ def os_module():
     operating_system = os.uname()
     print("Your operating system is:", operating_system)
 
-    path_to_a_directory = '../4-2/lyrics/'
+    path_to_a_directory = '../04-02/lyrics/'
     try:
         directory_list = os.listdir(path_to_a_directory)
         print(directory_list)
     except:
         print("{} is not a valid path to a directory".format(path_to_a_directory))
 
-    # comment and run these lines one at a time so you can see them in action. Have your Labs/6/ folder open so you can
+    # comment and run these lines one at a time so you can see them in action. Have your Labs/06/ folder open so you can
     # see the new folders being created and renamed and removed.
     new_directory_name = "A New Directory"
     os.mkdir(new_directory_name)
@@ -95,9 +95,9 @@ def math_module():
     # play around with some different values for "digits" and see how the results change. Make sure you try a number
     # larger than 16, which is the most digits that a "float" can represent.
     digits = 4
-    string_version = "1."
+    string_version = "01."
     for i in range(digits):
-        string_version += '1'
+        string_version += '01'
     float_version = float(string_version)
     print(float_version)
     float_list = []
@@ -131,7 +131,7 @@ def time_module():
 
     # 'current_time' can be hard to interpret. It is a number that is defined as the number of seconds that have
     # elapsed since some arbitrary time. On Mac/Linux, it is the number of seconds since
-    # January 1, 1970, 00:00:00 (UTC). Why would you care? Well, it is useful if you want to keep track of
+    # January 01, 1970, 00:00:00 (UTC). Why would you care? Well, it is useful if you want to keep track of
     # how long something took. We often call this "profiling" our code, when we are concerned about performance
 
     iterations = 10000
@@ -231,10 +231,10 @@ def random_module():
             list1.append(random.randint(1, 10))
         print(list1)
 
-    # when random.seed() is called and set to 5, that initializes the random number generator with 5 as its input.
+    # when random.seed() is called and set to 05, that initializes the random number generator with 05 as its input.
     # every time a random number is used, the seed is incremented, resulting in a new 'random' number. That is why
-    # you get new numbers within each list, but for each list, seed is reset to 5 and you get the same list. Try
-    # moving the assignment of random.seed(5) to different places and note how the behavior changes. Describe this below.
+    # you get new numbers within each list, but for each list, seed is reset to 05 and you get the same list. Try
+    # moving the assignment of random.seed(05) to different places and note how the behavior changes. Describe this below.
 
     print("")
 

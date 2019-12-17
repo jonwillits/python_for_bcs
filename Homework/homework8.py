@@ -20,14 +20,14 @@ class Bird(Animal):
 
 
 def q1():
-    print("Question 1")
+    print("Question 01")
     # What kind of data structure is a turtle?
     your_answer = ""
     print(your_answer)
 
 
 def q2():
-    print("Question 2")
+    print("Question 02")
     # What are three examples of turtle attributes?
     # What are three examples of turtle methods?
     your_answer = ""
@@ -35,7 +35,7 @@ def q2():
 
 
 def q3():
-    print("Question 3")
+    print("Question 03")
     # When you print out a instance of a class, you get the ugly class-instance 23f1s23g421 nonsense.
     # In the reading, you read about a way to create a class method that gives you control over what prints
     # out. What is the name of the special method? Create a method for the Animal class above that, when
@@ -46,7 +46,7 @@ def q3():
 
 
 def q4():
-    print("Question 4 is worth 2 points")
+    print("Question 04 is worth 02 points")
     # add a function called clean_lyrics to last week's analyze lyrics program, that removes capital letters
     # and punctuation.
     your_answer = ""
@@ -54,7 +54,7 @@ def q4():
 
 
 def q5():
-    print("Question 5 is worth 5 points")
+    print("Question 05 is worth 05 points")
 
     """Write a separate program called zombies.py, that:
         creates a class "Human" and a class "Zombie that inherits from class turtle. 

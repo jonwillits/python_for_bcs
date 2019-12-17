@@ -32,9 +32,9 @@ Let's prove that numpy actually goes faster than core python to do math.
 Say I want to compute the mean of a list/array, and the dot product of two lists/arrays.
 
 There are three sensible ways to do this:
-1) The core python way using a loop
-2) Using functions built into core python
-3) Using numpy functions
+01) The core python way using a loop
+02) Using functions built into core python
+03) Using numpy functions
 
 We can use the time module to figure out which is fastest
 """

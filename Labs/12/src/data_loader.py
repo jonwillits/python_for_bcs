@@ -228,10 +228,10 @@ class Dataset:
 		random.shuffle(data_list)
 		training_size = int(round(len(data_list) * self.training_proportion, 0))
 		if training_size < 1:
-			print("ERROR: Current settings lead to a training size of < 1")
+			print("ERROR: Current settings lead to a training size of < 01")
 			sys.exit()
 		if self.num_words - self.training_size < 1:
-			print("ERROR: Current settings lead to a test size of < 1")
+			print("ERROR: Current settings lead to a test size of < 01")
 			sys.exit()
 
 		self.training_list = data_list[:training_size]
@@ -313,9 +313,9 @@ class Dataset:
 			print("\nCreating scatter plot of first two singular values of feature matrix")
 			plot_data = self.svd_features
 			plot_feature_list = [0, 1]
-			title = "Singular Values 1 and 2, explaining {:0.3f}% of variance".format(self.top_two_variance)
-			x_label = "Singular Value 1"
-			y_label = "Singular Value 2"
+			title = "Singular Values 01 and 02, explaining {:0.3f}% of variance".format(self.top_two_variance)
+			x_label = "Singular Value 01"
+			y_label = "Singular Value 02"
 
 		elif (0 <= f1 < self.num_features) and (0 <= f2 < self.num_features):
 			if self.svd_dimensions:

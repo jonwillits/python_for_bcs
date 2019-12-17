@@ -46,7 +46,7 @@ def create_screen():
     wn = turtle.Screen()
     wn.colormode(255)
     wn.setup(1200, 800)
-    wn.title("Vehicle 1")
+    wn.title("Vehicle 01")
     return wn
 
 

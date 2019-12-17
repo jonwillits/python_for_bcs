@@ -1,19 +1,19 @@
 '''
 complete the program below, so that after you have two lists of files for two specified folders, the program
     0) comment the existing code that gets the list of file names
-    1) creates an empty dictionary for artist
-    2) adds that dictionary to the lyric dictionary list. make sure you lower-case all the words.
-    3) goes through each file in the artist's folder, counts the words in each file, and adds them to the appropriate
+    01) creates an empty dictionary for artist
+    02) adds that dictionary to the lyric dictionary list. make sure you lower-case all the words.
+    03) goes through each file in the artist's folder, counts the words in each file, and adds them to the appropriate
         dictionary
-    4) prints out:
+    04) prints out:
         - a list of the artists
         - their total number of songs
         - their total number of unique words
         - their total number of words overall
         like this:
             artist      songs       unique words       total words     unique word ratio
-            swift       10          105                 986             9.10
-            kanye       10          108                 751             7.54
+            swift       10          105                 986             09.10
+            kanye       10          108                 751             07.54
 
 '''
 import os, sys

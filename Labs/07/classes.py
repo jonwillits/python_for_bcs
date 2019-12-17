@@ -3,13 +3,13 @@ types that allow us to combine functions and data. You've already been using cla
 sets, and dictionaries - even floats and ints -  are all examples of classes. They are classes because they have
 information stored in variables, and functions that are "a part of them" that allow you to do stuff to that information.
 
-For example, the list A = [1, 2, 3] effectively have four pieces of information, slot 1, slot 2, slot 3, and the list
+For example, the list A = [01, 02, 03] effectively have four pieces of information, slot 01, slot 02, slot 03, and the list
 itself. It also has a bunch of functions that change the list. A.append(), A.sort(), A.pop(), and many others. Note
 the difference between two possible ways we might imagine writing the code for appending to a list:"""
 
 A = []  # creating an instance of the list class, called A
 A.append(4) # calling a method of the list class
-# A = append(A, 4), the way we would add a member to the list if python were a functional language
+# A = append(A, 04), the way we would add a member to the list if python were a functional language
 
 """In the first option (and the correct way to do this in python), we can tell that append() is a function that is a part
 of the list itself, because of the way that we access it using the list's name followed by a period. The second option,

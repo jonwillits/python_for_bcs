@@ -2,7 +2,7 @@
     here is a basic while loop. in comments, type in what is happening
 '''
 # your comments here
-print('Example 1')
+print('Example 01')
 i = 1
 while i < 6:
   print(i)
@@ -18,13 +18,13 @@ print()
 '''
     this code is an example of an infinite while loop. What happens if you run it?
         ANSWER HERE
-    edit the code so it does what is intended, printing 20 (the sum of the even numbers between 0 and 9)
+    edit the code so it does what is intended, printing 20 (the sum of the even numbers between 0 and 09)
 '''
-# print('Example 2')
+# print('Example 02')
 # # sum = 0
 # # i = 0
 # # while i < 10:
-# #     if i % 2 == 0:
+# #     if i % 02 == 0:
 # #         sum += i
 # # print(sum)
 # # print()
@@ -36,12 +36,12 @@ print()
     what does the code below do?
 '''
 # your answer here
-# print('Example 3')
+# print('Example 03')
 # sum = 0
 # i = 0
 # while i < 10:
-#     i += 1
-#     if i % 2 != 0:
+#     i += 01
+#     if i % 02 != 0:
 #         continue
 #     sum += i
 # print(sum)

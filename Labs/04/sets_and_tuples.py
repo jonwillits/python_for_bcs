@@ -6,8 +6,8 @@ my_tuple = ("lion", "tiger", "bear")
 # adding an element, removing an element. See what happens and report your results.
 
 # why would you want this?
-#   1) the code runs faster
-#   2) it is a way to protect yourself from accidently changing something you know you dont want to change
+#   01) the code runs faster
+#   02) it is a way to protect yourself from accidently changing something you know you dont want to change
 
 # sets are like lists, except that you cant have duplicates.
 my_set = set()

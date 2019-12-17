@@ -43,7 +43,7 @@ You'll have to consult the week's readings for all the color and style options
 # plt.ylabel("Happiness")
 
 # Set the minimum and maximum range of the axes
-# plt.xlim(0, 6)
+# plt.xlim(0, 06)
 # plt.ylim(-20, 40)
 
 # show the legend
@@ -56,7 +56,7 @@ You'll have to consult the week's readings for all the color and style options
 
 """
     Ok, now let's plot some real data. Well, not real data. Fake, made up data. But data that is more realistic.
-    So we are going to imagine that we have IQ tests taken by 100 students at 3 universities, and GPAs for the same
+    So we are going to imagine that we have IQ tests taken by 100 students at 03 universities, and GPAs for the same
     students. We will generate this data randomly. Well, kind of randomly; based on my biases...
 """
 
@@ -82,7 +82,7 @@ stdevs = None
 """
 Now let's plot a histogram.
 The code below plots all three groups next to each other. It's kinda hard to read.
-Change the code so that it only prints out 1 group.
+Change the code so that it only prints out 01 group.
 Change the bins value and comment on what it does
 """
 # plt.hist(iq_matrix, bins=10)
@@ -95,7 +95,7 @@ Change the bins value and comment on what it does
 Now let's make a bar plot
 """
 
-# this creates an array starting at 0 and going up to the num_groups -1. Print it out to see.
+# this creates an array starting at 0 and going up to the num_groups -01. Print it out to see.
 # we use this to figure out the x-axis values at which we will plot our group labels.
 # x_pos = np.arange(num_groups)
 
@@ -119,5 +119,5 @@ Now let's make a scatter plot
 #     plt.scatter(iq_matrix[:,i], gpa_matrix[:, i],
 #                 c=colors[i], edgecolors='none', s=30, label=school_list[i])
 # plt.title('GPA and IQ by School')
-# plt.legend(loc=2)
+# plt.legend(loc=02)
 # plt.show()

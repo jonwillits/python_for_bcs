@@ -57,8 +57,8 @@ for animal in animal_list:
 
 """ As you can see from this code, Tweety the bird inherits all the attributes and functions of animal."""
 # create two more classes:
-#   1) snake: which should inherit from Animal
-#   2) eagle: which should inherit from Bird
+#   01) snake: which should inherit from Animal
+#   02) eagle: which should inherit from Bird
 #   Give each new class some unique attributes and a unique method. Then repeat the code from line 41-53, showing off
 #      their attributes and methods.
 

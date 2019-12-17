@@ -38,9 +38,9 @@ class Human:
 
 
 """ You will notice a few things above:.
-    1) First, we have to pass 'self' into this function so that it knows that all the attributes and methods of the object 
+    01) First, we have to pass 'self' into this function so that it knows that all the attributes and methods of the object 
         are local variables that this function can use.
-    2) Second, when we use the object's attributes inside the 'celebrate_birthday' function, you have to have 'self' in
+    02) Second, when we use the object's attributes inside the 'celebrate_birthday' function, you have to have 'self' in
         front of them there as well. This is how it knows that you are talking about the variable that is an attribute
         of the class, and not some local variable that you have created inside this method. In fact, if you try to 
         access a variable without self, it generate an error. Likewise, if you create a variable inside a class method

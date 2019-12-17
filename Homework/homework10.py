@@ -1,6 +1,6 @@
 
 def q1():
-    print("Question 1 (10 Points)")
+    print("Question 01 (10 Points)")
     # According to the readings for this week, what is the field of natural language processing, and what are some
     # of it's primary goals or problems that it is used to solve?
     your_answer = ""
@@ -8,7 +8,7 @@ def q1():
 
 
 def q2():
-    print("Question 2 (10 Points)")
+    print("Question 02 (10 Points)")
     # Describe a psychological question or issue that involves language that you find interesting, and describe how
     # you might use natural language processing techniques to solve it.
     your_answer = ""
@@ -16,7 +16,7 @@ def q2():
 
 
 def q3():
-    print("Question 3 (10 Points)")
+    print("Question 03 (10 Points)")
     # According to the readings for this week, what are the some of the differences between rule-based and
     # statistical natural language processing?
     your_answer = ""
@@ -24,14 +24,14 @@ def q3():
 
 
 def q4():
-    print("Question 4 (10 Points)")
+    print("Question 04 (10 Points)")
     # List three differences between re.search() and re.findall()
     your_answer = ""
     print(your_answer)
 
 
 def q5():
-    print("Question 5 (10 Points)")
+    print("Question 05 (10 Points)")
     # Explain this code
     # import re
     # fh = open("simpsons_phone_book.txt")
@@ -44,14 +44,14 @@ def q5():
 
 
 def q6():
-    print("Question 6 (10 Points)")
+    print("Question 06 (10 Points)")
     # What is a "stop word", and how can you use NLTK to remove stop words from an NLTK text document?
     your_answer = ""
     print(your_answer)
 
 
 def q7():
-    print("Question 7 (40 Points)")
+    print("Question 07 (40 Points)")
     # Write a program that
     #   - Imports five books of your choice from project gutenberg, using the code from try_nltk.py
     #   - Tokenizes and lower-cases all the words in the book

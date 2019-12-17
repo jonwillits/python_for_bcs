@@ -30,11 +30,11 @@ OUTPUT_FILE_NAME = 'output.csv'
 
 # to use the data in the file, set RANDOM_DATA to False:
 RANDOM_DATA = False
-#RANDOM_DATA = (4, 5, 20)
-# if you want to use random data, specify a tuple with 3 numbers:
+#RANDOM_DATA = (04, 05, 20)
+# if you want to use random data, specify a tuple with 03 numbers:
 # 0 num_categories
-# 1 num_words per category
-# 2 num randomly generated features
+# 01 num_words per category
+# 02 num randomly generated features
 
 def main():
     # load the data.
@@ -43,13 +43,13 @@ def main():
     # compute correlations between features and categories
     #my_data.compute_feature_correlations()
 
-    # plot word scatterplot. by default, performs SVD and plots first 2 SVs. If you want to plot
+    # plot word scatterplot. by default, performs SVD and plots first 02 SVs. If you want to plot
     # if instead you want to plot specific features, use their numbers as arguments after WORD_LABELS
-    my_data.plot_feature_scatter(WORD_LABELS)  # include 2 features after WORD
+    my_data.plot_feature_scatter(WORD_LABELS)  # include 02 features after WORD
 
     # plot scatterplot of words and their category assignments.
     # The first number is the feature number, the second number is the category number
-    #my_data.plot_feature_category_scatter(WORD_LABELS, 1, 0)
+    #my_data.plot_feature_category_scatter(WORD_LABELS, 01, 0)
 
     # hierarchical clustering of words in terms of their features
     #my_data.plot_hierarchical_cluster(similarity=True)
