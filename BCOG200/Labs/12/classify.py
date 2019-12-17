@@ -30,7 +30,7 @@ RANDOM_DATA = (4, 5, 20)
 def main():
     my_data = dl.Dataset(FILE_NAME, RANDOM_DATA, TRAINING_PROPORTION, NORMALIZE, SVD_DIM, VERBOSE)
     my_data.compute_feature_correlations()
-    # my_data.plot_feature_scatter(WORD_LABELS)
+    my_data.plot_feature_scatter(WORD_LABELS)
     # my_data.plot_feature_category_scatter(WORD_LABELS, 1, 0)
 
     my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)

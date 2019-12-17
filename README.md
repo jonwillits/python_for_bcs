@@ -1,6 +1,9 @@
-# python_for_bcs
-Introduction to Python for Brain and Cognitive Sciences
+# Python for BCS
+This repository contains all the supplementary materials for BCOG 200, 
+Introduction to Programming for Brain and Cognitive Sciences, taught at the University of
+Illinois at Urbana Champaign by Jon Willits.
 
-##### This contains two subdirectories
-- Textbook: A book for the course that I am working on
-- BCOG200: The course materials (syllabus, labs, homework assignments, lecture slides)
+- Find out more about the course by consulting the most recent syllabus in the Syllabus directory.
+- Homework, Lab Assignments, and Lecture Slides are all in the approporiately named directories.
+
+

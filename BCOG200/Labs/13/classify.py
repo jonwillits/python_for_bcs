@@ -45,7 +45,7 @@ def main():
 
     # plot word scatterplot. by default, performs SVD and plots first 2 SVs. If you want to plot
     # if instead you want to plot specific features, use their numbers as arguments after WORD_LABELS
-    #my_data.plot_feature_scatter(WORD_LABELS)  # include 2 features after WORD
+    my_data.plot_feature_scatter(WORD_LABELS)  # include 2 features after WORD
 
     # plot scatterplot of words and their category assignments.
     # The first number is the feature number, the second number is the category number
