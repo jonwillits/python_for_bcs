@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a74b0a6-1608-4618-a54e-aa5c3871a8bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework/homework10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/homework9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/11/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/14/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/3-1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/3-2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/4-1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/4-2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/6/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/7/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/8/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/9/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/Python Machine Learning CH1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/homework9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Homework/vehicles.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/big-five-personality-test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/big5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/big5_summary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/play_counts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/play_counts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/spotify_counts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/1-2/top_three.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/ALICE_IN_WONDERLAND.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/FRANKENSTEIN.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/GRIMMS_FAIRY_TALES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/HUCK_FINN.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/MOBY_DICK.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/PRIDE_AND_PREJUDICE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/SHERLOCK_HOLMES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/TALE_OF_TWO_CITIES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/THE_AWAKENING.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/books/THE_REPUBLIC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/novel_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/regex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/regex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/10/try_nltk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/11/figures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/11/novel_figures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/11/numpy_refresher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/11/try_matplotlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/classify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/data/data1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/data/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/data/data_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/src/data_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/12/src/k_nearest_neighbor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/classify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/data/data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/data/data1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/data/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/data/data3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/data/data_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/src/data_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/src/k_nearest_neighbors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/13/src/logistic_regression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/14/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/14/data/animals_4_128_15.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/14/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/14/src/datasets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/14/src/neural_network.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-1/conditions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-1/for_loop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-1/lists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-1/variables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/2-2/big5e.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-1/files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-1/test_file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-1/test_file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-1/while_loops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/big5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/questions/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/questions/c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/questions/e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/questions/n.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/3-2/questions/o.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-1/dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-1/sets_and_tuples.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyric_word_counts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/e_t.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/gold_digger.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/good_life.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/heartless.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/knock_you_down.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/love_lockdown.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/ni--as_in_paris.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/run_this_town.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/slow_jamz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/kanye/stronger.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/bad_blood.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/blank_space.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/i_dont_want_to_live_forever.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/i_knew_you_were_trouble.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/love_story.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/shake_it_off.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/style.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/we_are_never_getting_back_together.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/wildest_dreams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/4-2/lyrics/taylor/you_belong_with_me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/5-1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/5-1/function_scope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/5-1/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/5-1/lyric_word_counts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/6/blackjack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/6/standard_library_modules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/6/try_numpy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/7/analyze_lyrics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/7/class_attributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/7/class_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/7/classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/8/inheritance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/8/more_turtles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/8/super_turtle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/8/try_turtles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/9/vehicle1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/9/vehicle2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/9/vehicle3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Labs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Lectures/Lecture 1-1 Intro to Programming in CogSci.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Lectures/Lecture 1-2 Python Basics.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Lectures/Lecture 12 - Machine Learning.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Lectures/Lecture 13 - Logistic Regression Classification.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Lectures/Lecture 14 - Neural Networks.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Syllabus/Spring 2019.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/Syllabus/Spring 2020.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCOG200/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/10/__init__.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/14/src/neural_network.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/14/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/13/classify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Labs/12/classify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Syllabus/Spring 2020.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BCOG200/Labs/13/classify.py" />
+        <option value="$PROJECT_DIR$/BCOG200/Labs/12/classify.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/python_for_bcs.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
+    <option name="y" value="46" />
+    <option name="width" value="1717" />
+    <option name="height" value="959" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python_for_bcs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_for_bcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_for_bcs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_for_bcs" type="462c0819:PsiDirectoryNode" />
+              <item name="Homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_for_bcs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_for_bcs" type="462c0819:PsiDirectoryNode" />
+              <item name="Labs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BCOG200" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Labs/4" />
+      <recent name="$PROJECT_DIR$/Labs/3" />
+      <recent name="$PROJECT_DIR$/Labs/2" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/BCOG200/Syllabus" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BCOG200" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a74b0a6-1608-4618-a54e-aa5c3871a8bd" name="Default Changelist" comment="" />
+      <created>1575559847700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575559847700</updated>
+      <workItem from="1575559848818" duration="743000" />
+      <workItem from="1575646097919" duration="599000" />
+      <workItem from="1576598656901" duration="27000" />
+      <workItem from="1576599506597" duration="557000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated course structure for spring 2020">
+      <created>1576599949561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576599949561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1926000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="46" width="1717" height="959" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24955116" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated course structure for spring 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated course structure for spring 2020" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Labs/14/src/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/14/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/13/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/CH0/CH0.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/CH1/CH1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/CH2/CH2.1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/CH2/CH2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Labs/12/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Overview.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Syllabus/Spring 2020.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
