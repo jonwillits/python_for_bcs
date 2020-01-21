@@ -468,7 +468,7 @@ Due by Apr 27th at 12:00pm (Noon, not midnight)<br
 \- Coming Soon <br>
 
 #### Lab Assignments:
-Due by May 4th at 12:00pm (Noon, not midnight)<br
+Due by May 4th at 12:00pm (Noon, not midnight)<br>
 \- lab_13_01_multilayer_neural_network.py<br>
 \- lab_13_02_hebbian_neural_network.py<br>
 \- lab_13_03_try_pytorch.py<br>
