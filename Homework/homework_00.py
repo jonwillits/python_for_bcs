@@ -5,9 +5,9 @@
 '''
     00. what are the difference between variables, statements, and expressions in python? (3 POINTS)
 '''
-    # type your answer here
-    a1 = "your answer to question 1"
-    print(a1 + "\n\n")
+# type your answer here
+a1 = "your answer to question 1"
+print(a1 + "\n\n")
 
 '''
     01. what is the difference between a string, an integer, and a float variable in python?
