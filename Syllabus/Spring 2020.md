@@ -1,6 +1,8 @@
 # Syllabus for BCOG 200: <br> Introduction to Programming for Brain & Cognitive Science
 
 ## 1. Course Info
+**Term: Spring 2020**
+
 **Class Location & Time**<br>
 Room: Psychology 11<br>
 Tue/Thu 330pm - 520pm
@@ -20,7 +22,7 @@ University of Illinois at Urbana-Champaign<br>
 Email: jwillits@illinois.edu<br>
 Website: http://www.psychology.illinois.edu/people/jwillits<br>
 Office Location: Psychology 811<br>
-Office Hours: Monday 1000am-1200pm or by appointment
+Office Hours: Monday 3pm-5pm, or by appointment
 
 **Teaching Assistant**<br>
 Shufan Mao<br>
@@ -28,7 +30,7 @@ PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: smao9@illinois.edu<br>
 Office Location: Psychology 832<br>
-Office Hours: TBA
+Office Hours: Friday 3pm-5pm, or by appointment
 
 ## 2. Course Description and Learning Objectives
 Programming for Cognitive Science has three primary learning objectives: 
@@ -129,19 +131,19 @@ at the bottom of the page.”
 ## 7. Class Schedule
 
 ### At a Glance Summary:
-\- Week 1: Course Overview and Getting Started with Python<br>
-\- Week 2: Variables, Lists, and Loops<br>
-\- Week 3: More Loops, Input, and Output<br>
-\- Week 4: Dictionaries, Tuples, and Sets<br>
-\- Week 5: Functions<br>
-\- Week 6: Modules and Numpy<br>
-\- Week 7: Classes<br>
-\- Week 8: More Classes and Turtles<br>
-\- Week 9: Agent-Based Simulations<br>
-\- Week 10: Natural Language Processing<br>
-\- Week 11: Plotting and Data Visualization<br>
-\- Week 12: Introduction to Machine Learning<br>
-\- Week 13: Supervised Learning<br>
+\- Week 01: Course Overview, Variables and Flow Control<br>
+\- Week 02: Loops, Lists, and Tuples<br>
+\- Week 03: Input and Output, Programming Principles<br>
+\- Week 04: Functions<br>
+\- Week 05: Dictionaries and Sets<br>
+\- Week 06: Modules, especially Numpy<br>
+\- Week 07: Classes<br>
+\- Week 08: Agent-Based Simulations 1<br>
+\- Week 09: Agent-Based Simulations 2<br>
+\- Week 10: Graphical User Interfaces & Experiments<br>
+\- Week 11: Natural Language Processing<br>
+\- Week 12: Plotting and Data Visualization<br>
+\- Week 13: Machine Learning<br>
 \- Week 14: Neural Networks<br>
 \- Week 15: Final Projects<br>
 
@@ -150,7 +152,7 @@ at the bottom of the page.”
 - Course Overview
 - What Programming is Good For
 - The Value of Simulation
-- Introduction to Python Basic Data Types and Expressions<br>
+- Introduction to Python Basic Data Types, Expressions, Conditionals, and Control Flow<br>
 
 #### Readings:
 **Python Tutorial 1**<br>
@@ -176,10 +178,8 @@ at the bottom of the page.”
 \- Chapter 2: http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html<br>
 
 #### Lab Assignments:
-Due by Jan 21st at 11:59pm<br>
-\- Background Survey<br>
+Due by Jan 28st at 12:00pm (Noon, not midnight)<br>
 \- Install Python 3<br>
-\- Install Git<br>
 \- hello_world.py<br>
 
 #### Homework:
@@ -190,7 +190,7 @@ homework1.py<br><br>
 ### Week 2: Jan 22nd & 24th<br>
 #### Learning Objectives:
 \- Variables<br>
-\- Conditionals<br>
+
 \- Lists<br>
 \- For Loops<br>
 
