@@ -9,13 +9,13 @@ np.set_printoptions(precision=3)
 ###########################################################################
 class Dataset:
 	###########################################################################
-	def __init__(self, filename, random_data, training_proportion, normalize_method, svd_dimensions, verbose, random_seed):
+	def __init__(self, filename, random_data, training_proportion=0.80,
+				 normalize_data=False, svd_dimensions=0, verbose=True):
 
 		self.filename = filename  # the file where the data came from
 		self.random_data = random_data		# if nonzero, will replace the real data with random data containing n features
 		self.training_proportion = training_proportion  # the proportion of items that will be used to train the model
-		self.normalize_method = normalize_method  # whether or not we want to z-score or scale the feature columns
-		self.random_seed = random_seed
+		self.normalize_data = normalize_data  # whether or not we want to z-score the feature columns
 
 		self.num_categories = 0  	     # the total number of categories in the data file
 		self.category_list = None  	     # a list of the categories in teh data file
@@ -54,18 +54,15 @@ class Dataset:
 
 		self.verbose = verbose			# whether or not to print a lot of stuff out
 
-		random.seed(self.random_seed)
-		np.random.seed(self.random_seed)
-
 		# import the data, creating the majority of the data structures described above
 		print("\nCreating Dataset from file '{}'".format(filename))
 
 		if self.random_data is False:
-			self.import_data_from_file()
+			self.import_data()
 		else:
 			self.generate_random_data()
 
-		if self.normalize_method is not None:
+		if self.normalize_data:
 			self.normalize()
 
 		if svd_dimensions:
@@ -80,7 +77,7 @@ class Dataset:
 		self.create_train_test_sets()
 
 	###########################################################################
-	def import_data_from_file(self):
+	def import_data(self):
 
 		self.num_categories = 0
 		self.category_list = []
@@ -213,15 +210,8 @@ class Dataset:
 
 	###########################################################################
 	def normalize(self):
-		print("    Normalizing Data by {}".format(self.normalize_method))
-		if self.normalize_method == 'scale':
-			self.feature_matrix -= self.feature_matrix.min(0)
-			self.feature_matrix /= self.feature_matrix.sum(0)
-		elif self.normalize_method == 'z-score':
-			self.feature_matrix = (self.feature_matrix.mean(0) - self.feature_matrix) / self.feature_matrix.std(0)
-		else:
-			print("    Invalid normalization method. Options are 'scale' and 'z-score")
-			sys.exit()
+		print("    Normalizing Data...")
+		self.feature_matrix = (self.feature_matrix.mean(0) - self.feature_matrix) / self.feature_matrix.std(0)
 
 	###########################################################################
 	def create_train_test_sets(self):
@@ -260,11 +250,7 @@ class Dataset:
 			training_feature_list.append(self.feature_matrix[item[0], :])
 
 			if self.verbose:
-				output_string = "        {:5s} {:16s} {:24s}".format(str(item[0]), item[1], item[2])
-				for j in range(self.feature_matrix.shape[1]):
-					output_string += "   {:>3.3f}".format(self.feature_matrix[item[0], j])
-				print(output_string)
-
+				print("        {:5s} {:16s} {:16s} {}".format(str(item[0]), item[1], item[2], self.feature_matrix[item[0], :]))
 		self.training_feature_matrix = np.array(training_feature_list)
 
 		if self.verbose:
@@ -276,10 +262,7 @@ class Dataset:
 			test_feature_list.append(self.feature_matrix[item[0], :])
 
 			if self.verbose:
-				output_string = "        {:5s} {:16s} {:24s}".format(str(item[0]), item[1], item[2])
-				for j in range(self.feature_matrix.shape[1]):
-					output_string += "   {:>3.3f}".format(self.feature_matrix[item[0], j])
-				print(output_string)
+				print("        {:5s} {:16s} {:16s} {}".format(str(item[0]), item[1], item[2], self.feature_matrix[item[0], :]))
 		self.test_feature_matrix = np.array(test_feature_list)
 
 	###########################################################################
@@ -289,7 +272,6 @@ class Dataset:
 		self.svd_features = u[:, :dimensions]
 		self.eigenvalues = s
 		self.top_two_variance = self.eigenvalues[:dimensions].sum() / self.eigenvalues.sum()
-		print("        Top {} dimensions' proportion of variance: {:0.3f}".format(dimensions, self.top_two_variance))
 
 	###########################################################################
 	def get_color_list(self):
@@ -459,46 +441,6 @@ class Dataset:
 				for j in range(self.num_features):
 					output_string += "   {:>3.2f}".format(self.feature_correlation_matrix[i, j])
 				print(output_string)
-
-	###########################################################################
-	def plot_hierarchical_cluster(self, similarity=False):
-		print("\n    Plotting Hierarchical Cluster Diagram")
-		ok_to_go = False
-		try:
-			import heatmapcluster
-			ok_to_go = True
-		except:
-			print("Cannot import heatmapcluster. try running 'pip install heatmapcluster'")
-
-		if ok_to_go:
-			x_labels = self.word_list
-			y_labels = self.word_list
-			if similarity:
-				data = np.zeros([self.num_words, self.num_words])
-				for i in range(self.num_words):
-					a = self.feature_matrix[i, :]
-					for j in range(self.num_words):
-						b = self.feature_matrix[j, :]
-						data[i,j] = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-
-
-			else:
-				data = self.feature_matrix.transpose()
-				x_labels = self.word_list
-				y_labels = self.feature_list
-
-			h = heatmapcluster.heatmapcluster(data,
-											  y_labels,
-											  x_labels,
-											  label_fontsize=6,
-											  xlabel_rotation=90,
-											  cmap=plt.cm.coolwarm,
-											  show_colorbar=True,
-											  colorbar_pad=2,
-											  top_dendrogram=True)
-
-
-
 
 
 
