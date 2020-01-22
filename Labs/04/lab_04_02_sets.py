@@ -1,6 +1,4 @@
-# remember that a "tuple" is like a list, except that it is "immutable", meaning it cannot be changed once it is
-#   created.
-my_tuple = ("lion", "tiger", "bear")
+
 
 # try doing all the stuff with lists that you might want to do, like accessing an item by element,
 # adding an element, removing an element. See what happens and report your results.

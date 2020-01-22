@@ -267,7 +267,7 @@ Due by Feb 18th at 12:00pm (Noon, not midnight)<br>
 \- lab_03_01_functions.py<br>
 \- lab_03_02_function_scope.py<br>
 \- lab_03_03_complex_programs.py<br>
-\- lab_03_04_big5e.py<br>
+\- lab_03_04_big5.py<br>
 \- homework_03.py<br><br>
 
 

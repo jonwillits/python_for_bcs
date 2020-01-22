@@ -19,7 +19,12 @@
 10. I am quiet around strangers.
 """
 
-# write a program that prints the instructions, te
-# calculate the final score for introversion/extroversion using the following formula:
-# E = 20 + (1) ___ - (2) ___ + (3) ___ - (4) ___ + (5) ___ - (6) ___ + (7) ___ - (8) ___ + (9) ___ - (10) ___
-# print out the person's extroversion score
+# Last week, you wrote a program where each question was stored in a different variable.
+# This week, write a program that
+#       - stores the questions in a question_list.
+#       - prints the instructions
+#       - has a for loop that iterates over the list, each time through the loop
+#           - asks the question
+#           - saves the response to an answer_list
+#           - also updates their final_score
+#       - once the loop is done, the program should print out their final extroversion score
