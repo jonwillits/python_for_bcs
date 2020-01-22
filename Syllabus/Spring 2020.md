@@ -30,7 +30,7 @@ PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: smao9@illinois.edu<br>
 Office Location: Psychology 832<br>
-Office Hours: Friday 3pm-5pm, or by appointment
+Office Hours: Friday 3pm-4pm, or by appointment
 
 ## 2. Course Description and Learning Objectives
 Programming for Cognitive Science has three primary learning objectives: 
@@ -209,7 +209,7 @@ Due by Jan 28st at 12:00pm (Noon, not midnight)<br>
 \- Chapter 10: http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html<br>
 
 #### Assignments:
-Due by Feb 03rd at 12:00pm (Noon, not midnight)<br>
+Due by Feb 4th at 12:00pm (Noon, not midnight)<br>
 \- lab_01_01_lists.py<br>
 \- lab_01_02_tuples.py<br>
 \- lab_01_03_for_loops.py<br>
@@ -240,7 +240,7 @@ Due by Feb 03rd at 12:00pm (Noon, not midnight)<br>
 \- Chapter 3: http://interactivepython.org/runestone/static/thinkcspy/Debugging/toctree.html<br>
 
 #### Assignments:
-Due by Feb 10th at 12:00pm (Noon, not midnight)<br>
+Due by Feb 11th at 12:00pm (Noon, not midnight)<br>
 \- Lab assignments TBD<br>
 \- lab_02_01_files.py<br>
 \- lab_02_02_screen_output.py<br>
@@ -263,7 +263,7 @@ Due by Feb 10th at 12:00pm (Noon, not midnight)<br>
 \- http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html<br>
 
 #### Assignments:
-Due by Feb 17th at 12:00pm (Noon, not midnight)<br>
+Due by Feb 18th at 12:00pm (Noon, not midnight)<br>
 \- lab_03_01_functions.py<br>
 \- lab_03_02_function_scope.py<br>
 \- lab_03_03_complex_programs.py<br>
@@ -290,7 +290,7 @@ Due by Feb 17th at 12:00pm (Noon, not midnight)<br>
 \- http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html<br>
 
 #### Assignments:
-Due by Feb 24th at 12:00pm (Noon, not midnight)<br>
+Due by Feb 25th at 12:00pm (Noon, not midnight)<br>
 \- lab_04_01_dicts.py<br>
 \- lab_04_02_sets.py<br>
 \- lab_04_03_lyric_word_counts.py<br>
@@ -309,7 +309,7 @@ Due by Feb 24th at 12:00pm (Noon, not midnight)<br>
 \- http://cs231n.github.io/python-numpy-tutorial/#numpy<br><br>
 
 #### Assignments:
-Due by Mar 2nd at 12:00pm (Noon, not midnight)<br>
+Due by Mar 3rd at 12:00pm (Noon, not midnight)<br>
 \- lab_05_01_standard_library.py<br>
 \- lab_05_02_numpy.py<br>
 \- lab_05_03_more_numpy.py<br>
@@ -333,7 +333,7 @@ Due by Mar 2nd at 12:00pm (Noon, not midnight)<br>
 \- https://interactivepython.org/runestone/static/thinkcspy/ClassesDiggingDeeper/Fractions.html<br>
 
 #### Assignments:
-Due by Mar 9th at 12:00pm (Noon, not midnight)<br>
+Due by Mar 10th at 12:00pm (Noon, not midnight)<br>
 \- lab_06_01_classes.py<br>
 \- lab_06_02_class_attributes.py<br>
 \- lab_06_03_class_methods.py<br>
@@ -352,7 +352,7 @@ Due by Mar 9th at 12:00pm (Noon, not midnight)<br>
 \- Lewendowksy & Farrell (2018) CH1 (pp 1-23)<br>
 
 #### Assignments:
-Due by Mar 23rd at 12:00pm (Noon, not midnight)<br>
+Due by Mar 24th at 12:00pm (Noon, not midnight)<br>
 \- lab_07_01_try_turtles.py<br>
 \- lab_07_02_advanced_turtles.py<br>
 \- lab_07_03_turtle_game.py<br>
@@ -369,7 +369,7 @@ Due by Mar 23rd at 12:00pm (Noon, not midnight)<br>
 \- Braitenberg (1984) CH1-8 (pp 1-42)<br>
 
 #### Assignments:
-Due by Mar 30th at 12:00pm (Noon, not midnight)<br>
+Due by Mar 31st at 12:00pm (Noon, not midnight)<br>
 \- lab_08_01_vehicle1.py<br>
 \- lab_08_02_vehicle2.py<br>
 \- lab_08_02_vehicle3.py<br>
@@ -385,7 +385,7 @@ Due by Mar 30th at 12:00pm (Noon, not midnight)<br>
 \- https://www.python-course.eu/python_tkinter.php
 
 #### Assignments:
-Due by Apr 6th at 12:00pm (Noon, not midnight)<br>
+Due by Apr 7th at 12:00pm (Noon, not midnight)<br>
 \- lab_09_01_gui1.py<br>
 \- lab_09_02_gui2.py<br>
 \- lab_09_03_gui3.py<br>
@@ -405,7 +405,7 @@ Due by Apr 6th at 12:00pm (Noon, not midnight)<br>
 \- https://likegeeks.com/nlp-tutorial-using-python-nltk<br>
 
 #### Assignments:
-Due by Apr 13th at 12:00pm (Noon, not midnight)<br>
+Due by Apr 14th at 12:00pm (Noon, not midnight)<br>
 \- lab_10_01_regex1.py<br>
 \- lab_10_02_regex2.py<br>
 \- lab_10_03_try_nltk.py<br>
@@ -426,7 +426,7 @@ Due by Apr 13th at 12:00pm (Noon, not midnight)<br>
 \- https://www.labri.fr/perso/nrougier/teaching/matplotlib<br>
 
 #### Assignments:
-Due by Apr 20th at 12:00pm (Noon, not midnight)<br
+Due by Apr 21st at 12:00pm (Noon, not midnight)<br
 \- lab_11_01_numpy_refresher.py<br>
 \- lab_11_02_try_matplotlib.py<br>
 \- lab_11_03_figures.py<br>
@@ -450,7 +450,7 @@ Due by Apr 20th at 12:00pm (Noon, not midnight)<br
 \- https://www.python-course.eu/neural_networks_with_python_numpy.php<br>
 
 #### Assignments:
-Due by Apr 27th at 12:00pm (Noon, not midnight)<br
+Due by Apr 28th at 12:00pm (Noon, not midnight)<br
 \- lab_12_01_classify.py<br>
 \- lab_12_02_data_loader.py<br>
 \- lab_12_03_k_nearest_neighbors.py<br>
@@ -468,7 +468,7 @@ Due by Apr 27th at 12:00pm (Noon, not midnight)<br
 \- Coming Soon <br>
 
 #### Lab Assignments:
-Due by May 4th at 12:00pm (Noon, not midnight)<br>
+Due by May 5th at 12:00pm (Noon, not midnight)<br>
 \- lab_13_01_multilayer_neural_network.py<br>
 \- lab_13_02_hebbian_neural_network.py<br>
 \- lab_13_03_try_pytorch.py<br>
