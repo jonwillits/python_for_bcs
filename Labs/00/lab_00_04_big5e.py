@@ -19,7 +19,9 @@
 10. I am quiet around strangers.
 """
 
-# write a program that prints the instructions, te
-# calculate the final score for introversion/extroversion using the following formula:
-# E = 20 + (1) ___ - (2) ___ + (3) ___ - (4) ___ + (5) ___ - (6) ___ + (7) ___ - (8) ___ + (9) ___ - (10) ___
-# print out the person's extroversion score
+# write a program that
+#   - prints the instructions
+#   - asks each question, one at a time, and saves the answer in a veriable
+#   - calculate the final score for introversion/extroversion using the following formula:
+#       E = 20 + (1) ___ - (2) ___ + (3) ___ - (4) ___ + (5) ___ - (6) ___ + (7) ___ - (8) ___ + (9) ___ - (10) ___
+#   - prints out the person's extroversion score
