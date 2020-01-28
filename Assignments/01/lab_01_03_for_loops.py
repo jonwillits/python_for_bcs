@@ -8,7 +8,6 @@ food_list = ['pizza', 'sandwich', 'apple', 'ice cream', 'salad']
 score_list = [1, 3, 4, 5, 2]
 
 # what will the following code do
-#
 # for food in food_list:
 #     print(food)
 #
@@ -16,7 +15,7 @@ score_list = [1, 3, 4, 5, 2]
 # num_foods = len(food_list)
 # for i in range(num_foods):
 #     print(food_list[i], score_list[i])
-#
+
 # # what will the following code do
 # combined_list = []
 # for i in range(num_foods):
@@ -30,5 +29,3 @@ score_list = [1, 3, 4, 5, 2]
 #     for letter in word:
 #         print(letter)
 #     print()
-
-# i added this line to the master branch

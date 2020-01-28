@@ -65,7 +65,7 @@ def os_module():
     except:
         print("{} is not a valid path to a directory".format(path_to_a_directory))
 
-    # comment and run these lines one at a time so you can see them in action. Have your Labs/06/ folder open so you can
+    # comment and run these lines one at a time so you can see them in action. Have your Assignments/06/ folder open so you can
     # see the new folders being created and renamed and removed.
     new_directory_name = "A New Directory"
     os.mkdir(new_directory_name)
