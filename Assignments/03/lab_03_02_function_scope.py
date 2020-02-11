@@ -37,7 +37,7 @@ for temperature in c_temp_list:
 # z = positive_exponentiation(x)
 # print(z)
 
-# uncomment and fix the code so that "positive_exponentiation" knows what 'power' is, and calculates the correct result.
+# UNCOMMENT AND FIX THE CODE so that "positive_exponentiation" knows what 'power' is, and calculates the correct result.
 
 # here is another example:
 def f():
@@ -64,7 +64,8 @@ s = "I love Paris in the summer!"
 # to use a variable and name it i to do some arithmetic. Then later, I use i inside a function for a wihle loop. Inside
 # that function, I might have meant to declare i = 0. But I forgot. But instead of getting an "i isnt defined" error,
 # the program ran without a syntax error because there was a defined i (being used in a different part of the program).
-# the resulting program generates an infinite loop. So be careful running it. But fix it so it runs as intended.
+# the resulting program generates an infinite loop. So be careful running it.
+# FIX IT SO IT RUNS AS INTENDED
 
 # def f():
 #     while i < 10:

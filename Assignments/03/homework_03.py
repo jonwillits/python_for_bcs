@@ -76,9 +76,9 @@ def q6():
 
 
 def q7():
-    # Explain how sys.argv works. What kind of data structure is created, and what information is put in that data
-    # structure?
-
+    # explain why it is valuable to make your code in terms functions. Give at least three specific examples from class
+    # so far that take code you have written and why it would be better if it had been as a function instead of how we
+    # did it originally.
     your_answer = ""
     print("Question 07")
     print(your_answer)
