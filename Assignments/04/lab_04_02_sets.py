@@ -1,12 +1,4 @@
 
-
-# try doing all the stuff with lists that you might want to do, like accessing an item by element,
-# adding an element, removing an element. See what happens and report your results.
-
-# why would you want this?
-#   00) the code runs faster
-#   01) it is a way to protect yourself from accidently changing something you know you dont want to change
-
 # sets are like lists, except that you cant have duplicates.
 my_set = set()
 
@@ -32,6 +24,3 @@ my_set.issuperset()
 # explain what happens here:
 my_set = set("abcdefghijklmnopqrstuvwxyz")
 my_set = set(['a', 'b', 'c'])
-
-
-

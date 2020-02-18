@@ -58,6 +58,7 @@ print(na_city_populations_dict)
 city_input = input('Type a city name: ')
 print(na_city_populations_dict.get(city_input))
 
-# write a program that takes last week's test_file2.txt as input (the file with the animals and where they are from
-# and put's each animal into the dictionary as a key, with the location as it's value. Then write a look that iterates
+# write and call a function that takes week 02's "test_file2.txt" as an input, (the file with the animals and where
+# they are from), and put's each animal into the dictionary as a key, with the location as it's value. have the function
+# return the dictionary. Outside the function, write a loop that that iterates
 # through the whole dictionary, printing them out one at a time.
