@@ -1,119 +1,134 @@
-import numpy as np
+
 
 def q1():
-    # If i want to pass a command line argument to a program, what module and function do I need to use?
+    # 1 POINT
+    # If i want to pass a command line argument to a program, what module and function do you need to use?
     your_answer = ""
-    print("Question 00")
+    print("Question 1")
     print(your_answer)
 
 
 def q2():
-    # We have used the .format() function many times. What module is it a part of?
+    # 1 POINT
+    # What is a random seed and why would you want to use one?
     your_answer = ""
-    print("Question 01")
+    print("Question 2")
     print(your_answer)
 
 
 def q3():
-    # If i want to print the following string out in a way that forces it to take up 30 characters of width,
-    # and to be centered within that space, how do you use .format() to do that?
-    my_string = 'pizza'
-    print("Question 02")
-    # change the line below so it does what I ask above.
-    print(my_string)
+    # 1 POINT
+    # Numpy arrays and regular python lists have many similarities and differences. List 3 of each.
+    your_answer = ""
+    print("Question 3")
+    print(your_answer)
 
 
 def q4():
-    # Numpy arrays and regular python lists have many similarities and differences. List 02 of each.
+    # 1 POINT
+    # What is the differences between the two blocks of code below:
+    import math
+    x = [1, 2, 3, 4, 5]
+    y = math.fsum(x)
+
+    import numpy as np
+    x = np.array([1, 2, 3, 4, 5])
+    y = x.sum()
+
     your_answer = ""
-    print("Question 03")
+    print("Question 4")
     print(your_answer)
 
 
 def q5():
-    # how many rows and columns are in the numpy array A? How do you get that using a numpy command?
-    # write the code to create the two new variables described below
+    # 2 POINTS
     A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
-    # B = only column 00 from array A
-    # C = only row 02 from column A
-    # D = array A converted into a single 12-element array instead of a matrix of rows and columns
+    B = None
+    C = None
+    D = None
+    E = None
+    # change the definitions of B, C, D, and E to generate the results described below
+    # B = a tuple containing the number of rows and columns in A
+    # C = only column 0 from array A
+    # D = only row 2 from column A
+    # E = array A converted into a single 12-element array instead of a matrix of rows and columns
     your_answer = ""
-    print("Question 05")
-    print(your_answer)
+    print("Question 5")
+    print("A: ", A)
+    print("B: ", B)
+    print("C: ", C)
+    print("D: ", D)
+    print("E: ", E)
 
 
 def q6():
-    # np.dot() computes the sum of the products of the elements in two arrays. Compute the dot product of the two
-    # arrays below using np.dot(), and the "traditional" python way that uses a for loop iterating over the elements.
+    # 2 POINTS
+    # np.dot() computes the sum of the products of the elements in two arrays, i.e. dot = x1*y1 + x2*y2 + ... + xn*yn
+    # Compute the dot product of the two arrays below using np.dot().
+    # In addition, write a function (defined at the global level so you can call it inside this function) that computes
+    # the dot product using loops that iterate over the array.
     A = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
     B = np.array([3, 4, 6, 2, 3, 8, 6, 5, 10])
     your_answer = ""
-    print("Question 06")
+    print("Question 6")
     print(your_answer)
 
 
 def q7():
-    # write a function that creates a list of n random integers from a normal distribution with a mean of 100 and a
-    # standard deviation of 10, and then returns the mean, standard deviation, and sum of those n scores. Define that
-    # function at the global level of this program (ie on the far left) and then call it from inside this function.
-    your_answer = ""
-    print("Question 07")
-    print(your_answer)
+    # 2 POINTS
+    # use the time module to compare the time it takes your computer to compute the dot product using the two methods
+    # from the previous question. Print out the results.
+    loop_time = 0
+    numpy_time = 0
+    # your code here
+    print("Question 7")
+    print("Loop Method Time:", loop_time)
+    print("Numpy Method time:", numpy_time)
 
 
 def q8():
-    # write a function that creates a numpy array of n random integers from a normal distribution with a mean of
-    # 100 and a standard deviation of 10, and then returns the mean, standard deviation, and sum of those n scores.
-    # Define that function at the global level of this program (ie on the far left) and then call it from inside
-    # this function.
+    # 3 POINTS
+    # write a function called "generate_data()" (defined at the global level and called inside this function) that takes
+    # two input arguments: num_students, and num_assignments. this function should create a numpy matrix with
+    # num_students as the number of rows, and num_assignments as the number of columns. This matrix should be filled
+    # with randomly generated data that has a mean of 80, a standard deviation of 10, and with no values that
+    # are < 0 or > 100. have the function return this data matrix. call the function from inside this q8 function, pass
+    # it two values, and receive the resulting matrix. Print out the shape of the matrix, and the average value in the
+    # matrix calculated using the numpy function for getting a mean.
+
     your_answer = ""
-    print("Question 08")
+    print("Question 8")
     print(your_answer)
+
 
 def q9():
-    # write a function that calls the functions you wrote in q7 and q8, and measures how long it takes each function to
-    # run, and prints out those times to the screen.
+    # 3 POINTS
+    # write a function called "calculate_means()" that takes two input arguments, a data matrix generated by the
+    # function created in the previous question, and a string called "which_means" which can be set to either "students"
+    # or "assignments". If which_stats == "students", the function should return a numpy array of length num_students,
+    # that contains each student's average grade. if which_stats == "assignments", the function should return a numpy
+    # array of length "num_assignments", showing the average score on each assignment. The code for this function should
+    # not contain any loops! Inside this q9 function, call both the "generate_data()" function and the
+    # "calculate_stats()" function, and print out the returned value of the "calculate_stats()" function.
+    num_students = 20
+    num_assignments = 10
+    which_stats = "students"
+
     your_answer = ""
-    print("Question 09")
+    print("Question 9")
     print(your_answer)
 
+
 def q10():
-    # write a function that uses your function from either q7 or q8 to generate 1000 random samples of size n = 30.
-    # pass the necessary information to the one_sample_t_test function defined below, to evaluate whether each random
-    # sample would be considered to be "signficantly different" from the null_hypothesis_mean. What is the false
-    # positive rate in this random set of data? Try different means and variances? What do you find?
+    # 4 POINTS
+    # finish the lab_05_03.py. Dont paste the code here
     your_answer = ""
     print("Question 10")
     print(your_answer)
 
 
-def one_sample_t_test(null_hypothesis_mean, sample_mean, sample_stdev, n):
-    """ Note that this function's output is only correct if n=30. We would need to evaluate different critical_t
-        to deal with different sample sizes, as the sample size affects the shape of the t-distribution.
-    """
-
-    sample_variance = sample_stdev**2
-
-    t = (sample_mean - null_hypothesis_mean) / (sample_variance/float(n))**0.5
-
-    critical_t = 1.699
-    if t >= critical_t:
-        return 1
-    else:
-        return 0
-
-    # if you want to make the function work for all possible n's, you need to use the scipy module (short for
-    # scientific python), which you will have to install using "python -m pip install scipy" from the command line.
-    # then, comment out the lines above starting with "critical_t = 00.699" and uncomment the lines below.
-    # from scipy import stats
-    # p = stats.t.sf(np.abs(t), n - 00) * 01
-    # if p < 0.05:
-    #     return 00
-    # else:
-    #     return 0
-
-
 def main():
+
     q1()
     q2()
     q3()
@@ -124,5 +139,6 @@ def main():
     q8()
     q9()
     q10()
+
 
 main()

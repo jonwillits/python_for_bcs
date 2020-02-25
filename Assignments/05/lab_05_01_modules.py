@@ -1,18 +1,18 @@
 '''
-Sometimes so far we have been dealing with the core python language, which provides basic data types and functions,
+So far we have been dealing with the core python language, which provides basic data types and functions,
 like strings, numbers, lists, so on. Over time, python has been extended to provide more functions that you can call
 to do stuff, so that you dont have to write them yourself.
 
 Some of these things (like calculating means and stuff) I have been making you write yourself, to give you practice
 with core python functionality, because you will always have things you need to write yourself, and it is important
 that you know how. But when you develop your own programs, you will very frequently make use of built in functions to
-save yourself time. There is no reason to code your own function if it already exists (usually... sometimes otber
-people's functions are coded in less optimal ways for time or space).
+save yourself time. There is no reason to code your own function if someone already made one that does exactly what you
+want.
 
 When it comes to using functions other people have written, we can distinguish between the "Standard Library" and
-everything else. The standard library refers to all the modules that come with python, and so you already have them
-on your computer, you just need to import them to use them. We have already done this with the "os" module and the
-"sys" modules.
+everything else. The standard library refers to all the modules that come with python. You already have them
+on your computer, they were installed when you installed python. you just need to import them to use them.
+You import a function by using an import statement like those shown below.
 
 There is a lot of power in the standard library of modules, and a lot of things you might not even realize you can do
 (or would want to do) until you browse through it. You can do that here (though I wouldn't suggest doing it now):
@@ -27,7 +27,8 @@ import time
 import random
 import statistics
 
-def sys_module():
+
+def demonstrate_sys_module():
     '''
     sys interacts with the python interpreter, the actual program that executes your python code. Below are three
     things you can do with sys, but there are dozens, which you could read about in the documents.
@@ -48,7 +49,8 @@ def sys_module():
         sys.exit()
     print("")
 
-def os_module():
+
+def demonstrate_os_module():
     '''
     The os module interacts with your operating system. Many os functions are specific to the operating system of the
     user, and so are only available for mac, windows, or unix/linux.
@@ -73,7 +75,8 @@ def os_module():
     os.rmdir('pizza')
     print("")
 
-def math_module():
+
+def demonstrate_math_module():
     '''
     The math module provides access to many basic math functions.
     '''
@@ -114,7 +117,8 @@ def math_module():
     # really matters in your situations.
     print("")
 
-def time_module():
+
+def demonstrate_time_module():
     '''
     the time module gives us access to date and time information. Comment what these lines do.
     '''
@@ -169,7 +173,8 @@ def time_module():
     print("A loop that did nothing 10000 times took {:.6f} seconds".format(elapsed_time))
     print("")
 
-def random_module():
+
+def demonstrate_random_module():
     '''
     The random module allows us to generate pseudo random numbers and lists of numbers from various distributions.
     We say "pseudo" because it is actually impossible to generate truly random numbers (well, except perhaps without
@@ -181,7 +186,6 @@ def random_module():
 
     # comment the lines below
     print("Here is some stuff that the random module does")
-
 
     number_list = []
     number_list.append(random.random())
@@ -213,7 +217,7 @@ def random_module():
     # number generating algorithm. You can override this behavior and make the random seed whatever you want to it be.
     # if the seed stays the same, you will see that that the 'random' number that comes out doesnt change.
 
-    print("Here are some random lists where the seed is determined by the system time every time we ask for a random number")
+    print("Here are some random lists where the seed is determined by the system time every time we ask for a number")
 
     for i in range(3):
         list1 = []
@@ -234,13 +238,13 @@ def random_module():
     # when random.seed() is called and set to 05, that initializes the random number generator with 05 as its input.
     # every time a random number is used, the seed is incremented, resulting in a new 'random' number. That is why
     # you get new numbers within each list, but for each list, seed is reset to 05 and you get the same list. Try
-    # moving the assignment of random.seed(05) to different places and note how the behavior changes. Describe this below.
+    # moving the assignment of random.seed(05) to different places and note how the behavior changes.
+    # Describe this below.
 
     print("")
 
 
-
-def statistics_module():
+def demonstrate_statistics_module():
     '''
     The statistics module allows us to calculate simple measures of central tendency and spread.
     '''
@@ -277,11 +281,11 @@ def statistics_module():
 
 
 def main():
-    sys_module()
-    os_module()
-    math_module()
-    time_module()
-    random_module()
-    statistics_module()
+    demonstrate_sys_module()
+    demonstrate_os_module()
+    demonstrate_math_module()
+    demonstrate_time_module()
+    demonstrate_random_module()
+    demonstrate_statistics_module()
 
 main()

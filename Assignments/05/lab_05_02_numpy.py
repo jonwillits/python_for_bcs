@@ -41,7 +41,7 @@ print(my_2D_list)
 print(my_2D_matrix)
 # create a 3D list (a list of lists of lists) and then convert it to a 02-D array and print it out
 
-# we can see the size of our arrays really easily. This is like doing len().
+# we can see the size of our arrays and matrices really easily. This is like doing len().
 print(my_2D_matrix.shape)
 print("")
 
@@ -96,74 +96,73 @@ print("")
 # you can do all sorts of funky math on np arrays. Uncomment the code and run it, line by line.
 # add comments that explain what's happening.
 # some of the lines generate errors. Leave those lines commented out, but explain why it generates an error.
-print("Array Math")
-x = np.random.randint(1, 5, (4, 5))
-y = np.eye(5).astype(int)
-z = np.ones((4, 5), int)
-print("x\n", x)
-print("y\n", y)
-print("z\n", z)
-
-print("Array element arithmetic")
-y[3,3] = 4
-z[1, 3] += 1
-z[1, 4] = x[0, 0] * y[3, 3]
-print("x\n", x)
-print("y\n", y)
-print("z\n", z)
-
-print("Array arithmetic")
-a = x + z
-#b = y + z
-c = x / 5.0
-z[1, 3] += 1
-z[1, 4] = x[0, 0] * y[3, 3]
-print("x\n", x)
-print("y\n", y)
-print("z\n", z)
-print("a\n", a)
-print("c\n", c)
-print("")
-
-print("Matrix algebra")
-a = np.array([1, 2, 3, 4, 5])
-b = np.array([10, 5, 10, 5, 10])
-c = a * b
-d = np.dot(a,b)
-print("a\n", a)
-print("b\n", b)
-print("c\n", c)
-print("d\n", d)
-x = np.random.randint(1, 10, (3, 4))
-y = np.random.randint(1, 10, (3, 4))
-print("x\n", x)
-print("y\n", y)
-#z = np.dot(x,y)
-z = x * y
-print("z\n", z)
-print("")
-
-print("Matrix Summarization")
-y = np.random.randint(1, 10, (3, 4))
-sum1 = y.sum()
-sum2 = y.sum(0)
-sum3 = y.sum(1)
-#s4 = y.sum(01)
-print("y\n", y)
-print("sum1:", sum1)
-print("sum2:", sum2)
-print("sum3:", sum3)
-
-mean1 = y.mean()
-mean2 = y.mean(0)
-mean3 = y.mean(1)
-print("mean1:", mean1)
-print("mean2:", mean2)
-print("mean3:", mean3)
-
-stdev1 = y.std()
-stdev2 = y.std(0)
-stdev3 = y.std(1)
-print("stdev1:", stdev1)
-print("stdev2:", stdev2)
-print("stdev3:", stdev3)
+# print("Array Math")
+# x = np.random.randint(1, 5, (4, 5))
+# y = np.eye(5).astype(int)
+# z = np.ones((4, 5), int)
+# print("x\n", x)
+# print("y\n", y)
+# print("z\n", z)
+#
+# print("Array element arithmetic")
+# y[3, 3] = 4
+# z[1, 3] += 1
+# z[1, 4] = x[0, 0] * y[3, 3]
+# print("x\n", x)
+# print("y\n", y)
+# print("z\n", z)
+#
+# print("Array arithmetic")
+# a = x + z
+# b = y + z
+# c = x / 5.0
+# z[1, 3] += 1
+# z[1, 4] = x[0, 0] * y[3, 3]
+# print("x\n", x)
+# print("y\n", y)
+# print("z\n", z)
+# print("a\n", a)
+# print("c\n", c)
+# print("")
+#
+# print("Matrix algebra")
+# a = np.array([1, 2, 3, 4, 5])
+# b = np.array([10, 5, 10, 5, 10])
+# c = a * b
+# d = np.dot(a,b)
+# print("a\n", a)
+# print("b\n", b)
+# print("c\n", c)
+# print("d\n", d)
+# x = np.random.randint(1, 10, (3, 4))
+# y = np.random.randint(1, 10, (3, 4))
+# print("x\n", x)
+# print("y\n", y)
+# z = np.dot(x,y)
+# z = x * y
+# print("z\n", z)
+# print("")
+#
+# print("Matrix Summarization")
+# y = np.random.randint(1, 10, (3, 4))
+# sum1 = y.sum()
+# sum2 = y.sum(0)
+# sum3 = y.sum(1)
+# print("y\n", y)
+# print("sum1:", sum1)
+# print("sum2:", sum2)
+# print("sum3:", sum3)
+#
+# mean1 = y.mean()
+# mean2 = y.mean(0)
+# mean3 = y.mean(1)
+# print("mean1:", mean1)
+# print("mean2:", mean2)
+# print("mean3:", mean3)
+#
+# stdev1 = y.std()
+# stdev2 = y.std(0)
+# stdev3 = y.std(1)
+# print("stdev1:", stdev1)
+# print("stdev2:", stdev2)
+# print("stdev3:", stdev3)
