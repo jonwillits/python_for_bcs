@@ -1,6 +1,6 @@
 
 def q1():
-    print("Question 1:"
+    print("Question 1: (2 POINTS)"
           "Explain the behavior of Vehicle 1. "
           "What is an example of a way that Braitenberg says that vehicle one could behave in a way that makes "
           "it look more complex than it really is? "
@@ -10,7 +10,7 @@ def q1():
 
 
 def q2():
-    print("Question 2: "
+    print("Question 2: (2 POINTS)"
           "The varieties of Vehicle 1 behave in ways that Braitenberg says remind of us of a more complex "
           "organism demonstrating fear and aggression. Explain why this is so? "
           "Think of another example of human behavior where something complex is in fact possibly explainable "
@@ -21,7 +21,7 @@ def q2():
 
 
 def q3():
-    print("Question 3: "
+    print("Question 3: (2 POINTS)"
           "Vehicle 2 discusses the nature of knowledge. What does Braitenberg say about what knowledge is in this "
           "chapter? Do you agree with Braitenberg? Why or why not?")
     your_answer = ""
@@ -29,26 +29,33 @@ def q3():
 
 
 def q4():
-    print("""Question 4:
-          Complete Vehicle3.py as described in lab_08_03.py. Make sure you have implemented the following:
-            - Add at least 1 more class representing another kind of input other than heat.
-            - Have the input_list contain multiple kinds of input sources.
-            - Use custom images for each input sources
-            - Modify vehicle 3 so that it has an 'innate preference' or 'innate dislike' of each kind of input""")
-    your_answer = ''
-    print(your_answer)
+    print("Question 4: (2 POINT)"
+          "Edit lab_08_01.py so that the buttons are at the bottom of the window instead of at the top")
 
 
 def q5():
-    print("""Question 5:
-    Create Vehicle4.py by saving a copy of your Vehicle3.py file and saving it as Vehicle4.py.
-    Modify the vehicle so that, for things that it likes, it has a 'u-shaped' preference curve, moving little
-    when it is far away from something, or when it is really close, but moving quickly when it is a moderate distance
-    away. If you get this working correctly, you should get your Vehicles approaching and staying near the things they
-    like.
-    """)
-    your_answer = ""
-    print(your_answer)
+    print("Question 5: (2 POINTS"
+          "Edit lab_08_01.py so that if you click on the hunter image, it calls the reset function")
+
+
+def q6():
+    print("Question 6: (5 POINTS)"
+          "Edit lab_08_03.py in the following ways:"
+          "     - create a second food source class, like 'Sugar'. Name it something else and make it look different."
+          "     - edit the create_food_sources function so that it randomly chooses between sugar and your new food"
+          "         each time a food is created"
+          "     - edit the vehicle's init function so that, when it randomly decides if the vehicle likes sugar, "
+          "         it makes it so that it feels the opposite about your new food.")
+
+
+def q7():
+    print("Question 7: (5 POINTS"
+          "Edit lab_08_03.py in the following ways:"
+          "     - create a global constant called 'HUNGER_GROWTH', set to 0.0001"
+          "     - add an attribute to vehicle called 'hunger' that starts at 0 and ticks up by HUNGER_GROWTH) "
+          "         every time while self.running is True in the TurtleWindow.start_stop method"
+          "     - make the 'hunger' attribute reset to 0 every time the turtle comes within 20 of a food that they like"
+          "     - if the vehicle's hunger reaches 100, kill the vehicle! remove it from the vehicle list, and hide it")
 
 
 def main():
@@ -57,6 +64,8 @@ def main():
     q3()
     q4()
     q5()
+    q6()
+    q7()
 
 
 main()
