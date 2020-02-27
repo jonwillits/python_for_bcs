@@ -47,7 +47,7 @@ my_turtle = SuperTurtle('Jon')
 wn.mainloop()
 
 """ the advantage to creating these custom classes is that we can put all the complex program code in our class 
-defitions, and maek the actual code that we use to do stuff simple and easy to read. WHen you add stuff to a list,
+definitions, and maek the actual code that we use to do stuff simple and easy to read. WHen you add stuff to a list,
 dozens of lines of code are executed. But they are all in the list class definition, and so you can just type 
 list.append() without needing to copy and paste that code every time. And then if you want to change how it works,
 you only need to change it in the class definition, not everywhere you used it."""
