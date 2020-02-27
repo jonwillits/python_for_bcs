@@ -4,8 +4,10 @@ we call "methods"). Here we're going to talk about class attributes.
 There are two ways you can add attributes to a class, by adding them to the instance or adding them to the class
 definition itself. Let's start by adding attributes to a class instance. """
 
+
 class Human:
     pass
+
 
 jon = Human()
 print(jon, "\n")
