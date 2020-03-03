@@ -15,7 +15,7 @@ def celebrate_birthday(human):
     human.age += 1
     print("\nHappy Birthday to {}! {} is now {} years old!".format(human.name, human.name, human.age))
 
-jon = Human("jon", 40, "Male")
+jon = Human("jon", 41, "Male")
 celebrate_birthday(jon)
 
 """ But the object-oriented way is to make that function a member of the class. When we make a function a member of
@@ -50,21 +50,9 @@ class Human:
 You access methods of a class the same way you access its attributes, with the class instance's name,
  followed by a period, followed by the method name.
 """
-jon = Human("jon", 40, "Male")
+jon = Human("jon", 41, "Male")
 jon.celebrate_birthday()
 
 # Create two more methods in the class definition above that change attributes of class. Feel free to add new
 # attributes to the class definition that may be things about the instance that could change over time. Make sure at
 # least one of the methods is a 'fruitful' method.
-
-
-
-class List:
-
-    def __init__:
-
-    def append(self)
-        :
-
-x = list()
-[]

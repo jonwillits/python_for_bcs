@@ -27,7 +27,7 @@ of our own that will have their own behaviors.
 
 Here you can see how we define a class."""
 
-class human:
+class Human:
     pass
 
 """Classes need to have something "inside" them, code that is tabbed or spaced over once (just like if statements, for
@@ -36,7 +36,7 @@ using the "pass" command  (which doesnt do anything), as the only thing inside t
 something."""
 
 """Next, see how we create a member of our human class."""
-my_human = human()
+my_human = Human()
 
 """Note how creating a member is very similar to how we create instances of built in classes."""
 my_float = float(5)
