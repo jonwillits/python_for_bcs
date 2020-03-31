@@ -1,6 +1,6 @@
 
 def q1():
-    print("Question 00 (10 Points)")
+    print("Question 1 (1 Points)")
     # According to the readings for this week, what is the field of natural language processing, and what are some
     # of it's primary goals or problems that it is used to solve?
     your_answer = ""
@@ -8,7 +8,7 @@ def q1():
 
 
 def q2():
-    print("Question 01 (10 Points)")
+    print("Question 2 (1 Points)")
     # Describe a psychological question or issue that involves language that you find interesting, and describe how
     # you might use natural language processing techniques to solve it.
     your_answer = ""
@@ -16,7 +16,7 @@ def q2():
 
 
 def q3():
-    print("Question 02 (10 Points)")
+    print("Question 3 (1 Points)")
     # According to the readings for this week, what are the some of the differences between rule-based and
     # statistical natural language processing?
     your_answer = ""
@@ -24,14 +24,14 @@ def q3():
 
 
 def q4():
-    print("Question 03 (10 Points)")
+    print("Question 3 (2 Points)")
     # List three differences between re.search() and re.findall()
     your_answer = ""
     print(your_answer)
 
 
 def q5():
-    print("Question 05 (10 Points)")
+    print("Question 5 (2 Points)")
     # Explain this code
     # import re
     # fh = open("simpsons_phone_book.txt")
@@ -44,32 +44,43 @@ def q5():
 
 
 def q6():
-    print("Question 06 (10 Points)")
+    print("Question 6 (2 Points)")
     # What is a "stop word", and how can you use NLTK to remove stop words from an NLTK text document?
     your_answer = ""
     print(your_answer)
 
 
 def q7():
-    print("Question 07 (40 Points)")
-    # Write a program that
-    #   - Imports five books of your choice from project gutenberg, using the code from try_nltk.py
-    #   - Tokenizes and lower-cases all the words in the book
-    #   - Creates a text object from each book
-    #   - Removes stop words from each text object
-    #   - Uses NLTK's part of speech tagger to get each word's part of speech
-    #   - Uses NLTK's FreqDist() to get word frequency distributions
-    #   - Prints out the 10 most frequent nouns, verbs, and adjectives in each book, looking like this:
-    #
-    #   MOBY DICK
-    #   Nouns: whale, boat, ocean, ...
-    #   Verbs: chase, fish, sail, ...
-    #   Adjectives: white, wet, big, ...
-    #
-    #   ALICE IN WONDERLAND
-    #   Nouns: rabbit, boat, ocean, ...
-    #   Verbs: drink, eat, sail, ...
-    #   Adjectives: white, wet, big, ...
+    print("Question 7 (2 Points)")
+    # Write a program called "get_books.py" that
+    #   - Imports five books of your choice from project gutenberg, using the code from lab_09_03_try_nltk.py, and saves
+    #   - each book as a text file in a folder called "my_books"
+    # this program does not need to use classes, but it should have a main function that calls other functions that
+    # each do specific, independent parts of the program
+
+def q8():
+    print("Question 8 (9 Points)")
+    # Write a program called "analyze_books.py"
+    #   - in it, create a class called "Book". The class should have attributes and methods appropriate for doing the
+    #       the following:
+    #   - storing the tokenized, lower-cased text of all the words in the book (1 pt)
+    #   - storing a version of the text with stop words removed (1 pt)
+    #   - storing a list of each word's part of speech (POS). For example, if the raw text list was
+    #       "['the', 'dog', 'runs'", the POS list would be "[('the', 'DT'), ('dog', 'NN'), ('runs', 'NNS')]" (1 pt)
+    #   - Uses NLTK's FreqDist() to get word frequency distributions for the book, and print out the number of unique
+    #       and total words (1 pt)
+    #   - find and prints out the 10 most frequent nouns, verbs, and adjectives in each book, looking like this: (2 pts)
+    #       MOBY DICK
+    #           Nouns: whale, boat, ocean, ...
+    #           Verbs: chase, fish, sail, ...
+    #           Adjectives: white, wet, big, ...
+    #       ALICE IN WONDERLAND
+    #           Nouns: rabbit, boat, ocean, ...
+    #           Verbs: drink, eat, sail, ...
+    #           Adjectives: white, wet, big, ...
+    #   - the program should have a main function which looks in your 'my_books' folder from the previous question,
+    #       gets the list of books, loops through them and creates a Book() instance for each book, and calls each
+    #       of the functions described above for each book (3 pts)
     your_answer = ""
     print(your_answer)
 

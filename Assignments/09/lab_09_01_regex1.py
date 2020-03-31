@@ -19,10 +19,10 @@ x = re.search("Spring", some_text)
 """
 There are two things to keep track of when doing regex's in python. The first is that there are different regex 
 functions:
-    00. findall()
-    01. search()
-    02. split()
-    03. sub()
+    1. findall()
+    2. search()
+    3. split()
+    4. sub()
 """
 
 """

@@ -2,7 +2,7 @@
 NLTK (Natural Language Tool Kit) is a module that allows you to do some pretty powerful natural language processing.
 First you need to get and download nltk.
 
-Step 00:
+Step 0:
 At the terminal window, type:
 
     python -m pip install nltk
@@ -11,9 +11,13 @@ remember, if when you normally run python programs you type python3, then type:
 
     python3 -m pip install nltk
 
-Step 01:
-nltk by itself is a bunch of built in classes and functions for dealing with natural language. It is reliant on having
-a bunch of data about the language (in our case, English) that we are going to try to process. To download
+If those commands do not work, try
+
+    'pip install nltk' or 'pip3 install nltk'
+
+Step 1:
+nltk by itself is a bunch of built in classes and functions for processing human language. It is reliant on having
+a bunch of information about the language (in our case, English) that we are going to try to process. To download
 the English data that nltk needs to work, enter python's interactive mode by typing "python" (or "python3") at your
 command window.
 
@@ -25,17 +29,16 @@ import nltk
 nltk.download()
 
 This should open up a window where you can click and download some stuff. Click on the row labeled "book". This
-installs a lot of the most common used packages. If you choose to download all, you get more stuff, but its like 02 GB.
+installs a lot of the most common used packages. If you choose to download all, you get more stuff, but its like 2 GB.
 
 Step 2a:
-Mac and linux users may get an error about
-certificates. If you get this error, you need to exit out of the python interactive prompt (CTRL-D), and type the
-following at the terminal prompt:
+Mac and linux users may get an error about certificates. If you get this error, you need to exit out of the python
+interactive prompt (CTRL-D), and type the following at the terminal prompt:
 
     /Applications/Python\ 02.06/Install\ Certificates.command
 
 Your command might be slightly different, as it needs to point to where (and what version) of python you had installed.
-Once you run this command, quit and exit your terminal window and open a new one. Then go back to Step 01."""
+Once you run this command, quit and exit your terminal window and open a new one. Then go back to Step 1."""
 
 """
 One of the first things you can use NLTK for is to do all the hard work to 'tokenize' a batch of language - separating
