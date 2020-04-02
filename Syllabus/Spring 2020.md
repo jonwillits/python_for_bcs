@@ -443,11 +443,10 @@ Due by Apr 21st at 12:00pm (Noon, not midnight)<br
 \- Logistic Regression method<br>
 
 #### Readings:
-\- Python Machine Learning by Raschka CH1 <br>
+\- https://towardsdatascience.com/machine-learning-an-introduction-23b84d51e6d0<br>
 \- https://www.python-course.eu/machine_learning_terminology.php<br>
 \- https://www.python-course.eu/k_nearest_neighbor_classifier.php<br>
-\- https://www.python-course.eu/neural_networks.php<br>
-\- https://www.python-course.eu/neural_networks_with_python_numpy.php<br>
+
 
 #### Assignments:
 Due by Apr 28th at 12:00pm (Noon, not midnight)<br
@@ -465,7 +464,8 @@ Due by Apr 28th at 12:00pm (Noon, not midnight)<br
 \- Unsupervised (Hebbian) Learning<br>
 
 #### Readings:
-\- Coming Soon <br>
+\- https://www.python-course.eu/neural_networks.php<br>
+\- https://www.python-course.eu/neural_networks_with_python_numpy.php<br>
 
 #### Lab Assignments:
 Due by May 5th at 12:00pm (Noon, not midnight)<br>
