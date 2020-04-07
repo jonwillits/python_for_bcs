@@ -21,85 +21,102 @@ import numpy as np
 what is this "as np" business? This just means we can refer to numpy as np instead of as numpy every time we use it.
 it shortens it and makes it easier to type.
 """
-some_list = [1,2,3]
+some_list = [1, 2, 3]
 some_array = np.array(some_list)  # this command changes a python list into a numpy array
 """
 We could use "as" to change a module's name to anything we want.
 I could "import numpy as pizza", and then replace the line above with "x = pizza.array(some_list)"
-But that wouldnt be shorter or faster to type...
+But that wouldn't be shorter, or faster to type, or easier to understand...
 
 Let's prove that numpy actually goes faster than core python to do math.
 Say I want to compute the mean of a list/array, and the dot product of two lists/arrays.
 
 There are three sensible ways to do this:
-00) The core python way using a loop
-01) Using functions built into core python
-02) Using numpy functions
+1) The core python way using a loop
+2) Using functions built into core python
+3) Using numpy functions
 
-We can use the time module to figure out which is fastest
+Remember that we can use the time module to figure out which is fastest
 """
 import time
 import random
 import statistics
 
-# create two random number lists
-x = []
-y = []
-for i in range(1000000):
-    new_random_number = random.normalvariate(100, 10)
-    x.append(new_random_number)
-    y.append(new_random_number + 10)
-print(x[:10])
-print(y[:10])
-print()
 
-# compute the means using core python
-start_time = time.time()
-x_sum = 0
-y_sum = 0
-for i in range(len(x)):
-    x_sum += x[i]
-    y_sum += y[i]
-x_mean = x_sum / len(x)
-y_mean = y_sum / len(y)
-took = time.time() - start_time
-print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
-print("Core Python Mean took {:0.3f}".format(took))
-print()
+def create_random_lists():
+    x = []
+    y = []
+    for i in range(100000):
+        new_random_number = random.randint(1, 100)
+        x.append(new_random_number)
+        y.append(new_random_number + 10)
+    print("Last 10 elements in our two random lists")
+    print(x[:10])
+    print(y[:10])
+    print()
+    return x, y
 
-# compute the means using python's statistics library
 
-x_mean = statistics.mean(x)
-y_mean = statistics.mean(y)
+def create_random_numpy_arrays():
+    x = np.random.randint(1, 100, 100000)
+    y = x + 10
+    return x, y
 
-print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
-print("Statistics Module Mean took {:0.3f}".format(took))
-print()
-# much easier to code, about the same runtime on my machine.
-# how much slower was this on your machine compared to the core python loop method?
 
-x_array = np.array(x)
-y_array = np.array(y)
-start_time = time.time()
-x_mean = x_array.mean()
-y_mean = y_array.mean()
-took = time.time() - start_time
-print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
-print("Numpy Mean took {:0.3f}".format(took))
-print()
-# just as easy to code, almost 20x faster to run on my machine
-# how much faster on your machine?
+def compute_mean_using_core_python(x, y):
+    start_time = time.time()
+    x_sum = 0
+    y_sum = 0
+    for i in range(len(x)):
+        x_sum += x[i]
+        y_sum += y[i]
+    x_mean = x_sum / len(x)
+    y_mean = y_sum / len(y)
+    took = time.time() - start_time
+    print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
+    print("Core Python Mean took {:0.3f}".format(took))
+    print()
+
+
+def compute_mean_using_statistics_module(x, y):
+    start_time = time.time()
+    x_mean = statistics.mean(x)
+    y_mean = statistics.mean(y)
+    took = time.time() - start_time
+    print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
+    print("Statistics Module Mean took {:0.3f}".format(took))
+    print()
+
+
+
+def compute_mean_using_numpy(x, y):
+    start_time = time.time()
+    x_mean = x.mean()
+    y_mean = y.mean()
+    took = time.time() - start_time
+    print("x mean: {:0.3f}   y mean: {:0.3f}".format(x_mean, y_mean))
+    print("Numpy Mean took {:0.3f}".format(took))
+    print()
+
+
+x_list, y_list = create_random_lists()
+x_array, y_array = create_random_numpy_arrays()
+compute_mean_using_core_python(x_list, y_list)
+compute_mean_using_statistics_module(x_list, y_list)
+compute_mean_using_numpy(x_array, y_array)
+# how fast did each code run on your machine? Which was fastest?
+
 
 """
-And of course, numpy let's us do all kinds of math magic with arrays, avoiding those annoying loops.
+And of course, numpy let's us do all kinds of math magic with numpy arrays, avoiding those annoying loops.
 Say I want to compute dot products of two arrays (the sum of the product of each element:
-    dot_product = x1*y1 + x2*y2 + ... +xn * yn
+    dot_product = x1*y1 + x2*y2 + ... + xn*yn
 """
 
 # core python way
 dot_product = 0
-for i in range(len(x)):
-    dot_product += x[i] * y[i]
+for i in range(len(x_list)):
+    dot_product += x_list[i] * y_list[i]
 print("dot product: {:0.3f}".format(dot_product))
 
 # numpy way
