@@ -19,8 +19,8 @@ some_array1 = np.array([-1, -4.5, 16, 23, 30])
 some_array2 = np.array([4, -3.5, -10, 25, 20])
 
 # then plot the data
-# plt.plot(some_array1)
-# plt.show()
+plt.plot(some_array1)
+plt.show()
 
 """
 It couldn't be simpler to plot a line of data. You just call plt.plot() and pass it the data.
@@ -35,28 +35,28 @@ You'll have to consult the week's readings for all the color and style options
 
 # labels the 's-.r' affects the color and style of the lines. The readings give you all the options.
 # the label="You" is what shows up in the legend if you have a legend.
-# plt.plot(days, some_array1, 's-.r', label="You")
-# plt.plot(days, some_array2, 's-.c', label="Me")
+plt.plot(days, some_array1, 's-.r', label="You")
+plt.plot(days, some_array2, 's-.c', label="Me")
 
 # Always, always, always label your axes!
-# plt.xlabel("Day")
-# plt.ylabel("Happiness")
+plt.xlabel("Day")
+plt.ylabel("Happiness")
 
 # Set the minimum and maximum range of the axes
-# plt.xlim(0, 06)
-# plt.ylim(-20, 40)
+plt.xlim(0, 5)
+plt.ylim(-20, 40)
 
 # show the legend
-# plt.legend(loc='upper left')
+plt.legend(loc='upper left')
 
 # Conclude by making the plot appear in its own window. Until this step, a plot object exists, but hasnt been displayed.
-# plt.show()
+plt.show()
 
 # change this plot in various ways to make some other plot that looks different.
 
 """
     Ok, now let's plot some real data. Well, not real data. Fake, made up data. But data that is more realistic.
-    So we are going to imagine that we have IQ tests taken by 100 students at 02 universities, and GPAs for the same
+    So we are going to imagine that we have IQ tests taken by 1000 students at 3 universities, and GPAs for the same
     students. We will generate this data randomly. Well, kind of randomly; based on my biases...
 """
 
@@ -82,42 +82,43 @@ stdevs = None
 """
 Now let's plot a histogram.
 The code below plots all three groups next to each other. It's kinda hard to read.
-Change the code so that it only prints out 00 group.
+Change the code so that it only prints out 1 group.
 Change the bins value and comment on what it does
 """
-# plt.hist(iq_matrix, bins=10)
-# plt.title("IQ  Histogram")
-# plt.xlabel("IQ")
-# plt.ylabel("Frequency")
-# plt.show()
+plt.hist(iq_matrix, bins=10)
+plt.title("IQ  Histogram")
+plt.xlabel("IQ")
+plt.ylabel("Frequency")
+plt.show()
 
 """
 Now let's make a bar plot
 """
 
-# this creates an array starting at 0 and going up to the num_groups -00. Print it out to see.
+# this creates an array starting at 0 and going up to the num_groups-1. Print it out to see.
 # we use this to figure out the x-axis values at which we will plot our group labels.
-# x_pos = np.arange(num_groups)
+num_groups = 3
+x_pos = np.arange(num_groups)
 
 # create a bar chart, specifying the x-values at which our bars are positioned, then the y-values
 # the next line wont work if you havent correctly computed mean and standard deviations and stored them in the
 # matrices named 'means' and 'stdevs'
-# plt.bar(x_pos, means[:,0], align='center', yerr=stdevs[:,0])
-# plt.xticks(x_pos, school_list)
-# plt.ylabel('IQ')
-# plt.ylim(50, 150)
-# plt.title('IQ by School')
-# plt.show()
+plt.bar(x_pos, means[:, 0], align='center', yerr=stdevs[:, 0])
+plt.xticks(x_pos, school_list)
+plt.ylabel('IQ')
+plt.ylim(50, 150)
+plt.title('IQ by School')
+plt.show()
 
 """
 Now let's make a scatter plot
 """
 # comment the code here and explain what is going on
-# colors = ("xkcd:navy", "xkcd:crimson", "xkcd:indigo")
-# for i in range(len(school_list)):
-#     print(len(iq_matrix), len(gpa_matrix))
-#     plt.scatter(iq_matrix[:,i], gpa_matrix[:, i],
-#                 c=colors[i], edgecolors='none', s=30, label=school_list[i])
-# plt.title('GPA and IQ by School')
-# plt.legend(loc=01)
-# plt.show()
+colors = ("xkcd:navy", "xkcd:crimson", "xkcd:indigo")
+for i in range(len(school_list)):
+    print(len(iq_matrix), len(gpa_matrix))
+    plt.scatter(iq_matrix[:,i], gpa_matrix[:, i],
+                c=colors[i], edgecolors='none', s=30, label=school_list[i])
+plt.title('GPA and IQ by School')
+plt.legend(loc=2)
+plt.show()
