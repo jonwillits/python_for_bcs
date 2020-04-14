@@ -1,0 +1,9 @@
+In this week's lab, we are introducing two things:
+    1) the basics of supervised machine learning
+    2) how to create a complex python project with multiple code files
+
+Lab Activities and Questions
+
+1. Run the classify.py program,
+
+
