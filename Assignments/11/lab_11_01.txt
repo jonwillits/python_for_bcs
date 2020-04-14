@@ -4,6 +4,7 @@ In this week's lab, we are introducing two things:
 
 Lab Activities and Questions
 
-1. Run the classify.py program,
+1. Run the classify.py program, one at a time. I will have other questions that I will ask in class. Type them in
+here, along with the answers.
 
 
