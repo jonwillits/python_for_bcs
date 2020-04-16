@@ -4,7 +4,31 @@ In this week's lab, we are introducing two things:
 
 Lab Activities and Questions
 
-1. Run the classify.py program, one at a time. I will have other questions that I will ask in class. Type them in
-here, along with the answers.
+1. Open the classify.py program. 
 
+Make sure that the FILE_NAME parameter is set to data/data1.csv, and that all other parameters are left how I had them.
 
+In the main function, make sure that every line EXCEPT 49 is commented out. This creates an instance of the dataset by
+loading the data1.csv file. Take a look at the output that prints out. Discuss with your group to make sure that you
+all understand everything being printed. Then, change the FILE_NAME to data/data2.csv, and then to data/data3.csv.
+What changes?
+
+2. Uncomment the line 51 and rerun the program. What is this command doing? What prints out? Feel free to look at the
+code to see if that helps you understand it.
+
+3. Uncomment line 53 and rerun the program. What is this line doing? Try changing the values of F1 and F2 to different
+    numbers. What do you observe? Uncomment line 54 and run the program. Try changing F_INDEX to different numbers and
+    observe the difference. What do you find?
+
+4. Using these two plots for data3.csv, what do you conclude about how easy it would be to use these features to
+    correctly classify the groups of animals into their correct category?
+
+5. Change NORMALIZE_DATA to True and try rerunning the program. What is this doing to the data? Feel free to figure
+    this out by looking at the data or by looking at the code. How might this affect the ability to correctly categorize
+    the animals?
+
+6. Uncomment out lines 57-59 and rerun the program. Explain what this is doing, and what you are observing in the
+printed output.
+
+7. Try changing the value of MIN_MAX_KNN and of TRAINING PROPORTION. How do different values affect how the knn
+    classification program works?
