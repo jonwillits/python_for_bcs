@@ -15,7 +15,7 @@ for book in book_file_list:
         title = book[:-4]
         title_list.append(title)
         print("Importing", book)
-        f = open(input_directory + book)
+        f = open(input_directory + book, 'r', encoding = 'utf-8')
         book_string = f.read()
         tokens = nltk.word_tokenize(book_string)
         text = nltk.Text(tokens)

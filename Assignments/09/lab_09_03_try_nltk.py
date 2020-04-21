@@ -106,7 +106,7 @@ of text out there if you want to use it badly enough.
 To do more advanced processing, we need to convert the string of the whole novel, to a list of tokens, and then to a
 nltk "text".
 """
-frankenstein_tokens = tokens = nltk.word_tokenize(frankenstein)
+frankenstein_tokens = nltk.word_tokenize(frankenstein)
 frankenstein_text = nltk.Text(frankenstein_tokens)
 #print(frankenstein_text[209:321])
 
@@ -121,9 +121,13 @@ The angle brackets are used to mark token boundaries, and any whitespace between
 In the following example, we include <.*> which will match any single token, and enclose it in parentheses so only 
 the matched word (e.g. young) and not the matched phrase (e.g. a young man) is produced.
 """
+print("HERE1")
+
 words = frankenstein_text.findall(r"<a> (<.*>) <man>")
-# print(words)
+
+print(frankenstein_text)
 # search for some other stuff
+print("HERE2")
 
 """
 We might want to see all the words around a given word:
@@ -137,16 +141,16 @@ Ok now let's count words. Remember all that hard work of counting word frequenci
 line.
 """
 # comment what you think is happening below
-frakenstein_freqs = nltk.FreqDist(frankenstein_text)
-# print(frakenstein_freqs)
-# for word in frakenstein_freqs.most_common(50):
+frankenstein_freqs = nltk.FreqDist(frankenstein_text)
+# print(frankenstein_freqs)
+# for word in frankenstein_freqs.most_common(50):
 #     print(word)
 
 """
 Remember sets? We can take advantage of them.
 """
-frakenstein_vocab = set(frankenstein_text)
-long_words = [w for w in frakenstein_vocab if len(w) > 15]
+frankenstein_vocab = set(frankenstein_text)
+long_words = [w for w in frankenstein_vocab if len(w) > 15]
 sorted_long_words = sorted(long_words)
 # print(sorted_long_words)
 # test your knowledge and print out only the items in this sequence that do not have a /

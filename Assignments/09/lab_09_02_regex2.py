@@ -74,8 +74,21 @@ What if we want to count the second one as well? We can combine some of what we'
 searches This search is basically specifying I want a record of all occurrences of Taylor that are followed by one
 or more occurrences of Swift, even if there is one characters (of any time) in between them.
 """
-some_text = r"I like Taylor Swift. But I still prefer Taylor Dayne. It's Taylor 'Hey Look!' Swift"
-a = re.findall('Taylor.+Swift+', some_text)
+text_list = ["I like Taylor Swift.",
+			 "But I still prefer Taylor Dayne",
+			 "It's Taylor 'Hey Look!' Swift",
+			 "I like Taylor Swift.",
+			 "I like Taylor Swift. But I still prefer Taylor Dayne. It's Taylor 'Hey Look!' Swift",
+			 ]
+
+for text in text_list:
+	print()
+	re.findall('TaylorSwift', text)
+	re.findall('Taylor Swift', text)
+	re.findall('Taylor.Swift', text)
+	re.findall('Taylor.+Swift', text)
+	re.findall('Taylor.Swift+', text)
+	re.findall('Taylor.+Swift+', text)
 # print(a)
 # play around with some other complicated search expressions. Make three of your own text strings, and then construct
 # at least five searches on them to play around with finding matches of various types.
