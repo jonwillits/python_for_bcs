@@ -364,9 +364,11 @@ Due by Mar 24th at 12:00pm (Noon, not midnight)<br>
 #### Learning Objectives:
 \- Agent-Based Models<br>
 \- Braitenberg's Vehicles<br>
+\- Graphical User Interfaces (with tkinter)<br>
 
 #### Readings:
 \- Braitenberg (1984) CH1-8 (pp 1-42)<br>
+\- https://www.python-course.eu/python_tkinter.php<br>
 
 #### Assignments:
 Due by Mar 31st at 12:00pm (Noon, not midnight)<br>
@@ -377,22 +379,6 @@ Due by Mar 31st at 12:00pm (Noon, not midnight)<br>
 
 
 ### Week 09: Mar 31th & Apr 02<br>
-#### Learning Objectives:
-\- Graphical User Interfaces (with tkinter)<br>
-\- Programming Experiments (and Games)<br>
-
-#### Readings:
-\- https://www.python-course.eu/python_tkinter.php
-
-#### Assignments:
-Due by Apr 7th at 12:00pm (Noon, not midnight)<br>
-\- lab_09_01_gui1.py<br>
-\- lab_09_02_gui2.py<br>
-\- lab_09_03_gui3.py<br>
-\- homework_09.py<br><br>
-
-
-### Week 10: Apr 7th & 9th<br>
 #### Learning Objectives:
 \- Regular Expressions<br>
 \- NLP and Computational Linguistics?<br>
@@ -405,10 +391,24 @@ Due by Apr 7th at 12:00pm (Noon, not midnight)<br>
 \- https://likegeeks.com/nlp-tutorial-using-python-nltk<br>
 
 #### Assignments:
+Due by Apr 7th at 12:00pm (Noon, not midnight)<br>
+\- lab_09_01_regex1.py<br>
+\- lab_09_02_regex2.py<br>
+\- lab_09_03_try_nltk.py<br>
+\- lab_09_04_novel_analysis.py<br>
+\- homework_09.py<br><br>
+
+
+### Week 10: Apr 7th & 9th<br>
+#### Learning Objectives:
+
+
+#### Readings:
+
+
+#### Assignments:
 Due by Apr 14th at 12:00pm (Noon, not midnight)<br>
-\- lab_10_01_regex1.py<br>
-\- lab_10_02_regex2.py<br>
-\- lab_10_03_try_nltk.py<br>
+
 \- lab_10_04_music_corpus10.py<br>
 \- lab_10_05_run_mc10.py<br>
 \- homework_10.py<br><br>
