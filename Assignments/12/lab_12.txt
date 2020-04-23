@@ -55,3 +55,5 @@ The homework is the same as the lab. You only have to turn in one or the other.
     the performance of the logistic regression algorithm? Think about how the two are different, and what kinds of data
     are good and bad for each one. Then reverse the question, what kind of data would be best for logistic regression,
     and worst for KNN?
+
+

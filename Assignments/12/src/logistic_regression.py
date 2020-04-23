@@ -7,13 +7,12 @@ import random
 ############################################################################################################
 class LogisticRegression:
     ############################################################################################################
-    def __init__(self, dataset, learning_rate, num_epochs, verbose, random_seed, output_filename):
+    def __init__(self, dataset, learning_rate, num_epochs, verbose, output_filename):
 
         self.name = "logistic_regression"
 
         self.dataset = dataset
         self.output_filename = output_filename
-        self.random_seed = random_seed
 
         self.train_xy_list = None
         self.test_xy_list = None
@@ -25,6 +24,7 @@ class LogisticRegression:
         self.learning_rate = learning_rate
         self.num_epochs = num_epochs
         self.verbose = verbose
+        self.output_freq = 1
 
         self.y_bias = None
         self.y_x_weights = None
@@ -41,9 +41,6 @@ class LogisticRegression:
 
     ############################################################################################################
     def init_network(self):
-
-        random.seed(self.random_seed)
-        np.random.seed(self.random_seed)
 
         if self.dataset.svd_dimensions:
             self.input_size = self.dataset.svd_dimensions
@@ -97,7 +94,7 @@ class LogisticRegression:
                 error = self.calc_error(y_actual, y_pred)
                 sse += (error**2).sum()
 
-                if i % 10 == 0 and j == self.dataset.training_size-1:
+                if i % self.output_freq == 0 and j == self.dataset.training_size-1:
                     if self.verbose:
                         accuracy_mean = accuracy_sum / self.dataset.training_size
                         confidence_mean = confidence_sum / self.dataset.training_size
@@ -234,81 +231,6 @@ class LogisticRegression:
     @staticmethod
     def sigmoid_prime(z):
         return 1/(1+np.exp(-z)) * (1 - 1/(1+np.exp(-z)))
-
-    ############################################################################################################
-    def plot_weight_heat_map(self):
-        ok_to_go = False
-        try:
-            import heatmapcluster
-            ok_to_go = True
-        except:
-            print("Cannot import heatmapcluster. try running 'pip install heatmapcluster'")
-
-        if ok_to_go:
-            h = heatmapcluster.heatmapcluster(self.y_x_weights.transpose(),
-                                              self.dataset.feature_list, self.dataset.category_list,
-                                              label_fontsize=12,
-                                              xlabel_rotation=0,
-                                              cmap=plt.cm.coolwarm,
-                                              show_colorbar=True,
-                                              colorbar_pad=2,
-                                              top_dendrogram=True)
-
-    ############################################################################################################
-    def plot_ypredict_yactual_scatter(self, word_labels, category_index=None):
-        ###########################################################################
-        def plot_group(item_list, current_marker):
-
-            for i in range(self.dataset.num_categories):
-                current_category = self.dataset.category_list[i]
-                current_color = color_list[i]
-
-                current_prediction_list = []
-
-                for j in range(len(item_list)):
-                    word_index = item_list[j][0]
-                    word = item_list[j][2]
-                    word_category = item_list[j][1]
-
-                    current_features = self.dataset.feature_matrix[word_index, :]
-                    category_predictions = self.feedforward(current_features)
-                    current_category_prediction = category_predictions[category_index]
-
-                    if current_category == word_category:
-                        current_prediction_list.append(current_category_prediction)
-
-                        if word_labels:
-                            if word_category == plot_category:
-                                plt.text(current_category_prediction, 0.95, word, rotation=315)
-                            else:
-                                plt.text(current_category_prediction, 0.05, word, rotation=45)
-
-                feature_vector = np.array(current_prediction_list)
-                if current_category == plot_category:
-                    category_vector = np.ones([len(current_prediction_list)])
-                else:
-                    category_vector = np.zeros([len(current_prediction_list)])
-
-                plt.scatter(feature_vector, category_vector, color=current_color, marker=current_marker)
-
-        ###########################################################################
-
-        print("\nCreating y-predict y-actual scatter plot")
-        if category_index is None:
-            print("        WARNING: Cannot plot y-predict y-actual scatter plot without specifying category index")
-        else:
-            plot_category = self.dataset.category_list[category_index]
-
-            color_list = self.dataset.get_color_list()
-
-            plt.figure(figsize=(8, 8))
-            plt.title("Category Prediction Values for Category '{}'".format(plot_category))
-            plt.xlabel("Category Prediction Values")
-            plt.ylabel("In Category '{}".format(plot_category))
-            plt.xlim(0, 1)
-
-            plot_group(self.dataset.training_list, 'o')
-            plot_group(self.dataset.test_list, 'x')
 
     ###########################################################################
     def write_results(self):

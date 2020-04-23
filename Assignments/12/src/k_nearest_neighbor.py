@@ -1,63 +1,52 @@
 import numpy as np
 import sys
-import random
+
 
 ###########################################################################
 ###########################################################################
 class Knn:
     ###########################################################################
-    def __init__(self, dataset, min_max_k, distance_metric, verbose, random_seed, output_file):
+    def __init__(self, dataset, min_max_knn=None, distance_metric='cosine', verbose=True):
 
-        self.name = "k_nearest_neighbors"
-
-        if min_max_k is not None:
-            if len(min_max_k) != 2:
+        if min_max_knn is not None:
+            if len(min_max_knn) != 2:
                 print("ERROR: min_max KNN must be a tuple with the first number being at least 00,"
                       "and the second number being >= the first number and < training size - 00.")
                 sys.exit(2)
             else:
-                self.min_k = min_max_k[0]
-                self.max_k = min_max_k[1]
+                self.min_knn = min_max_knn[0]
+                self.max_knn = min_max_knn[1]
         else:
-            self.min_k = 1
-            self.max_k = 5
+            self.min_knn = 1
+            self.max_knn = 5
         self.distance_metric = distance_metric
 
         self.dataset = dataset
-        self.output_filename = output_file
-        self.random_seed = random_seed
         self.best_k = None
-        self.best_training_accuracy = None
-        self.test_accuracy = None
         self.verbose = verbose
 
-        random.seed(self.random_seed)
-        np.random.seed(self.random_seed)
-
-        if min_max_k[0] < 1:
-            print("ERROR: min_max_k must be a tuple with the first number being at least 00,"
+        if min_max_knn[0] < 1:
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 00,"
                   "and the second number being >= the first number and < training size - 00.")
             sys.exit(2)
-        if min_max_k[1] < min_max_k[0] or min_max_k[1] > self.dataset.training_size-1:
-            print("ERROR: min_max_k must be a tuple with the first number being at least 00,"
+        if min_max_knn[1] < min_max_knn[0] or min_max_knn[1] > self.dataset.training_size-1:
+            print("ERROR: min_max KNN must be a tuple with the first number being at least 00,"
                   "and the second number being >= the first number and < training size - 00.")
             sys.exit(2)
 
     ###########################################################################
     def train(self):
-        print("\nTraining KNN Model from k={} to {}".format(self.min_k, self.max_k))
+        print("\nTraining KNN Model from KNN {} to {}".format(self.min_knn, self.max_knn))
         sim_matrix = self.calculate_similarity_matrix(self.dataset.training_list, self.dataset.training_list)
 
-        num_neighbors_list = np.arange(self.min_k, self.max_k + 1)
+        num_neighbors_list = np.arange(self.min_knn, self.max_knn + 1)
         accuracy_list = []
-        item_performance_list_list = []
 
         for nn in num_neighbors_list:
             accuracy, confidence_list, item_performance_list = self.classify_items(self.dataset.training_list,
-                                                                                   self.dataset.training_list,
-                                                                                   sim_matrix, nn)
+                                                            self.dataset.training_list,
+                                                            sim_matrix, nn)
             accuracy_list.append(accuracy)
-            item_performance_list_list.append(item_performance_list)
 
         if self.verbose:
             for i in range(len(num_neighbors_list)):
@@ -65,12 +54,10 @@ class Knn:
 
         best_nn_index = np.argmax(accuracy_list)
         self.best_k = num_neighbors_list[best_nn_index]
-        self.best_training_accuracy = np.max(accuracy_list)
-
         print("    Winning Model: nn={}".format(self.best_k))
         if self.verbose:
             print("    Item Performance:")
-            for item in item_performance_list_list[self.best_k - self.min_k]:
+            for item in item_performance_list:
                 print(item)
 
     ###########################################################################
@@ -155,21 +142,6 @@ class Knn:
 
         accuracy = correct_sum / n
         return accuracy, confidence_list, item_performance_list
-
-    ###########################################################################
-    def write_results(self):
-        f = open(self.output_filename, 'a')
-        f.write("{},{},{},{},{},{},{},{},{}_{}_{},{},{}\n".format(self.name, self.random_seed,
-                                                                  self.dataset.num_features,
-                                                                  self.dataset.num_categories,
-                                                                  self.dataset.num_words,
-                                                                  self.dataset.training_size,
-                                                                  self.dataset.normalize_data,
-                                                                  self.dataset.svd_dimensions,
-                                                                  self.min_k, self.max_k, self.best_k,
-                                                                  self.best_training_accuracy,
-                                                                  self.test_accuracy))
-        f.close()
 
 
 

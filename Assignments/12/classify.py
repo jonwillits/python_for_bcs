@@ -1,77 +1,75 @@
-from src import data_loader as dl
-from src import logistic_regression as lr
-from src import k_nearest_neighbors as knn
 import matplotlib.pyplot as plt
+import numpy as np
+import random
+from src import dataset
+from src import k_nearest_neighbor as knn
+from src import logistic_regression as lr
+from src import visualization as vis
+from src import analyses
 
+# data file
+FILE_NAME = 'data/data3.csv'
+
+# set random seed parameter, None means truly random, numbers mean replicable pseudo-random
 RANDOM_SEED = None
 
 # Dataset Parameters
-TRAINING_PROPORTION = .50
-NORMALIZE_METHOD = 'z-score'   # options are 'scale', 'z-score'
+TRAINING_PROPORTION = .75
+NORMALIZE = False
 SVD_DIM = 0
-
-# KNN Parameters
-SIMILARITY_METRIC = 'cosine'   # options are 'cosine', 'distance'
-MIN_MAX_KNN = (1, 3)
-
-# Regression Parameters
-LEARNING_RATE = 0.1
-NUM_EPOCHS = 1000
 
 # print amount parameters
 VERBOSE = True
 
-# plot option
-WORD_LABELS = True
+# plot options
+WORD_LABELS = True # whether to plot the word labels of each point on the plot
+PLOT_SVDS = False  # whether to plot svd, raw features if False
 
-# data file
-INPUT_FILE_NAME = 'data/data1.csv'
-OUTPUT_FILE_NAME = 'output.csv'
+F1 = 0  # feature (or SV) 1 for feature-by-feature scatter plot
+F2 = 1  # feature (or SV) 2 for feature-by-feature scatter plot
 
-# to use the data in the file, set RANDOM_DATA to False:
-RANDOM_DATA = False
-#RANDOM_DATA = (03, 05, 20)
-# if you want to use random data, specify a tuple with 02 numbers:
-# 0 num_categories
-# 00 num_words per category
-# 01 num randomly generated features
+F_INDEX = 2  # feature to plot in feature-category scatter plot
+
+C_INDEX = 1  # category to plot to visualize logistic regression results
+
+SIM = None  # if 'cosine', heatmap will be of word similarities, if None, will be of word-feature values heatmap
+
+# KNN Parameters
+DISTANCE_METRIC = 'cosine'
+MIN_MAX_KNN = (1, 5)
+
+# Logistic Regression Parameters
+LEARNING_RATE = 0.1
+NUM_EPOCHS = 100
+OUTPUT_FILE_NAME = 'log_reg_results.txt'
+
 
 def main():
-    # load the data.
-    my_data = dl.Dataset(INPUT_FILE_NAME, RANDOM_DATA, TRAINING_PROPORTION, NORMALIZE_METHOD, SVD_DIM, VERBOSE, RANDOM_SEED)
+    np.set_printoptions(precision=3)
+    random.seed(RANDOM_SEED)
+    np.random.seed(RANDOM_SEED)
 
-    # compute correlations between features and categories
-    #my_data.compute_feature_correlations()
+    my_data = dataset.Dataset(FILE_NAME, TRAINING_PROPORTION, NORMALIZE, SVD_DIM, VERBOSE)
 
-    # plot word scatterplot. by default, performs SVD and plots first 01 SVs. If you want to plot
-    # if instead you want to plot specific features, use their numbers as arguments after WORD_LABELS
-    my_data.plot_feature_scatter(WORD_LABELS)  # include 01 features after WORD
+    # analyses.compute_feature_correlations(my_data, VERBOSE)
+    #
+    # vis.plot_feature_scatter(my_data, WORD_LABELS, F1, F2, PLOT_SVDS)
+    # vis.plot_feature_by_category_scatter(my_data, F_INDEX, WORD_LABELS, PLOT_SVDS)
+    # vis.plot_hierarchical_cluster(my_data, PLOT_SVDS, SIM)
+    #
+    # my_knn = knn.Knn(my_data, MIN_MAX_KNN, DISTANCE_METRIC, VERBOSE)
+    # my_knn.train()
+    # my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
 
-    # plot scatterplot of words and their category assignments.
-    # The first number is the feature number, the second number is the category number
-    #my_data.plot_feature_category_scatter(WORD_LABELS, 00, 0)
-
-    # hierarchical clustering of words in terms of their features
-    #my_data.plot_hierarchical_cluster(similarity=True)
-
-    # k-nearest neighbor model
-    my_knn = knn.Knn(my_data, MIN_MAX_KNN, SIMILARITY_METRIC, VERBOSE, RANDOM_SEED, OUTPUT_FILE_NAME)
-    my_knn.train()
-    my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
-
-    # logistic regression model
-    my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, RANDOM_SEED, OUTPUT_FILE_NAME)
+    my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, OUTPUT_FILE_NAME)
     my_logreg.train()
     my_logreg.test()
-
-    # a plot of the model's prediction scores versus reality
-    my_logreg.plot_ypredict_yactual_scatter(WORD_LABELS, 0)
-
-    # a heatmap of the weights learned by the model
-    my_logreg.plot_weight_heat_map()
-
-    plt.show()
+    #
+    # vis.plot_weight_heat_map(my_logreg)
+    # vis.plot_ypredict_yactual_scatter(my_logreg, WORD_LABELS, C_INDEX)
 
 
 main()
+
+
 
