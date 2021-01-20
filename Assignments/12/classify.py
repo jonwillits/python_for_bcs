@@ -19,7 +19,7 @@ NORMALIZE = False
 SVD_DIM = 0
 
 # print amount parameters
-VERBOSE = True
+VERBOSE = False
 
 # plot options
 WORD_LABELS = True # whether to plot the word labels of each point on the plot
@@ -64,6 +64,15 @@ def main():
     my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, OUTPUT_FILE_NAME)
     my_logreg.train()
     my_logreg.test()
+
+    accuracy_list = []
+    for i in range(100):
+        my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, OUTPUT_FILE_NAME)
+        my_logreg.train()
+        my_logreg.test()
+        accuracy_list.append(my_logreg.test_accuracy)
+
+
     #
     # vis.plot_weight_heat_map(my_logreg)
     # vis.plot_ypredict_yactual_scatter(my_logreg, WORD_LABELS, C_INDEX)

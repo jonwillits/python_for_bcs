@@ -1,0 +1,38 @@
+Homework 11's questions involve the week's readings, and running the lab programs for week 11.
+Make sure you have downloaded the most up to date versions that we used in class Thursday's class.
+
+1. Tuesday's lecture and the assigned reading described three main branches of machine learning. What are they, and what
+are the situations in which each are useful?
+
+2. If we were going to put it into one of the categories, what type of machine learning would a t-test fall into?
+Explain your answer? If you don't know what a t-test is, its from statistics, feel free to ask.
+
+3. What is over-fitting? How does it relate to the idea of type 1 and type 2 errors from statistics?
+
+4. What is normalization, and how does it affect the data we are using? Why is it useful for supervised and unsupervised
+learning?
+
+5. In lab we have been using the k-nearest-neighbor algorithm. Which of the three categories is this algorithm in?
+Why does it belong in that category? How does the algorithm work?
+
+6. What are some situations where a k-nearest neighbor algorithm might work well? What are some situations where it
+wouldn't work very well?
+
+7. In 'classify.py', what does changing the MIN_MAX_KNN parameter do? How does this effect the way the algorithm
+performs on data1.csv? Are there values that "break" the program and cause it to crash? Why?
+
+8. What effect does the TRAINING_PROPORTION parameter have, both in terms of how it changes what the
+program does, and also in terms of how well the k-nearest-neighbor algorithm is able to classify the data in data1.csv?
+
+9. Why is the k-nearest-neighbor algorithm's accuracy not always the same? Hint: there is a random component. But what
+is being randomized? What one line of code could we add to 'classify.py' to make the results consistent and replicable?
+What would we be sacrificing by doing so?
+
+10. Why does the k-nearest-neighbor algorithm perform better on data2.csv than on data1.csv? Explain this in terms of the
+details of how the algorithm works, not just in terms of why the data in data2.csv is better.
+
+11. What does the function analyses.compute_feature_correlations() do? What do you learn about the data, and the
+performance of the classification algorithm, from the output of this method? Make sure you have VERBOSE=True.
+
+12. If you added 20 random features to data2.csv, but retained the existing features, would that make the
+k-nearest-neighbor algorithm perform better, worse, or have no effect? Why?

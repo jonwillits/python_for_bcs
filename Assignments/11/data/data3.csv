@@ -1,4 +1,4 @@
-﻿word,category,prop. time in air,prop. time in water,prop. time on land,wing proportion,has feathers,warmblooded,breathes air,lays eggs,has teats,has beak,has teeth,has scales,arm prop.,leg prop.,side flipper/fin prop.
+﻿category,word,prop. time in air,prop. time in water,prop. time on land,wing proportion,has feathers,warmblooded,breathes air,lays eggs,has teats,has beak,has teeth,has scales,arm prop.,leg prop.,side flipper/fin prop.
 bird,penguin,0,0.6,0.4,2.5,1,1,1,1,0,1,0,0,0,1.6,0
 bird,crow,0.2,0.01,0.79,7,1,1,1,1,0,1,0,0,0,4,0
 bird,bluejay,0.16,0.02,0.82,6,1,1,1,1,0,1,0,0,0,2.4,0
