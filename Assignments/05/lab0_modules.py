@@ -246,11 +246,13 @@ def demonstrate_random_module():
     number_sample = random.sample(number_list, 3)
     print("Here is a random sample from the list:", number_sample)
 
-    # One last thing about the random library is, what if you want some control over the random numbers that are
-    # generated, so that you can replicate things? Well, like I said, python generates psuedo random numbers by
-    # running your system's time through a random number generator. This number is called the "seed" for the random
-    # number generating algorithm. You can override this behavior and make the random seed whatever you want to it be.
-    # if the seed stays the same, you will see that that the 'random' number that comes out doesnt change.
+    """
+    One last thing about the random library is, what if you want some control over the random numbers that are
+    generated, so that you can replicate things? Well, like I said, python generates psuedo random numbers by
+    running your system's time through a random number generator. This number is called the "seed" for the random
+    number generating algorithm. You can override this behavior and make the random seed whatever you want to it be.
+    If the seed stays the same, you will see that that the 'random' number that comes out doesnt change.
+    """
 
     print("Here are some random lists where the seed is determined by the system time every time we ask for a number")
 
@@ -270,11 +272,15 @@ def demonstrate_random_module():
             list1.append(random.randint(1, 10))
         print(list1)
 
-    # when random.seed() is called and set to 05, that initializes the random number generator with 05 as its input.
-    # every time a random number is used, the seed is incremented, resulting in a new 'random' number. That is why
-    # you get new numbers within each list, but for each list, seed is reset to 05 and you get the same list. Try
-    # moving the assignment of random.seed(05) to different places and note how the behavior changes.
-    # Describe this below.
+    """  
+    When random.seed() is called and set to 5, that initializes the random number generator with 5 as its input.
+    every time a random number is used, the seed is incremented, resulting in a new 'random' number. That is why
+    you get new numbers within each list, but for each list, seed is reset to 5 and you get the same list. Try
+    moving the assignment of random.seed(05) to different places and note how the behavior changes.
+    Describe this below.
+    
+    COMMENT REQUIRED
+    """
 
     print("")
 
@@ -282,9 +288,13 @@ def demonstrate_random_module():
 def demonstrate_statistics_module():
     '''
     The statistics module allows us to calculate simple measures of central tendency and spread.
+    Try running it with a sample size of 10 and a sample size of 100000. What is different?
+
+    Comment the code below.
+
     '''
 
-    # comment the code below. Try running it with a sample size of 10 and a sample size of 100000. What is different?
+    # Comment required
     print("Here is some stuff that the statistics module does")
     random.seed()
     IQ_population_mean = 100
@@ -322,5 +332,6 @@ def main():
     demonstrate_time_module()
     demonstrate_random_module()
     demonstrate_statistics_module()
+
 
 main()

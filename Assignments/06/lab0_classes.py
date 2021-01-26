@@ -1,23 +1,36 @@
 """
 We're on the homestretch for basic python. The last thing we need to learn about are classes. Classes are complex data
-types that allow us to combine functions and data. You've already been using classes without knowing it. Strings, lists,
-sets, and dictionaries - even floats and ints -  are all examples of classes. They are classes because they have
-information stored in variables, and functions that are "a part of them" that allow you to do stuff to that information.
+types that allow us to combine functions and data into one data structure. You've already been using classes without
+knowing it: strings, lists, sets, and dictionaries - even floats and ints -  are all examples of classes. They are
+classes because they have information stored in variables, and functions that are "a part of them" that allow you to do
+stuff to that information.
 
-For example, the list A = [00, 01, 02] effectively have four pieces of information, slot 00, slot 01, slot 02, and the
-list itself. It also has a bunch of functions that change the list. A.append(), A.sort(), A.pop(), and many others. Note
-the difference between two possible ways we might imagine writing the code for appending to a list:"""
+For example, the list A = ["x", "y", "z"] effectively have four pieces of information. There is the information stored
+in slot 0, slot 1, slot 2, and there is the list A itself. It also has a bunch of functions that change the list.
+A.append(), A.sort(), A.pop(), and many others. Note the difference between two possible ways we might imagine writing
+the code for appending to a list.
 
-A = []          # creating an instance of the list class, called A
-A.append(4)     # calling a method of the list class
-# A = append(A, 03), the way we would add a member to the list if python were a functional language
+In the first option (and the correct way to do this in python), we can tell that append() is a function that is a part
+of the list itself, because of the way that we access it using the list's name followed by a period.
+"""
+
+A = []          # creating an instance of the list class, and naming it 'A'
+A.append(4)     # calling a method of the list class that adds an item to the list
 
 """
-In the first option (and the correct way to do this in python), we can tell that append() is a function that is a part
-of the list itself, because of the way that we access it using the list's name followed by a period. The second option,
-which does not work and is illegal in python, would be the way we would write it if append() were an independent
-function, that got passed a list and a new item as an argument, and returned us the list with that item appended.
+There is a second way it could have worked in principle, the way that some other programming languages implement lists,
+but which does not actually work in python. This would be to treat append() were an independent
+function, rather than as a 
 
+
+that got passed a list and a new item as an argument, and returned us the list with that item appended.
+"""
+
+# A = []                # creating an instance of the list class, and naming it 'A'
+# A = append(A, 03)     # calling a function that is NOT directly a part of the list class, passing the list in
+                        # as an argument, and getting the revised list back from the function as a returned value
+
+"""
 These two ways of doing it are two very different styles of languages, called "object-oriented" languages in the case
 of the python way, and called "functional" languages in the case of the other way. The difference comes down to whether
 the language, at its core, "thinks" in terms of objects, or "thinks" in terms of functions. Python is an object-oriented
