@@ -131,7 +131,7 @@ def q8():
 
 def q9():
     # 4 POINTS
-    # finish the lab_05_03.py. Dont paste the code here, we will grade it via this week's lab2.py file
+    # finish the lab2.py. Dont paste the code here, we will grade it via this week's lab2.py file.
     your_answer = ""
     print("Question 9")
     print(your_answer)

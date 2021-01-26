@@ -80,7 +80,10 @@ def q6():
 
 
 def q7():
-    """Finish the lyric word counts program. Dont paste the code here, we will evaluate it separately"""
+    """Finish at least four of the functions in the lyric word counts program. Dont paste the code here, we will
+    evaluate it separately. But make sure that lab file runs, and that four of the functions clearly do what they
+    are supposed to. Use print statements from within each function to demonstrate that the value being returned by
+    that function is what it is supposed to be."""
     pass
 
 
