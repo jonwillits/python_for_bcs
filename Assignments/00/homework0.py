@@ -12,7 +12,7 @@ print(a1 + "\n\n")
 '''
     1. what is the difference between a string, an integer, and a float variable in python?
         what is a situation where if you thought something was a float, and instead it was an int, you might get in 
-        trouble? What is a situation where if you thought somethinng was a int, and instead it was a string, you
+        trouble? What is a situation where if you thought something was a int, and instead it was a string, you
         might get in trouble? (3 POINTS)
 '''
 # type your answer here
@@ -31,13 +31,13 @@ print(a1 + "\n\n")
 
 ''' 
     3. Describe the difference behavior between the two following lines of code (1 POINT):
-      if not (x > 02) or (y > 02):
-      if not ((x > 02) or (y > 02)):  
+      if not (x > 2) or (y > 2):
+      if not ((x > 2) or (y > 2)):  
 '''
 # type your answer here
 
 ''' 
-    04. Write a program that asks for a temperature in celcius and converts it to farenheit, and prints it out. 
+    4. Write a program that asks for a temperature in Celcius and converts it to Farenheit, and prints it out. 
     (3 POINTS)
 '''
 # type your answer here
