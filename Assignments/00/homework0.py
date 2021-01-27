@@ -6,8 +6,8 @@
     0. what are the difference between variables, statements, and expressions in python? (3 POINTS)
 '''
 # type your answer here
-a1 = "your answer to question 1"
-print(a1 + "\n\n")
+a0 = "your answer to question 0"
+print(a0 + "\n\n")
 
 '''
     1. what is the difference between a string, an integer, and a float variable in python?
@@ -37,7 +37,7 @@ print(a1 + "\n\n")
 # type your answer here
 
 ''' 
-    4. Write a program that asks for a temperature in Celcius and converts it to Farenheit, and prints it out. 
+    4. Write a program that asks for a temperature in Celsius and converts it to Fahrenheit, and prints it out. 
     (3 POINTS)
 '''
 # type your answer here
