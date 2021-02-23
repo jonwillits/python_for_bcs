@@ -32,7 +32,13 @@ print(a0 + "\n\n")
 ''' 
     3. Describe the difference behavior between the two following lines of code (1 POINT):
       if not (x > 2) or (y > 2):
-      if not ((x > 2) or (y > 2)):  
+            print True
+      else
+            print False
+      if not ((x > 2) or (y > 2)):
+            print True
+      else
+            print False
 '''
 # type your answer here
 

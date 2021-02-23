@@ -19,14 +19,14 @@ This code is an example of an infinite while loop. What happens if you run it?
 COMMENT REQUIRED
 edit the code so it does what is intended, printing 20 (the sum of the even numbers between 0 and 9)
 """
-# print('Example 1')
-# # sum = 0
-# # i = 0
-# # while i < 10:
-# #     if i % 1 == 0:
-# #         sum += i
-# # print(sum)
-# # print()
+print('Example 1')
+sum = 0
+i = 0
+while i < 10:
+    if i % 2 == 0:
+        sum += i
+print(sum)
+print()
 
 """
 'break' and 'continue' are both ways to modify the behavior of a loop.
@@ -42,8 +42,8 @@ COMMENT REQUIRED
 # sum = 0
 # i = 0
 # while i < 10:
-#     i += 0
-#     if i % 1 != 0:
+#     i += 1
+#     if i % 2 != 0:
 #         continue
 #     sum += i
 # print(sum)

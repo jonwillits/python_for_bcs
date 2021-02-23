@@ -29,10 +29,10 @@
         - exists, and quits and prints an error message if not
         - has directories in it
     - checks to make sure that each artist directory has files in it, and quits and prints a message if not
-    - checks to make sure that each song lyric file has at least one word in it
+    - checks to make sure that each song lyric file has at least one word in it, and prints a warning message if not
     - lower-cases each token
     - removes punctuation characters from the end of each token
-    - dont forget to create docstrings for your new functions as well.
+    - dont forget to create docstrings for your new functions as well!
 
     When writing this, keep in mind that that some of these objectives might reasonably be broken into multiple
     functions, to keep the code as tidy as possible.
@@ -43,6 +43,9 @@
 
 
 def get_song_lists():
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     song_list_dict = {}
     song_list_dict['taylor'] = ['blank_space', 'gorgeous', 'love_story', 'me', 'shake_it_off']
     song_list_dict['kanye'] = ['power', 'in_paris', 'stronger', 'diamonds', "gold_digger"]
@@ -50,17 +53,23 @@ def get_song_lists():
 
 
 def get_all_lyrics():
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     all_lyrics_dict = {}
     # this function should create a dictionary of dictionaries!
     # the all_lyrics_dict should have the artists as the keys
     # each key should point to a dictionary as the value.
-    # each of those dictionaries should have song titles as the keys, pointing to a list of the words in the song
+    # each of those dictionaries should have song titles as the keys, pointing to a list of the words in the song.
     # so you will need some loops that call the function read_in_file
 
     return all_lyrics_dict
 
 
 def read_in_file():
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     lyric_list = []
     # this function should use the input arguments to open the appropriate file
     # read in the words and put them in lyric list
@@ -74,7 +83,10 @@ def read_in_file():
     return lyric_list
 
 
-def count_all_songs(all_lyrics_dict):
+def count_all_songs():
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     all_freqs_dict = {}
     # this function should replicate the structure of the all_lyrics_dict (a dictionary of dictionaries),
     # but instead of containing a list of the lyrics inside each inner dictionary,
@@ -93,7 +105,10 @@ def count_all_songs(all_lyrics_dict):
     return all_freqs_dict
 
 
-def count_single_song(song_word_list):
+def count_single_song():
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     freq_dict = {}
     # this function should convert the current song's word list to a dictionary, with each key being a unique word,
     # and each associated value being the frequency of that word
@@ -101,6 +116,9 @@ def count_single_song(song_word_list):
 
 
 def count_all_types_and_tokens(all_freqs_dict):
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     type_count_dict = {}
     token_count_dict = {}
     tt_ratio_dict = {}
@@ -120,6 +138,9 @@ def count_all_types_and_tokens(all_freqs_dict):
 
 
 def count_song_types_and_tokens(song_freq_dict):
+    '''
+    YOUR DOCSTRING COMMENTS GO HERE
+    '''
     # this function should take in a dictionary containing the word frequencies for a single song, and return
     # the total number of words (num_tokens), and the total number unique words (num_types)
     num_types = 0
@@ -150,12 +171,14 @@ def output_data(type_count_dict, token_count_dict, tt_ratio_dict):
 
 
 def main():
-    song_list_dict = get_song_lists()
-    lyric_dict = get_all_lyrics(song_list_dict)
-    print(lyric_dict)
-    all_freqs_dict = count_all_songs(lyric_dict)
-    type_count_dict, token_count_dict, tt_ratio_dict = count_all_types_and_tokens(all_freqs_dict)
-    output_data(type_count_dict, token_count_dict, tt_ratio_dict)
+    # these are the functions defined above. But they are not passing or getting back any variables. You need to add
+    # those! Add your new functions in here as well (unless you think they are more appropriately called from inside one
+    # of these functions.
 
+    get_song_lists()
+    get_all_lyrics()
+    count_all_songs()
+    count_all_types_and_tokens()
+    output_data()
 
 main()

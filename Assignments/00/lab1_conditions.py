@@ -51,9 +51,9 @@ else:
 We can of course print variables or run any code we want in the if and else conditions,
 """
 if X > Y:
-    print(X)
+    print(True)
 else:
-    print(Y)
+    print(False)
 
 """
 For each of the following comparisons below, add to the comment stating whether the if will evaluate to True or False,

@@ -33,7 +33,7 @@ def q3():
         Why doesnt this code work:
         x = set(["dog", "cat", "mouse", "mouse"])
         print(x[1])
-        Dont just repeat the error message as your answer, explain why it makes sense that this doesnt work
+        Dont just repeat the error message as your answer, explain why it makes sense that this doesnt work.
     """
     your_answer = ""
     print("Question 3")

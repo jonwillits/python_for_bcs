@@ -11,8 +11,11 @@ score_list = [1, 3, 4, 5, 2]
 What does the following code do?
 COMMENT REQUIRED
 """
-# for food in food_list:
-#     print(food)
+for food in food_list:
+    print(food)
+
+
+
 
 
 """

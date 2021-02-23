@@ -1,5 +1,5 @@
 """
-    0. what happens if you try to open a file that is already open?
+    0. What happens if you try to open a file that is already open?
     (1 POINT)
 """
 answer0 = ""
@@ -7,12 +7,12 @@ print("answer to question 0: {}".format(answer0))
 
 
 """
-    1. how do you only read the first 10 characters of a file? type your answer as working python code in the space
+    1. How do you only read the first 10 characters of a file? type your answer as working python code in the space
         indicated below.
         (1 POINT) 
 """
 answer1 = ""
-print("answer to question 1: {}".format(answer1))
+print("Answer to question 1: {}".format(answer1))
 
 
 """
