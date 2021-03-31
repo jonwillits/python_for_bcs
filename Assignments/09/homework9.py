@@ -45,7 +45,7 @@ def q5():
 
 def q6():
     print("Question 6 (2 Points)")
-    # What is a "stop word", and how can you use NLTK to remove stop words from an NLTK text document?
+    # What is a "stop word", and how can you use Spacy to remove stop words from a text document?
     your_answer = ""
     print(your_answer)
 
@@ -53,8 +53,9 @@ def q6():
 def q7():
     print("Question 7 (2 Points)")
     # Write a program called "get_books.py" that
-    #   - Imports five books of your choice from project gutenberg, using the code from lab_09_03_try_nltk.py, and saves
-    #   - each book as a text file in a folder called "my_books"
+    #   - Imports five books of your choice from project gutenberg, using the code from the previous lab where
+    #      you were showed how to do so
+    #   - Saves each book as a text file in a folder called "my_books"
     # this program does not need to use classes, but it should have a main function that calls other functions that
     # each do specific, independent parts of the program
 
@@ -65,10 +66,13 @@ def q8():
     #       the following:
     #   - storing the tokenized, lower-cased text of all the words in the book (1 pt)
     #   - storing a version of the text with stop words removed (1 pt)
-    #   - storing a list of each word's part of speech (POS). For example, if the raw text list was
-    #       "['the', 'dog', 'runs'", the POS list would be "[('the', 'DT'), ('dog', 'NN'), ('runs', 'NNS')]" (1 pt)
-    #   - Uses NLTK's FreqDist() to get word frequency distributions for the book, and print out the number of unique
-    #       and total words (1 pt)
+    #   - storing a list of tuples, containing the word and its part of speech (POS).
+    #       For example, if the raw text list was:
+    #       "['the', 'dog', 'runs'",
+    #       the POS list would be
+    #       "[('the', 'DT'), ('dog', 'NN'), ('runs', 'NNS')]" (1 pt)
+    #   - Implement a function that creates a word frequency dictionary for each book, and saves it as an
+    #       attribute of the book. Hint: use your old novel analysis code! (1 pt)
     #   - find and prints out the 10 most frequent nouns, verbs, and adjectives in each book, looking like this: (2 pts)
     #       MOBY DICK
     #           Nouns: whale, boat, ocean, ...
