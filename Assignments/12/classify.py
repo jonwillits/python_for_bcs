@@ -8,7 +8,7 @@ from src import visualization as vis
 from src import analyses
 
 # data file and variable for models
-FILE_NAME = 'data/data3.csv'
+FILE_NAME = 'data/data1.csv'
 my_knn = None
 my_logreg = None
 
@@ -61,10 +61,10 @@ def main():
     # my_knn.test(my_data.test_list, my_data.training_list, my_knn.best_k)
     # knn_test_accuracy = my_knn.test_accuracy
 
-    my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, OUTPUT_FILE_NAME)
-    my_logreg.train()
-    my_logreg.test()
-    logreg_test_accuracy = my_logreg.test_accuracy
+    # my_logreg = lr.LogisticRegression(my_data, LEARNING_RATE, NUM_EPOCHS, VERBOSE, OUTPUT_FILE_NAME)
+    # my_logreg.train()
+    # my_logreg.test()
+    # logreg_test_accuracy = my_logreg.test_accuracy
 
     if GENERATE_PLOTS:
         vis.plot_feature_scatter(my_data, WORD_LABELS, F1, F2, PLOT_SVDS)

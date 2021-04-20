@@ -88,8 +88,8 @@ happens here when the size of the training set is too small?
         differently, and where one or the other might lead to better classification?
     - Explain the difference quantitatively. Which one has higher accuracy on all three datasets, data1, data2, and
     data3?? Run each model 100 times, and calculate the mean and stdev accuracy of all 6 of these models (the knn run
-    on all three datasets, and the logreg on all three). Plot this data using a 2x3 bar chart, with the stdev as error
-    bars.
+    on all three datasets, and the logreg on all three). Don't do this manually. Write code! Plot this data using a 2x3
+    bar chart, with the stdev as error bars.
 
 
 
