@@ -62,8 +62,8 @@ Let's try.
     be because all the weights are random at the beginning and cancel out), then the error for each item will be about
     1.00 - 0.50 = 0.50, squared = 0.25, summed = 0.25*64 = 16. These models usually start a little worse than that, it
     will have a starting error of about 22. At the end of 1000 epochs, it will have an accuracy score of maybe around
-    80-90%%. This is determined by taking its guess for each word for each category (the output number between 0 and 1) and
-    treating it as a guess of "yes" if the value was above 0.5, and no if it was below 0.5.
+    80-90%%. This is determined by taking its guess for each word for each category (the output number between 0 and 1)
+    and treating it as a guess of "yes" if the value was above 0.5, and no if it was below 0.5.
 
 1. Which words did it perform poorly on. Why does it makes sense that it did so?
 
