@@ -70,6 +70,7 @@ class Knn:
         if self.verbose:
             for item in item_performance_list:
                 print(item)
+        self.test_accuracy = accuracy
 
     ###########################################################################
     def calculate_similarity_matrix(self, rows, columns):

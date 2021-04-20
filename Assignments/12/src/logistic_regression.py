@@ -188,10 +188,11 @@ class LogisticRegression:
     ############################################################################################################
     @staticmethod
     def output_epoch(i, accuracy_mean, confidence_mean, sse):
-        print("        Epoch {}:   Accuracy: {:0.3f}   Confidence: {:0.3f}   SSE: {:0.3f}".format(i,
-                                                                                              accuracy_mean,
-                                                                                              confidence_mean,
-                                                                                              sse))
+        if i % 10 == 0:
+            print("        Epoch {}:   Accuracy: {:0.3f}   Confidence: {:0.3f}   SSE: {:0.3f}".format(i,
+                                                                                                  accuracy_mean,
+                                                                                                  confidence_mean,
+                                                                                                  sse))
 
     ############################################################################################################
     def feedforward(self, x):

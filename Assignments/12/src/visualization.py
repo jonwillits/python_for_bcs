@@ -15,7 +15,7 @@ def plot_feature_scatter(the_dataset, word_labels, f1, f2, svd):
             the_dataset.svd_data()
         sv_var = the_dataset.svd_proportion_variance[f1] + the_dataset.svd_proportion_variance[f2]
         title = "Singular Values {} and {}, explaining {:0.3f}% of variance".format(f1, f2, sv_var)
-        x_label = "Singular Value {}".format(f2)
+        x_label = "Singular Value {}".format(f1)
         y_label = "Singular Value {}".format(f2)
     else:
         title = "Features '{}' and '{}'".format(the_dataset.feature_list[f1], the_dataset.feature_list[f2])
@@ -147,8 +147,6 @@ def plot_feature_by_category_group(the_dataset, feature_index, group, word_label
 
 ###########################################################################
 def plot_hierarchical_cluster(the_dataset, svd, similarity):
-
-    print("\n    Plotting Hierarchical Cluster Diagram")
     ok_to_go = False
 
     try:
@@ -181,7 +179,6 @@ def plot_hierarchical_cluster(the_dataset, svd, similarity):
             x_labels = the_dataset.feature_list
             data = data_matrix
 
-        print(data_matrix.shape)
         h = heatmapcluster.heatmapcluster(data,
                                           y_labels,
                                           x_labels,
