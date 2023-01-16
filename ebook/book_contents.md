@@ -3,8 +3,8 @@ Online Textbook for Programming (Python) for Brain and Cognitive Sciences
 About This Book
 
 Part 1: Python Crash Course
-0) [Installing and Using Python](CH0\0.0.%20Installing%20Python.md)
-1) [Basic Python Commands](1.%20Basic%20Python%20Commands)
+0) [Installing and Using Python](CH0/0.0.%20Installing%20Python.md)
+1) [Basic Python Commands](CH1/1.0.%20Python%20Statements%20&%20Expressions.md)
 2) Loops, Lists, and Tuples
 3) Input and Output
 4) Functions

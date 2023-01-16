@@ -2,4 +2,4 @@
 
 This website hosts information for this course:
 - [Syllabus for Spring 2023](syllabus.md)
-- [Online Textbook](book_contents.md)
+- [Online Textbook](ebook/book_contents.md)
