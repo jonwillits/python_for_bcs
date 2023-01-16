@@ -20,26 +20,26 @@ Assistant Professor of Psychology
 University of Illinois at Urbana-Champaign
 Email: jwillits@illinois.edu
 Website: http://www.psychology.illinois.edu/people/jwillits
-Office Hours TBD
+Office Hours: Monday 1pm-3pm, Psychology 811
 
 ### Teaching Assistants
 Lin Khern Chia
 PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: lachia2@illinois.edu
-Office Hours TBD
+Office Hours: Thursday 2pm-4pm
 
 Andrew Flores
 PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: azf2@illinois.edu
-Office Hours TBD
+Office Hours: Friday 2pm-4pm
 
 Jonathan Yuquimpo
 PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: jy57@illinois.edu
-Office Hours TBD
+Office Hours: Wednesday 10am-12pm
 
 
 ## 2. Course Description and Learning Objectives
