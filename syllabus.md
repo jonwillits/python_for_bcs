@@ -8,6 +8,8 @@ Spring 2023
 ### Class Location & Time
 Psychology Room 32
 Tue/Thu 9:30am-10:50am
+Zoom Link when Necessary: 
+[https://illinois.zoom.us/j/84176693658?pwd=UnpQUisyL3Y0M1lsQkZsZm1HbFRaUT09](https://illinois.zoom.us/j/84176693658?pwd=UnpQUisyL3Y0M1lsQkZsZm1HbFRaUT09)
 
 ### Materials
 1) Course Website: http://learn.illinois.edu
@@ -27,7 +29,7 @@ Lin Khern Chia
 PhD Student in Cognitive Psychology
 University of Illinois at Urbana-Champaign
 Email: lachia2@illinois.edu
-Office Hours: Thursday 2pm-4pm
+Office Hours: Thursday 2pm-4pm, Psychology 838 
 
 Andrew Flores
 PhD Student in Cognitive Psychology
