@@ -19,11 +19,11 @@ Zoom Link when Necessary:
 3) Course Github Page: https://github.com/jonwillits/python_for_bcs 
 
 ### Instructor
-Dr. Jon A. Willits
-Assistant Professor of Psychology
-University of Illinois at Urbana-Champaign
-Email: jwillits@illinois.edu
-Website: http://www.psychology.illinois.edu/people/jwillits
+Dr. Jon A. Willits\
+Assistant Professor of Psychology\
+University of Illinois at Urbana-Champaign\
+Email: jwillits@illinois.edu \
+Website: http://www.psychology.illinois.edu/people/jwillits \
 Office Hours: Monday 1pm-3pm, Psychology 811
 
 ### Teaching Assistants
