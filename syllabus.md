@@ -43,7 +43,7 @@ Office Hours: Monday 1pm-3pm, Psychology 811
     - PhD Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
     - Email: jy57@illinois.edu
-    - Office Hours: Wednesday 10am-12pm
+    - Office Hours: Wednesday 10am-12pm, Psychology 830
 
 
 ## 2. Course Description and Learning Objectives
