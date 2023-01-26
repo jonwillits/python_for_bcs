@@ -24,7 +24,7 @@ Assistant Professor of Psychology\
 University of Illinois at Urbana-Champaign\
 Email: jwillits@illinois.edu \
 Website: http://www.psychology.illinois.edu/people/jwillits \
-Office Hours: Monday 1pm-3pm, Psychology 811
+Office Hours: Monday 2pm-4pm, Psychology 811
 
 ### Teaching Assistants
 - Lin Khern Chia
