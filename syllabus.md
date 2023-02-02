@@ -37,13 +37,13 @@ Office Hours: Monday 2pm-4pm, Psychology 811
     - PhD Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
     - Email: azf2@illinois.edu
-    - Office Hours: Friday 2pm-4pm ,Psychology 832
+    - Office Hours: Friday 3pm-5pm, Psychology 832
 
 - Jonathan Yuquimpo
     - PhD Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
     - Email: jy57@illinois.edu
-    - Office Hours: Wednesday 10am-12pm, Psychology 830
+    - Office Hours: Friday 1:30pm-3:30pm, Psychology 830
 
 
 ## 2. Course Description and Learning Objectives
