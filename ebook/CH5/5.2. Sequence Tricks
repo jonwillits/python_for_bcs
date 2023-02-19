@@ -1,0 +1,46 @@
+# 5.2 Sequence Tricks
+
+Now that we have covered all of our basic data types in Python, let's talk about a few more tricks.
+
+## Sorting Data Structures
+
+We've already sorted lists. You can use the same trick to sort sets and dictionaries.
+
+Now remember that sets are not ordered, so sorting it converts it into a list.
+```python
+my_animals = {'dog', 'lion', 'mouse', 'cat'}
+sorted_animals = sorted(my_animals)
+print(sorted_animals)
+# results in ['cat', 'dog', 'lion', 'mouse']
+```
+
+It sorts alphabetically, you can sort in reverse by adding a reverse argument.
+```python
+my_animals = {'dog', 'lion', 'mouse', 'cat'}
+sorted_animals = sorted(my_animals, reverse=True)
+print(sorted_animals)
+# results in ['mouse', 'lion', 'dog', 'cat']
+```
+
+You can sort dictionaries too, but it is a little more complicated since it is a key-value pair. But remember that we 
+can use the .keys(), .values(), and .items() methods to get lists of the keys, values, or key-value pairs. We can then 
+sort them the same way we do lists.
+
+```python
+animal_populations = {'dog': 471000000, 'cat': 600000000, 'bee': 2000000000000, 'human': 8000000000}
+animals = sorted(animal_populations.keys())
+populations = sorted(animal_populations.values())
+populations = sorted(animal_populations.items())
+```
+Remember that .items() creates tuples with the key and then the value, so this will sort the tuples by the key. But if 
+we wanted them sorted by the value we can do that too:
+```python
+animal_populations = {'dog': 471000000, 'cat': 600000000, 'bee': 2000000000000, 'human': 8000000000}
+sorted(animal_populations.items(), key=lambda item: item[1])
+```
+This is another case of using the lambda expression we had to use in the Tkinter button. Basically we can use this 
+lambda expression to tell it what index of the tuples that we want to sort by. Using a [1] sorts by the second slot, 
+the values from the dictionary. Using [0] would have sorted by the keys.
+
+Next: [5.3. JSON Files](5.3.%20JSON%20Files.md)<br>
+Previous: [5.1. Dictionaries](5.1.%20Dictionaries.md)
