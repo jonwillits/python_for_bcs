@@ -1,0 +1,134 @@
+# 5.1 Dictionaries
+
+Now let's learn one of the most important and useful data structures in python: dictionaries.
+
+So far all of our data structures have been simple sequences: 
+- range: a set of numbers
+- list: a mutable (changeable) ordered sequence
+- tuple: an immutable (unchangeable) ordered sequence
+- set: a mutable unordered sequence without duplicates (you can actually create an immutable set using frozenset() 
+   instead of set(), and you can use all the same methods except those that change the set)
+
+Dictionaries are different, in that each element of a dictionary is a pair of things, a key, and a value. Dicionaries
+are like a set of unique keys, where each key points to a value. Think of an actual dictionary. It has a set of words,
+and each one points to a definition. We can create an actual dictionary with a python dictionary:
+```python
+word_meaning_dict = {"run": "to move with haste; act quickly",
+                     "jump": "to spring clear of the ground or other support by a sudden muscular effort",
+                     "talk": "to consult or confer"}
+```
+
+To create a dictionary in python, we use squiggly brackets just like a set, except that instead of adding single items, 
+we add key-value pairs. Dictionaries can be defined as we did above, with data already in them, or they can be
+defined empty (with just the squiggly brackets with nothing inside them. In either case, we can add items to a 
+dictionary after defining it like this:
+```python
+word_meaning_dict = {}
+word_meaning_dict["eat"] = "to take into the mouth and swallow for nourishment; chew and swallow (food)."
+```
+
+We can then access dictionary items by using the key in the same way we just added one:
+```python
+print(word_meaning_dict["jump"])
+# output would be "to spring clear of the ground or other support by a sudden muscular effort"
+```
+Sometimes it is useful to think of a dictionary like a list, with an important difference. In a list, the organization
+is the order of a list, so we access each member using a number. In a dictionary, the organization is the key. We access
+data the same way as with a list (using square brackets), but we provide the key instead of a number.
+
+Dictionaries are mutable, meaning you can change them. The keys of a dictionary must be unique, but the values do not
+need to be. You could, for example, have a dictionary of people's names and their birthdays. Every name in the 
+dictionary would need to be unique, but multiple people could have the same birthday.
+
+## Data Structures You Can Use in Dictionaries
+The values of dictionaries can be any kind of data type: strings, numbers, booleans, lists, tuples, sets, even
+other dictionaries. As we will talk about in later sections, data stuctures can get pretty complicated: dictionaries of
+dictionaires, lists of dictionaries, dictionaries of lists of sets. Oh my!
+
+The keys of dictionaries can be any immutable data type: string, int, float, tuple, boolean, frozenset. One way to 
+think about and make sense of this is that you cannot change a key in a dictionary once you've created it. You can 
+replace it, but not change it. In the example below, I can change the value of 'Jon', but I cannot change the key.
+If i wanted to do that I would need to delete the entry and create a new entry.
+```python
+birthday_dict = {'Jon': '11-04', 'Andrew': '05-16', 'Jonathan': '12-03', 'Lin Khern': '08-23'}
+birthday_dict['Jon'] = '11-11'
+
+# imagine the name was misspelled
+del birthday_dict['Jon'] # deletes the key and value
+birthday_dict['John'] = '11-04'
+```
+This is the reason you cannot use a mutable data type (like a list or a set) as the key of a dictionary. If you 
+made the key a list of words, and then added a word to the list, then the key would change, and that's not allowed.
+But you can use a tuple of words as a key, and if you want to be able to change the keys, then you just have to use the 
+delete and replace method described above.
+
+## Accessing Dictionary Data
+In addition to accessing data by using they key inside square brackets, there are other ways you can get at dictionary
+data.
+
+
+### Get a list of a dictionaries keys, or values, or both:
+```python
+word_meaning_dict = {"run": "to move with haste",
+                     "jump": "to spring clear of the ground",
+                     "talk": "to consult or confer"}
+word_list = word_meaning_dict.keys() 
+# ["run", "jump", "talk"]
+
+meaning_list = word_meaning_dict.values()  
+# ["to move with haste", "to spring clear of the ground", "to consult or confer"]
+
+word_meaning_list = word_meaning_dict.items()
+# .items() gives you a list of tuples
+# [("run", "to move with haste"), ("jump", "to spring clear of the ground"), ("talk", "to consult or confer")]
+```
+<br>
+
+### Use the len() function to see how many entries are in a dictionary:
+```python
+word_meaning_dict = {"run": "to move with haste",
+                     "jump": "to spring clear of the ground",
+                     "talk": "to consult or confer"}
+print(len(word_meaning_dict))  # output is 3
+```
+<br>
+
+### Looping Over Dictionaries
+Dictionaries are a sequence (of keys), so you can also loop over dictionaries just like a list.
+```python
+word_meaning_dict = {"run": "to move with haste; act quickly",
+                     "jump": "to spring clear of the ground or other support by a sudden muscular effort",
+                     "talk": "to consult or confer"}
+
+for word in word_meaning_dict:
+    print("{}: {}".format(word, word_meaning_dict[word]))
+```
+<br>
+
+### Checking to see if a key is in a dictionary
+You can combine the previous methods to iterate over keys and values at the same time:
+```python
+word_meaning_dict = {"run": "to move with haste; act quickly",
+                     "jump": "to spring clear of the ground or other support by a sudden muscular effort",
+                     "talk": "to consult or confer"}
+
+for word, definition in word_meaning_dict.items():
+    print("{}: {}".format(word, definition))
+```
+Remember that .items() gives you back a list of tuples, so what's really happening here is that you're creating that
+list of tuples, and then unpacking the values of that tuple one at a time into the two variables provided in the 
+for loop.
+
+Finally, as with lists and sets, you can check to see if a key is in a dictionary:
+```python
+word_meaning_dict = {"run": "to move with haste; act quickly",
+                     "jump": "to spring clear of the ground or other support by a sudden muscular effort",
+                     "talk": "to consult or confer"}
+
+word = "run"
+if word in word_meaning_dict:
+    print("Found the word {}. It's meaning is: {}".format(word, word_meaning_dict[word]))
+```
+
+Next: [5.2. Sequence Tricks](5.2.%20Sequence%20Tricks.md)<br>
+Previous: [5.0. Sets](5.0.%20Sets.md)
