@@ -1,0 +1,119 @@
+# 6.3. Manipulating Numpy Arrays
+
+There are many ways you can manipulate numpy arrays.
+
+## Reshaping Numpy Arrays
+You can create a new array (or reference to an array) that converts the existing array to a different shape, using the 
+reshape() method.
+
+```python
+import numpy as np
+
+array1 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+array2 = array1.reshape(4, 3)  # creates view of array1 that is reshaped from 1x12 to 4x3
+
+array3 = array1.reshape(4, 3).copy()  # creates a copy of to array1 that is reshaped from 1x12 to 4x3
+```
+
+For a multidimensional array, the .reshape() method allows you not specify one of the sizes. It will then make it
+the size that it needs to be. The way you tell it what size you are not specifying is by using a -1.
+```python
+import numpy as np
+
+array1 = np.ones([4, 3, 5])
+array2 = array1.reshape(2, 2, -1)  # creates a view of array1 that has a height=2, a width=2, and a depth=12.
+```
+The way this works is that you can figure out what total number of dimensions would be (4*3*5=60 in the above example),
+and so if you specify two dimensions that give you four elements (2*2 in the above example), then the remaining 
+dimension must have 15 elements in it (60/4).
+
+A common operation in many applications is also to take a multidimensional array and to "flatten" it into a single 
+dimension. You do this the same way, by using reshape and with -1 as the only argument.
+
+```python
+import numpy as np
+
+array1 = np.ones([4, 3, 5])
+array2 = array1.reshape(-1)  # creates a view of array1 that is a 1D array with 60 elements
+```
+
+## Combining Arrays
+
+As we said, the size of an arrays cannot be changed after it is created, but you can create new arrays (or new views) of 
+arrays that combine other arrays or use only parts of an array. There are many ways to do this.
+
+### Concatenating arrays
+```python
+import numpy as np
+
+array1 = np.array([1, 2, 3, 4, 5])
+array2 = np.array([11, 22, 33, 44, 55])
+array3 = np.array([111, 222, 333, 444, 555])
+
+array4 = np.concatenate((array1, array2, array3))
+# [  1, 2, 3, 4, 5, 11, 22, 33, 44, 55, 111, 222, 333, 444, 555])
+```
+Somewhat annoyingly to remember, np.concatenate() creates a copy, not a view. So in the example above, a change to 
+array1 would not make a change to array4.
+
+If you have a multidimensional array, you can specify what axis you want to concatenate along. The axis numbers are 
+interpreted from outer-most to inner-most arrays if you think of them as lists within lists.
+```python
+import numpy as np
+
+array1 = np.array([[1, 2, 3, 4, 5], [11, 21, 31, 41, 51]])
+array2 = np.array([[-1, -2, -3, -4, -5], [-11, -21, -31, -41, -51]])
+
+array3 = np.concatenate((array1, array2), axis=0)
+array4 = np.concatenate((array1, array2), axis=1)
+
+print(array3)
+print(array4)
+```
+The resulting output would be:
+```text
+[[  1   2   3   4   5]
+ [ 11  21  31  41  51]
+ [ -1  -2  -3  -4  -5]
+ [-11 -21 -31 -41 -51]]
+
+[[  1   2   3   4   5  -1  -2  -3  -4  -5]
+ [ 11  21  31  41  51 -11 -21 -31 -41 -51]]
+```
+If you specify the axis=0, that means you are concatenating along the outside dimension (the rows), and if you specify
+axis=1, you are concatenating the inside dimension, the columns. Another way to think of this is that the axis you 
+specify is the axis whose size is going to stay the same. If you specify axis=0, we keep the row size = 5. If you 
+specify axis=1, you keep the column size = 2.
+
+### Stacking arrays
+
+In addition to concatenating, you can stack arrays. Stacking creates a new axis.
+```python
+import numpy as np
+
+array1 = np.array([1, 2, 3, 4, 5])
+array2 = np.array([11, 22, 33, 44, 55])
+array3 = np.array([111, 222, 333, 444, 555])
+
+array4 = np.stack((array1, array2, array3))
+# [[1, 2, 3, 4, 5], [11, 22, 33, 44, 55], [111, 222, 333, 444, 555]])
+```
+
+## Splitting Arrays
+There are also many ways you can split arrays. The np.array_split() function takes an array and a number of chunks you 
+want to split it into, and gives you a list of two arrays back:
+```python
+import numpy as np
+array1 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+array2 = np.array([[1, 2, 3, 4], [11, 21, 31, 41]])
+
+array_list = np.array_split(array1, 2)  # [array([1, 2, 3, 4, 5]), array([6, 7, 8, 9, 10])]
+```
+This function doesn't need to divide evenly, if it doesn't the different arrays will be different sizes.
+The split function also works with multidimensional arrays, and by default splits along the first axis, but you can
+specify a different axis if you want.
+
+
+Next: [6.4. Numpy Operations](6.4.%20Numpy%20Operations.md)<br>
+Previous: [6.2 Numpy](6.2%20Numpy.md)
