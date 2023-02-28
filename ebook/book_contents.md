@@ -10,7 +10,7 @@ Part 1: Python Crash Course
 3 [Input and Output](CH3/3.0.%20Terminal%20Input%20and%20Output.md)<br>
 4 [Functions](CH4/4.0%20Functions.md)<br>
 5 [Dictionaries and Sets](CH5/5.0.%20Sets.md)<br>
-6 Modules (especially Numpy)<br>
+6 [Modules (especially Numpy)](CH6/6.0.%Core%Python%Modules.md)<br>
 7 Classes<br>
 8 Good Programming Practices<br>
 
