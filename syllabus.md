@@ -166,8 +166,8 @@ visiting the DRES website and selecting “Sign-Up for an Academic Screening” 
 	Assignments:
 		- CH5: Dictionaries and Sets
 		- Lab 5 (due Feb 24 by 5pm)
-
-### Week 7: Mar 7 & Mar 9
+		
+### Week 7: Mar 28 & Mar 2
 	Topics:
 		- Core Python Modules
 		- Installing Add On Modules
@@ -175,26 +175,27 @@ visiting the DRES website and selecting “Sign-Up for an Academic Screening” 
 	Assignments:
 		- CH6: Python Modules and Add-Ons
 		- Lab 6 (due Mar 10  by 5pm)
-		- Homework 3 (Mar 10 by 5pm)
 
-### Spring Break Mar 11-19
 
-### Week 8: Mar 21 & Mar 23
+### Week 8: Mar 7 & Mar 9
 	Topics:
 		- Classes and Object Oriented Programming
 		- Class Inheritance
 	Assignments:
 		- CH7: Classes
-		- Lab 7 (due Mar 24 by 5pm)
+		- Lab 7 (due Mar 10 by 5pm)
+		- Homework 3 (Mar 13 by 5pm)
 
-### Week 9: Mar 28 & Mar 30
+### Spring Break Mar 11-19
+
+### Week 9: Mar 21 & Mar 23
 	Topics:
 		- Creating Games and Simulations
 	Assignments:
 		- CH8: Creating Games and Simulations
-		- Lab 8 (due Mar 31 by 5pm)
+		- Lab 8 (due Mar 24 by 5pm)
 
-### Week 10: Apr 4 & Apr 6
+### Week 9: Mar 28 & Mar 30
 	Topics:
 		- Good Programming Practices
 		- Debugging Hints
@@ -202,35 +203,36 @@ visiting the DRES website and selecting “Sign-Up for an Academic Screening” 
 		- Using Github
 	Assignments:
 		- CH9: Good Programming Practices
-		- Lab 9 (due Apr 7 31 by 5pm)
-		- Homework 4 (due Apr 10 by 5pm)
+		- Lab 9 (due Mar 31 by 5pm)
+		- Homework 4 (due Apr 3 by 5pm)
 
-### Week 11: Apr 11 & Apr 13
+### Week 10: Apr 4 & Apr 6
 	Topics:
 		- Creating Experiments
 	Assignments:
 		- CH10: Creating Experiments
-		- Lab 10 (due Apr 14 by 5pm)
+		- Lab 10 (due Apr 7 by 5pm)
 
-### Week 12: Apr 18 & Apr 20
+### Week 11: Apr 11 & Apr 13
 	Topics:
 		- Plotting and Visualizing Data
 		- Pandas and Dataframes
 	Assignments:
 		- CH11: Plotting and Data Visualization
-		- Lab 11 (due Apr 21 by 5pm)
-		- Homework 5 (due Apr 24 by 5pm)
+		- Lab 11 (due Apr 14 by 5pm)
+		- Homework 5 (due Apr 17 by 5pm)
 
-### Week 13: Apr 25 & Apr 27
+### Week 12: Apr 18 & Apr 20
 	Topics:
 		- Machine Learning
 		- Supervised Learning
 		- Unsupervised Learning
 	Assignments:
 		- CH12: Machine Learning
-		- Lab 12 (due Apr 28 by 5pm)
+		- Lab 12 (due Apr 21 by 5pm)
 
-### Week 14: May 2
+### Week 13: Apr 25 & Apr 27
+
 	Topics:
 		- Regular Expressions
 		- Natural Language Processing
@@ -239,7 +241,11 @@ visiting the DRES website and selecting “Sign-Up for an Academic Screening” 
 		- CH13: Natural Language Processing
 		- Lab 13 (due May 5 by 5pm)
 		- Homework 6 (due May 8 by 5pm)
-
+### Week 14: May 2
+	Topics:
+		- Final Project Workday
+	Assignments:
+		
 ### Final Exam Week
 	Assignments:
 		- Final Project (due May 12 by 5pm)
