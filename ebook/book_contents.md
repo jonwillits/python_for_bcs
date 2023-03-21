@@ -16,7 +16,7 @@ Part 1: Python Crash Course
 
 Part 2: Applications to Brain and Cognitive Science<br>
 
-9 [Programming Experiments](9.5.Lab%209.md)<br>
+9 [Programming Experiments](9.6.Lab%209.md)<br>
 10 Data and Data Visualization (with Pandas and Matplotlib)<br>
 11 Natural Language Processing<br>
 12 Machine Learning<br>
