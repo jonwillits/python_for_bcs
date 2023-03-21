@@ -8,16 +8,17 @@ Part 1: Python Crash Course
 1 [Basic Python Commands](CH1/1.0.%20Python%20Statements%20&%20Expressions.md)<br>
 2 [Loops, Lists, and Tuples](CH2/2.0%20The%20For%20Loop.md)<br>
 3 [Input and Output](CH3/3.0.%20Terminal%20Input%20and%20Output.md)<br>
-4 [Functions](CH4/4.0%20Functions.md)<br>
+4 [Functions](CH4/4.0.%20Functions.md)<br>
 5 [Dictionaries and Sets](CH5/5.0.%20Sets.md)<br>
 6 [Modules (especially Numpy)](6.0.%20Core%20Python%20Modules.md)<br>
-7 Classes<br>
+7 [Classes](CH7/7.0/%20Classes%20and%20OOP.md)<br>
 8 Good Programming Practices<br>
 
 Part 2: Applications to Brain and Cognitive Science<br>
 
-9 Games and Simulations<br>
-10 Programming Experiments<br>
-11 Data and Data Visualization (with Pandas and Matplotlib)<br>
+9 [Programming Experiments](9.5.Lab%209.md)<br>
+10 Data and Data Visualization (with Pandas and Matplotlib)<br>
+11 Natural Language Processing<br>
 12 Machine Learning<br>
-13 Natural Language Processing<br>
+13 Computational Modeling<br>
+14 Games and Simulations<br>
