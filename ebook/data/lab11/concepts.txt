@@ -539,4 +539,3 @@ wrench,0
 yacht,0
 yam,0
 zebra,1
-zucchini,0
