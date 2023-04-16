@@ -19,4 +19,4 @@ Part 2: Applications to Brain and Cognitive Science<br>
 9 [Programming Experiments](CH9/9.6.%20Lab%209.md)<br>
 10 [Data and Data Visualization](CH10/10.0.%20Data%20Analysis%20and%20Visualization.md)<br>
 11 [Machine Learning](CH11/11.0.%20Machine%20Learning.md)<br>
-12 Natural Language Processing<br>
+12 [Natural Language Processing](CH12/12.0.%20Natural%20Language%20Processing.md)<br>
