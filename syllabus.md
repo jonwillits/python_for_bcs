@@ -22,33 +22,33 @@ Zoom Link when Necessary:
 Dr. Jon A. Willits\
 Assistant Professor of Psychology\
 University of Illinois at Urbana-Champaign\
-Email: jwillits@illinois.edu \
+E-mail: jwillits@illinois.edu \
 Website: http://www.psychology.illinois.edu/people/jwillits \
 Office Hours: Monday 2pm-4pm, Psychology 811
 
 ### Teaching Assistants
 - Lin Khern Chia
-    - PhD Student in Cognitive Psychology
+    - Ph.D. Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
-    - Email: lachia2@illinois.edu
+    - E-mail: lachia2@illinois.edu
     - Office Hours: Thursday 2pm-4pm, Psychology 838 
 
 - Andrew Flores
-    - PhD Student in Cognitive Psychology
+    - Ph.D. Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
-    - Email: azf2@illinois.edu
+    - E-mail: azf2@illinois.edu
     - Office Hours: Friday 3pm-5pm, Psychology 29
 
 - Jonathan Yuquimpo
-    - PhD Student in Cognitive Psychology
+    - Ph.D. Student in Cognitive Psychology
     - University of Illinois at Urbana-Champaign
-    - Email: jy57@illinois.edu
+    - E-mail: jy57@illinois.edu
     - Office Hours: Friday 1:30pm-3:30pm, Psychology 29
 
 
 ## 2. Course Description and Learning Objectives
 Programming for Cognitive Science has three primary learning objectives: 
-- to learn what computer programming is, and what one can accomplish using computer programs
+- to learn what computer programming is and what one can accomplish using computer programs
 - to master the basics of how to write computer programs in the Python programming language, including its syntax and proper programming technique and style
 - to discuss how computer programs, models, and simulations contribute to research about brain and cognitive science.
 
@@ -70,29 +70,29 @@ Programming for Cognitive Science has three primary learning objectives:
 
 ### Labs
 Each week we will be spending a considerable portion of our lab time working on various lab
-exercises. Each lab assignment is one of the final section's of each chapter in the textbook. Lab assignments should 
+exercises. Each lab assignment is one of the final sections of each chapter in the textbook. Lab assignments should 
 be turned in each week on the course website. Labs are due each week on Friday at 5pm. They can be turned in Monday by 
-5pm for a 20% deduction. After Monday at 5pm they will not be accepted unless you have made prior arrangements.
+5pm for a 20% deduction. After Monday at 5pm, they will not be accepted unless you have made prior arrangements.
 
 ### Homework
 There are six homework assignments throughout the semester, about every other week. The homework assignments involve 
-creating a single more complex python program that achieves some BCOG-related goal. Homework assignments should be 
+creating a single, more complex Python program that achieves some BCOG-related goals. Homework assignments should be 
 turned in each week on the course website. These homework assignments are due on a Monday at 5pm, and 10% is deducted 
 for each day they are late.
 
 ### Final Project
 The final project will involve creating a Python program that is more complex, like the homework assignments, but 
 on a topic of your own choosing. We will discuss the details later. At the end of the semester, you will turn in your 
-code and a brief project report, which describes your project. For the project, you may work alone or in a group. The 
+code and a brief project report which describes your project. For the project, you may work alone or in a group. The 
 bigger the group, the higher the expectations for your project.
 
 
 ## 4. Academic Integrity Policy
 This class will take the University’s Academic Integrity policy very seriously. Cheating and other forms of academic 
-dishonesty will not be tolerated. The University of Illinois has the responsibility for maintaining academic integrity 
+dishonesty will not be tolerated. The University of Illinois has the responsibility of maintaining academic integrity 
 so as to protect the quality of education and research on our campus and to protect those who depend upon our integrity. 
 It is the responsibility of each student to refrain from infractions of academic integrity, from conduct that may lead 
-to suspicion of such infractions, and from conduct that aids others in such infractions. It is also a responsibility of 
+to suspicion of such infractions, and from conduct that aids others in such infractions. It is also the responsibility of 
 the student to know and understand what constitutes academic integrity infractions. Ignorance is not a valid excuse.
 The University’s official statement of a student’s responsibilities can be found here: 
 [http://admin.illinois.edu/policy/code/article1_part4_1-401.html](http://admin.illinois.edu/policy/code/article1_part4_1-401.html).
@@ -105,10 +105,10 @@ can be found here: [http://www.las.illinois.edu/students/integrity/](http://www.
 To obtain disability-related academic adjustments and/or auxiliary aids, students with disabilities must contact 
 the course instructor and the Disability Resources and Educational Services (DRES) as soon as possible. To contact 
 DRES, you may visit 1207 S. Oak St., Champaign, 
-call 333-4603, e-mail disability@illinois.edu or go to the DRES website
+call 333-4603, e-mail disability@illinois.edu, or go to the DRES website
  ([https://www.disability.illinois.edu](https://www.disability.illinois.edu)). 
 If you are concerned you have a disability-related condition that is impacting your academic progress, there are 
-academic screening appointments available on campus that can help diagnosis a previously undiagnosed disability by 
+academic screening appointments available on campus that can help diagnose a previously undiagnosed disability by 
 visiting the DRES website and selecting “Sign-Up for an Academic Screening” at the bottom of the page.”
 
 
@@ -200,7 +200,7 @@ visiting the DRES website and selecting “Sign-Up for an Academic Screening” 
 		- Good Programming Practices
 		- Debugging Hints
 		- Managing Data and Projects
-		- Using Github
+		- Using GitHub
 	Assignments:
 		- CH9: Good Programming Practices
 		- Lab 9 (due Mar 31 by 5pm)
