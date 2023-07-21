@@ -540,3 +540,4 @@ yacht,0
 yam,0
 zebra,1
 zucchini,0
+zoo,0
