@@ -42,7 +42,7 @@
 29) Mathematical Models
 30) Learning Theories and Behaviorism
 
-### Part 4: Topics in Brain and Application
+### Part 4: Applications in Brain and Cognitive Science
 31) Object and Scene Perception
 32) Speech Perception
 33) Attention
